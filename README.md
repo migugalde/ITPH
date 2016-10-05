@@ -26,3 +26,5 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+<a href="https://codeclimate.com/github/msmith3/ITPH"><img src="https://codeclimate.com/github/msmith3/ITPH/badges/gpa.svg" /></a>
