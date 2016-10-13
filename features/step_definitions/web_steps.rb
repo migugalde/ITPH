@@ -252,3 +252,80 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+Given(/^the following clients exist:$/) do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^Bob Smith has an appointment with me on May (\d+), (\d+)$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I select "([^"]*)"$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see an upcoming appointment for May (\d+), (\d+)$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^Mary Adams phone number is (\d+)\-(\d+)\-(\d+)$/) do |arg1, arg2, arg3|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see the phone number is (\d+)\-(\d+)\-(\d+)$/) do |arg1, arg2, arg3|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see the counselor is Yolanda$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I change the counselor to Anna$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I change the phone number to (\d+)\-(\d+)\-(\d+)$/) do |arg1, arg2, arg3|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see the counselor is Anna$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I change the email to "([^"]*)"$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see an error$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see the email is "([^"]*)"$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I search for "([^"]*)"$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should not see "([^"]*)", "([^"]*)", "([^"]*)"$/) do |arg1, arg2, arg3|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see "([^"]*)", "([^"]*)", "([^"]*)", "([^"]*)"$/) do |arg1, arg2, arg3, arg4|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see "([^"]*)", "([^"]*)"$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should not see "([^"]*)", "([^"]*)"$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click "([^"]*)"$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
