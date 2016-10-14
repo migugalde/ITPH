@@ -27,4 +27,4 @@ Scenario: I want to see all details from the intake form
 	When I select "Mary Adams"
 	Then I should be on the Intake Form Data page for "Mary Adams"
 	And I should see the phone number is 999-000-1234
-	And I should see the counselor is Yolanda
+	And I should see the counselor is "Yolanda"
