@@ -14,12 +14,12 @@ Then(/^I should see an upcoming appointment for (.*)$/) do |date|
   expect(page.body.find(date))
 end
 
-Given(/^(.*) phone number is (\d*3-d*3-d*4)$/) do |client_name, number|
+Given(/^the phone number of (.*) is (\d{3}-\d{3}-\d{4})$/) do |client_name, number|
   client = Client.find(name: client_name)
   expect(client.phone_number).to be(number)
 end
 
-Then(/^I should see the phone number is (\d*3-d*3-d*4)$/) do |date|
+Then(/^I should see the phone number is (\d{3}-\d{3}-\d{4})$/) do |date|
   expect(page.body.find(date))
 end
 
@@ -31,7 +31,7 @@ Then(/^I change the counselor to (.*)$/) do |counselor|
   fill_in(counselor_name, :with => counselor)
 end
 
-Then(/^I change the phone number to (\d*3-d*3-d*4)$/) do |phone|
+Then(/^I change the phone number to (\d{3}-\d{3}-\d{4})$/) do |phone|
   fill_in(phone_number, :with => phone)
 end
 

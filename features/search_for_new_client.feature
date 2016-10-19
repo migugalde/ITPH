@@ -26,7 +26,7 @@ Scenario: Search for an nonexisting client
 	When I search for "Daniel Boone"
 	Then I should see an error
 	And I should see "Mary Williams"
-	And I should see"Bob Smith"
+	And I should see "Bob Smith"
 	And I should see "Joe Adams"
 	And I should see "Mary Adams"
 
