@@ -14,6 +14,9 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'simple_form'
+gem 'rails-footnotes', '>= 3.7.9', :group => :development
+gem 'bootstrap-sass', '~> 2.3.1.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -62,6 +65,7 @@ end
 # setup Cucumber, RSpec, Guard support
 group :test do
   gem 'rspec-rails'
+  gem 'protected_attributes'
   gem 'guard-rspec'
   gem 'simplecov', :require => false
   gem 'cucumber-rails', :require => false

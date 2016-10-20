@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+  get 'counselors/new'
+
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
+  # resources :login
+  root :to => redirect('/login')
+  # '/login'
+  get '/login' => 'counselor#index'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

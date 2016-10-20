@@ -1,0 +1,10 @@
+<h1>Counselors#new</h1>
+<p>Find me in app/views/counselors/new.html.erb</p>
+
+<%= simple_form_for(@counselor) fo |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
+  <%= f.button :submit %>
+<% end >
