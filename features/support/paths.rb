@@ -15,7 +15,10 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/master
     when /^the login\s?page$/
       '/login'
 

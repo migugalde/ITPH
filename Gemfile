@@ -11,6 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :rubyrv
+gem 'haml'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -25,13 +26,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,7 +54,7 @@ ruby '2.3.1'   # just in case - tell Heroku which Ruby version we need
 group :development, :test do
   # make sure sqlite3 gem ONLY occurs inside development & test groups
   gem 'sqlite3' # use SQLite only in development and testing
-end 
+end
 group :production do
   # make sure the following gems are in your production group:
   gem 'pg'              # use PostgreSQL in production (Heroku)
@@ -73,4 +75,8 @@ group :test do
   gem 'database_cleaner' # required by Cucumber
   gem 'factory_girl_rails' # if using FactoryGirl
   gem 'metric_fu'        # collect code metrics
+end
+
+group :test do
+  gem 'codeclimate-test-reporter', require: nil
 end

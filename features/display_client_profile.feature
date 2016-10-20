@@ -2,29 +2,31 @@ Feature: Display Client Profile when selected
 
 	As a counselor
 	So that I can quickly look at a certain clients info
-	After finding the right client
-	I want to see their intake form data and contact info
+	I want to find the right client
+	Then I want to see their intake form data and contact info
 
 Background: clients have been added to database
 
 	Given the following clients exist:
-	| Last Name | First Name	| counselor	| email 			|
-	| Smith		| Bob			| Toni 		| bob@smith.net 	|
-	| Adams		| Joe			| Yolanda 	| joe@adams.com		|
-	| Adams 	| Mary			| Yolanda 	| mary@adams.com 	|
-	| Williams	| Mary 			| Toni 		| mary@williams.nu	|
+	| name	| counselor	| email 			|
+	| Bob Smith			| Toni 		| bob@smith.net 	|
+	| Joe Adams			| Yolanda 	| joe@adams.com		|
+	| Mary Adams			| Yolanda 	| mary@adams.com 	|
+	| Mary Williams			| Toni 		| mary@williams.nu	|
 
 	And I am on the clients page
 
+Scenario: display a list of clients
+    Given I should be on the clients page
+    And I should see the following emails: bob@smith.net, joe@adams.com, mary@adams.com, mary@williams.nu
+
 Scenario: I want to know if I have an upcoming appointment with client
-	Given Bob Smith has an appointment with me on May 23, 2070
-	When I select "Bob Smith"
-	Then I should be on the Intake Form Data page for "Bob Smith"
-	And I should see an upcoming appointment for May 23, 2070
+	When I follow "Bob Smith"
+	Then I should see "Intake Information for Bob Smith"
+	And I should see no upcoming appointments
 
 Scenario: I want to see all details from the intake form
-	Given Mary Adams phone number is 999-000-1234
-	When I select "Mary Adams"
-	Then I should be on the Intake Form Data page for "Mary Adams"
-	And I should see the phone number is 999-000-1234
-	And I should see the counselor is "Yolanda"
+	When I follow "Mary Adams"
+	Then I should see "Intake Information for Mary Adams"
+	And I should see the email is "mary@adams.com"
+	And I should see the counselor is Yolanda
