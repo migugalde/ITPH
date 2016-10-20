@@ -11,6 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :rubyrv
+gem 'haml'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -50,7 +51,7 @@ ruby '2.3.1'   # just in case - tell Heroku which Ruby version we need
 group :development, :test do
   # make sure sqlite3 gem ONLY occurs inside development & test groups
   gem 'sqlite3' # use SQLite only in development and testing
-end 
+end
 group :production do
   # make sure the following gems are in your production group:
   gem 'pg'              # use PostgreSQL in production (Heroku)

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   get 'admin/index'
 
   get 'sessions/new'
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
   get 'sessions/create'
 
   get 'sessions/destroy'
+
+  get '/home/index', to: 'home#index', as: 'home_path'
 
   resources :users
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
@@ -69,5 +73,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  
+
 end
