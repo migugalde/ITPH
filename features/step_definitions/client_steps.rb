@@ -27,16 +27,16 @@ Then(/^I should see the counselor is (.*)$/) do |counselor|
   expect(page.should have_content counselor)
 end
 
-Then(/^I change the counselor to (.*)$/) do |counselor|
-  fill_in(counselor_name, :with => counselor)
+Then(/^I change the counselor to (.*)$/) do |c|
+  find(:css, "input[name='client[counselor]']").set(c)
 end
 
 Then(/^I change the phone number to (\d{3}-\d{3}-\d{4})$/) do |phone|
-  fill_in(phone_number, :with => phone)
+  find(:css, "input[name='client[phone_number]']").set(phone)
 end
 
 Then(/^I change the email to "([^"]*)"$/) do |client_email|
-  fill_in(email, :with => client_email)
+  find(:css, "input[name='client[email]']").set(client_email)
 end
 
 Then(/^I should see an error$/) do

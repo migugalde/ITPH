@@ -1,4 +1,5 @@
 class ClientsController < ApplicationController
+
 def client_params
 	params.require(:client).permit(:name, :counselor, :email, :phone_number)
 end
@@ -33,4 +34,14 @@ def destroy
 	redirect_to clients_path
 end
 
+def update
+	@client = Client.find params[:id]
+	if @client.update(client_params)
+		flash[:notice] = "Successfully added a new client!"
+		redirect_to clients_path
+	else
+		flash[:error] = "Error. Not Valid"
+		render "edit"
+	end
+end
 end
