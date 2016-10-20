@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20161019202904) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string	"seed"
   end
 
 end

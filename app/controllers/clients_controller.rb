@@ -14,7 +14,6 @@ def index
 end
 
 def new
-	@client = Client.new
 end
 
 def edit
@@ -22,16 +21,6 @@ def edit
 end
 
 def create
-	@client = Client.create!(client_params)
-	flash[:notice] = "#{@client.name} was successfully created."
-	redirect_to clients_path
-end
-
-def destroy
-	@client = Client.find(params[:id])
-	@client.destroy
-	flash[:notice] = "Client '#{@client.name}' deleted."
-	redirect_to clients_path
 end
 
 def update
@@ -39,9 +28,6 @@ def update
 	if @client.update(client_params)
 		flash[:notice] = "Successfully added a new client!"
 		redirect_to clients_path
-	else
-		flash[:error] = "Error. Not Valid"
-		render "edit"
 	end
 end
 end

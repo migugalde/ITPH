@@ -5,26 +5,16 @@ Given(/^the following clients exist:$/) do |table|
   end
 end
 
-Given(/^(.*) has an appointment with me on (.*)$/) do |client_name, date|
-  client = Client.where(name: client_name)
-  client.make_appointment("Toni", date)
-end
-
-Then(/^I should see an upcoming appointment for (.*)$/) do |date|
-  expect(page.should have_content date)
-end
-
-Given(/^the phone number of (.*) is (\d{3}-\d{3}-\d{4})$/) do |client_name, number|
-  client = Client.where(name: client_name)
-  expect(client.phone_number).to be(number)
-end
-
 Then(/^I should see the phone number is (\d{3}-\d{3}-\d{4})$/) do |date|
   expect(page.should have_content date)
 end
 
 Then(/^I should see the counselor is (.*)$/) do |counselor|
   expect(page.should have_content counselor)
+end
+
+Then(/^I change the name to (.*)$/) do |name|
+  find(:css, "input[name='client[name]']").set(name)
 end
 
 Then(/^I change the counselor to (.*)$/) do |c|
@@ -39,17 +29,8 @@ Then(/^I change the email to "([^"]*)"$/) do |client_email|
   find(:css, "input[name='client[email]']").set(client_email)
 end
 
-Then(/^I should see an error$/) do
-  expect(flash[:notice]).to be_present
-end
-
 Then(/^I should see the email is "([^"]*)"$/) do |email|
   expect(page.should have_content email)
-end
-
-When(/^I search for "([^"]*)"$/) do |arg1|
-  fill_in(search_bar, :with => arg1)
-  click_button("search")
 end
 
 Then(/^I should see the following emails:(.*)$/) do |email_list|
@@ -62,3 +43,32 @@ Then(/^I should see no upcoming appointments$/) do
   expect page.should_not have_content "Next Appointment"
 end
 
+
+Given /^(?:|I )am on (.+)$/ do |page_name|
+  visit path_to(page_name)
+end
+
+When /^(?:|I )go to (.+)$/ do |page_name|
+  visit path_to(page_name)
+end
+
+When /^(?:|I )press "([^"]*)"$/ do |button|
+  click_button(button)
+end
+
+When /^(?:|I )follow "([^"]*)"$/ do |link|
+  click_link(link)
+end
+
+Then /^(?:|I )should see "([^"]*)"$/ do |text|
+  if page.respond_to? :should
+    page.should have_content(text)
+  end
+end
+
+Then /^(?:|I )should be on (.+)$/ do |page_name|
+  current_path = URI.parse(current_url).path
+  if current_path.respond_to? :should
+    current_path.should == path_to(page_name)
+  end
+end

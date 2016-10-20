@@ -15,5 +15,10 @@
   </li>
 </ul>
 <h3>Upcoming Appointments:</h3>
+
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
+
 <%= link_to 'Edit', edit_client_path(@client) %>
 <%= link_to 'Back to client list', clients_path %>

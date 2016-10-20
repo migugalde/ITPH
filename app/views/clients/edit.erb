@@ -11,3 +11,7 @@
 <%= form.text_field:phone_number %> <br>
 <%= form.submit %><br>
 <% end %>
+
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
