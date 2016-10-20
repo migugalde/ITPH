@@ -7,8 +7,8 @@ Feature: Successfully Edit Client Profile
 Background: clients have been added to database
 
 	Given the following clients exist:
-	| Last Name | First Name	| counselor	| email 			|
-	| Smith		| Bob			| Toni 		| bob@smith.net 	|
+	| name	| counselor	| email 			|
+	| Bob Smith	| Toni 		| bob@smith.net 	|
 
 	And I am on Bob Smith's page
 
