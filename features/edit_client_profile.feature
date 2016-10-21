@@ -23,8 +23,7 @@ Scenario: I want to update my clients intake form
 	And I should see the counselor is Anna
 
 Scenario: I want to create a new client
-	Given I am on the clients page
-	When I follow "Create New Client"
+	Given I follow "Edit"
 	And I change the name to "Danny Boy"
 	And I change the counselor to Samurai
 	And I change the email to "ddd@gmail.com"
