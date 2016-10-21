@@ -10,3 +10,9 @@ Given(/^I enter my username as '(.*)'$/) do |un|
   find(:css, "input[name='counselor[username]']").set(un)
 end
 
+Given(/^the following counselors exist:$/) do |table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  table.hashes.each do |c|
+    User.create!(c)
+  end
+end
