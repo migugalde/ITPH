@@ -175,19 +175,9 @@
       "/home/mrstran/ITPH/config/routes.rb": [
         1,
         1,
-        null,
         1,
         null,
         1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
         1,
         1,
         1,
@@ -268,12 +258,12 @@
         null,
         null,
         1,
-        8,
+        12,
         null,
         null,
-        0,
+        1,
         null,
-        0,
+        3,
         null,
         null,
         null,
@@ -342,6 +332,20 @@
         null,
         1
       ],
+      "/home/mrstran/ITPH/features/step_definitions/cal_login.rb": [
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
       "/home/mrstran/ITPH/features/step_definitions/client_steps.rb": [
         1,
         null,
@@ -390,7 +394,7 @@
         null,
         null,
         1,
-        6,
+        10,
         null,
         null,
         1,
@@ -398,16 +402,16 @@
         null,
         null,
         1,
-        2,
-        null,
-        null,
-        1,
-        6,
+        4,
         null,
         null,
         1,
         6,
-        6,
+        null,
+        null,
+        1,
+        7,
+        7,
         null,
         null,
         null,
@@ -499,8 +503,22 @@
       "/home/mrstran/ITPH/app/helpers/home_helper.rb": [
         1,
         null
+      ],
+      "/home/mrstran/ITPH/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1476994431
+    "timestamp": 1477025897
   }
 }
