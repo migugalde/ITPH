@@ -14,6 +14,7 @@ def index
 end
 
 def new
+	@client = Client.new
 end
 
 def edit
