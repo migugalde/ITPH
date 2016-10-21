@@ -13,9 +13,9 @@ clients.each do |client|
   Client.create!(client)
 end
 
-counselors = [{:name => 'Toni', :username => 'toni@itph.com', :password => 'toni123'},
-            {:name => 'Yolanda', :username => 'yolanda@itph.com', :password => 'nottoni123'}]
+users = [{:email => 'test1@gmail.com', :password => 'test1'},
+            {:email => 'test2@gmail.com', :password => 'test2'}]
 
-#counselors.each do |counselor|
-#    Counselor.create!(counselor) #commented out by hannah tran because counselor controller does not exist in this commit
-#end
+users.each do |user|
+   User.create!(user)
+ end
