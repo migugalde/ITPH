@@ -1,21 +1,11 @@
 Rails.application.routes.draw do
-  get 'home/index'
-
-  get 'admin/index'
-
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
-  get '/home/index', to: 'home#index', as: 'home_path'
-
-  get '/clients', to: 'clients#index', as: 'client_path'
+  get 'login', to: 'sessions#new', as: 'login'
+  get '/home', to: 'home#index', as: 'home'
 
   resources :users
-  mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
+  resources :sessions
   resources :clients
+  mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
