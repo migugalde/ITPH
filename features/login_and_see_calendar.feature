@@ -6,7 +6,10 @@ Feature: Login as a user
 	And see the calendar with available times
 
 Background: I am a counselor
-	Given I am on the login page
+	Given the following counselors exist:
+	| email			| password	|
+	| bob@gmail.com	| bobby1	|
+	And I am on the home page
 
 Scenario: I want to be added as a counselor
 	When I press "Add new counselor"
