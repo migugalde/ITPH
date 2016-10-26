@@ -1,4 +1,7 @@
 <a href="https://codeclimate.com/github/msmith3/ITPH"><img src="https://codeclimate.com/github/msmith3/ITPH/badges/gpa.svg" /></a>
+
+<a href="https://codeclimate.com/github/msmith3/ITPH/coverage"><img src="https://codeclimate.com/github/msmith3/ITPH/badges/coverage.svg" /></a>
+
 [![Build Status](https://travis-ci.org/msmith3/ITPH.svg?branch=master)](https://travis-ci.org/msmith3/ITPH)
 
 https://itph-169.herokuapp.com/
