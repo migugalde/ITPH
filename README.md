@@ -10,7 +10,7 @@ https://www.pivotaltracker.com/n/projects/1882909
 
 Client Website:
 
-http://www.itph.org/
+https://boiling-fjord-19462.herokuapp.com/
 
 In the Potter's Hands hopes to provide counseling and community to those who need it.
 
