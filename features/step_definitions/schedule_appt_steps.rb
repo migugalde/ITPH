@@ -30,3 +30,7 @@ end
 Then(/^I should see an error "([^"]*)"$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Then(/^I should see "([^"]*)" is "([^"]*)"$/) do |arg1, arg2|
+  pending # Write code here that turns the phrase above into concrete actions
+end

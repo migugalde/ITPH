@@ -4,7 +4,7 @@ User story 1: I want to schedule an appointment.
 	As a counselor
 	So that I can schedule an appointment with my client
 	I want to quickly book an empty room
-    And I want to quickly book using autofill for common room bookings
+    And I want to quickly book using autofill for common room bookings and clients
     And I want to see any errors to help me know what I did wrong when I make a mistake
 
 User story 2: I want to add a new counselor to our counselors
