@@ -42,3 +42,12 @@ end
 Then(/^I should see no upcoming appointments$/) do
   expect page.should_not have_content "Next Appointment"
 end
+
+Given(/^I am "([^"]*)"$/) do |arg1|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Given(/^the following appointments are scheduled for "([^"]*)":$/) do |arg1, table|
+  # table is a Cucumber::MultilineArgument::DataTable
+  pending # Write code here that turns the phrase above into concrete actions
+end
