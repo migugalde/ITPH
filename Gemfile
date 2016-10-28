@@ -65,7 +65,6 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'simplecov', :require => false
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels' # basic imperative step defs
   gem 'database_cleaner' # required by Cucumber
@@ -74,5 +73,7 @@ group :test do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
+  gem "codeclimate-test-reporter", "1.0.0.pre.rc2"
 end
+
+gem 'simplecov', :require => false, :group => :test
