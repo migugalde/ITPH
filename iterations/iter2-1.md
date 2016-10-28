@@ -31,3 +31,8 @@ User story 5: Edit counselor account information
   As a counselor
 	So that my account can have up to date information
 	I want to be able to edit my account information
+
+User story 6: View only my clients
+	As a counselor
+	So that no one else can see my clients
+	I want only myself to see my clients
