@@ -26,3 +26,8 @@ User story 4: I want to view only my appointments on the calendar
 	I want to see all the appointments I have coming up
 	But to protect the privacy of other counselors clients
 	I should not be able to see who other counselors have booked appointments with
+
+User story 5: Edit counselor account information
+  As a counselor
+	So that my account can have up to date information
+	I want to be able to edit my account information
