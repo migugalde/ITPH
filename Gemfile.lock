@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/twbs/bootstrap-sass.git
+  revision: 5d6b2ebba0c2a5885ce2f0e01e9218db3d3b5e47
+  branch: next
+  specs:
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,6 +53,8 @@ GEM
     arel (6.0.3)
     arrayfields (4.9.2)
     ast (2.3.0)
+    autoprefixer-rails (6.5.1.1)
+      execjs
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -116,6 +127,8 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    faker (1.6.6)
+      i18n (~> 0.5)
     fattr (2.3.0)
     ffi (1.9.14)
     flay (2.8.1)
@@ -323,6 +336,9 @@ GEM
       rdoc (~> 4.0)
     sexp_processor (4.7.0)
     shellany (0.0.1)
+    simple_form (3.3.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     simplecov (0.12.0)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -373,6 +389,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt
+  bootstrap-sass!
   byebug
   codeclimate-test-reporter (= 1.0.0.pre.rc2)
   coffee-rails (~> 4.1.0)
@@ -380,6 +397,7 @@ DEPENDENCIES
   cucumber-rails-training-wheels
   database_cleaner
   factory_girl_rails
+  faker
   guard-rspec
   haml
   jasmine-rails
@@ -392,6 +410,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form
   simplecov
   spring
   sqlite3
