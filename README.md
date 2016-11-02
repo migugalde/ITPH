@@ -8,6 +8,8 @@ https://itph-169.herokuapp.com/
 
 https://www.pivotaltracker.com/n/projects/1882909
 
+Thanks to https://www.driftingruby.com/episodes/fullcalendar-events-and-scheduling who created a great starting point for including Fullcalendar.io in our app!
+
 Client Website:
 
 https://boiling-fjord-19462.herokuapp.com/

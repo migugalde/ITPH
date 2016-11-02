@@ -77,3 +77,6 @@ group :test do
 end
 
 gem 'simplecov', :require => false, :group => :test
+
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'simple_form'
