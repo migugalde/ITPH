@@ -6,10 +6,10 @@ Feature: Scheduling an Appointment Error Recover
 Background: counselor has been logged in
 	Given I am logged in as Toni
 	And the following appointments exist:
-	| Counselor | Type       | Room | Client    	| Date 		| Time 		|
-	| Toni		| counseling | A 	| Bob Smith		| 12.12.2016| 11:00am 	|
-	| Yolanda	| counseling | B 	| White Hat		| 12.12.2016| 11:00pm	|
-	| Anna		| counseling | B 	| Danny Boy		| 12.12.2016| 11:00am	|
+	| title | counselor | event_type | room | clients    	| date 		| start 	| end      |
+	| appt  | Toni		| counseling | A 	| Bob Smith		| 12.12.2016| 11:00am 	| 12:00 pm |
+	| appt  | Yolanda	| counseling | B 	| White Hat		| 12.12.2016| 11:00pm	| 12:00 pm |
+	| appt  | Anna		| counseling | B 	| Danny Boy		| 12.12.2016| 11:00am	| 12:00 pm |
 	And I am on the home page
 
 Scenario: I want to double book a room
@@ -25,3 +25,4 @@ Scenario: I accidentally click submit before fields are filled in
 	When I press "Schedule an appointment"
 	And I press "Confirm"
 	Then I should see "Please fill out the clients field to schedule a counseling appointment"
+	

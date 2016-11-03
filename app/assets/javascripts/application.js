@@ -19,4 +19,4 @@
 //= require daterangepicker
 //= require_tree .
 
-
+ITPH = {};

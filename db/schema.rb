@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20161102185246) do
     t.string "title"
     t.string "counselor"
     t.string "clients"
-    t.string "type"
+    t.string "event_type"
     t.string "date"
     t.string "room"
     t.string "notes"
