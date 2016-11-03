@@ -19,3 +19,14 @@ users = [{:email => 'test1@gmail.com', :password => 'test1'},
 users.each do |user|
    User.create!(user)
  end
+
+ 6.times do
+  event = Event.new
+  event.title = Faker::Book.title
+  start = Faker::Time.between(7.days.ago, Date.today + 7.days, :morning)
+  event.start = start
+  event.end = Faker::Time.between(start, start + 2.days, :evening)
+	event.color = ['blue','red'].sample
+	event.user_id = [1,2].sample
+  event.save
+end
