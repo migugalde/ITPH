@@ -7,7 +7,7 @@ class Event < ActiveRecord::Base
   end
 
   def self.get_events(id)
-  	events = Event.where(start: params[:start]..params[:end]).where
+  	events = Event.where(start: params[:start]..params[:end])
   	events.each do |event|
   		if event.counselor == User.find(id)
   			event.title = event.client
