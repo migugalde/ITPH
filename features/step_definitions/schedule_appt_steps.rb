@@ -3,8 +3,9 @@ Given(/^I am logged in as Toni$/) do
 end
 
 Given(/^the following appointments exist:$/) do |table|
-  # table is a Cucumber::MultilineArgument::DataTable
-  pending # Write code here that turns the phrase above into concrete actions
+  table.hashes.each do |c|
+    Event.create!(c)
+  end
 end
 
 When(/^I click "([^"]*)"$/) do |arg1|

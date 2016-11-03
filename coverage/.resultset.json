@@ -578,10 +578,10 @@
         null,
         null,
         1,
-        0,
+        6,
         null,
         null,
-        0,
+        6,
         null,
         0,
         null,
@@ -656,17 +656,17 @@
       ],
       "/home/mrstran/ITPH/features/step_definitions/calendar_steps.rb": [
         1,
-        0,
+        3,
         null,
         null,
         1,
         null,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -747,8 +747,9 @@
         null,
         null,
         1,
-        null,
         0,
+        0,
+        null,
         null,
         null,
         1,
@@ -818,7 +819,7 @@
         null,
         null,
         1,
-        0,
+        6,
         null,
         null,
         1,
@@ -867,8 +868,35 @@
         0,
         null,
         null
+      ],
+      "/home/mrstran/ITPH/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/users_helper.rb": [
+        1,
+        null
       ]
     },
-    "timestamp": 1478197877
+    "timestamp": 1478205790
   }
 }

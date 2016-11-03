@@ -4,17 +4,9 @@ Feature: Hide Client Names from other counselors: calendar
 	I want only myself to see my clients
 
 Background: Several Appointments Exist
-	Given a counselor named Anna exists
-	Given I should be on the login page
-	Given I login with email "Anna@gmail.com" and password "Anna"
-	Then I should be on the home page
+	Given I am on the home page
 	Then I should see the calendar
-	And the following appointments exist:
-	| Counselor | Room 	| Client Name| Start			 | End 		|
-	| Toni		| Room1	| Bob Smith	 |12.12.2016 11:00am | 12.12.2016 12:00am |
-	| Yolanda	| Room2	| Davy C	 |12.12.2016 11:00am | 12.12.2016 12:00am |
-	| Anna		| Room3	| Fancy Feast|12.12.2016 11:00am | 12.12.2016 12:00am |
-	| Anna		| Room3	| Bobby Feast|12.13.2016 11:00am | 12.13.2016 12:00am |
+
 	Then I am on the home page
 
 Scenario: I want to view who I am scheduled with
