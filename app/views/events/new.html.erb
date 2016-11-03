@@ -1,0 +1,21 @@
+<% # in app/views/events/new.html.erb %>
+<h2>Create a new appointment/event</h2>
+<%= form_for [@event] do |form| %>
+<%= form.label:Clients %><br>
+<%= form.text_field:clients %> <br>
+<%= form.label:Type %><br>
+<%= form.text_field:type %> <br>
+<%= form.label:Date %><br>
+<%= form.text_field:date %> <br>
+<%= form.label:Time %><br>
+<%= form.text_field:time %> <br>
+<%= form.label:Room %><br>
+<%= form.text_field:room %> <br>
+<%= form.label:Notes %><br>
+<%= form.text_field:notes %> <br>
+<%= form.submit %><br>
+<% end %>
+
+<% flash.each do |key, value| %>
+  <%= content_tag :div, value, class: "flash #{key}" %>
+<% end %>
