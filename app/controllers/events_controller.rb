@@ -18,6 +18,13 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
     @event.save
+    user = User.find(session[:user_id])
+    @event.counselor = user.email
+    client = Client.find(@event.clients)
+    if client.nil?
+      redirect_to new_client_path
+    end
+    flash[:notice] = "Successfully scheduled #{@event.type} event for #{@event.counselor} with #{@event.clients} on #{@event.date} from #{@event.start} to #{@event.end}"
   end
 
   def update
