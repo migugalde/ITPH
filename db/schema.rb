@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20161101235359) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title"
+    t.string   "counselor"
+    t.string   "clients"
     t.integer  "user_id"
     t.integer  "client_id"
     t.string   "type"
