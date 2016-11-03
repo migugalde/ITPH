@@ -2,10 +2,11 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   def index
-    @events = Event.where(start: params[:start]..params[:end])
+    @events = Event.get_events(session[:id])
   end
 
   def show
+    params[room] == "room1"
   end
 
   def new
