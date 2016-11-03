@@ -2,30 +2,29 @@ Given(/^I should see the calendar$/) do
   page.has_css?('calendar')
 end
 
-Given(/^I am logged in as (.*)$/) do |counselor|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^I am looking at the month of "(.*)-(.*)"$/) do |year, month|
+	#tell page current page is month view
+	date = year + month + "01";
+	('#calendar').fullCalendar( 'gotoDate', date );
 end
 
-Given(/^I am looking at the month of "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given(/^I am looking at the day of "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given(/^I open my appointment with "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^I am looking at the day of "(.*)"$/) do |date|
+	('#calendar').fullCalendar( 'gotoDate', date );
 end
 
 Then(/^I should see an error$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	expect page.to_have "Sorry"
 end
 
-Then(/^I should see (.*) is scheduled in Room(\d+) on (\d+)\-(\d+)\-(\d+)$/) do |counselor, arg1, arg2, arg3, arg4|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should see (.*) is scheduled in Room(\d+) on (.*)$/) do |counselor, arg1, date|
+	('#calendar').fullCalendar( 'gotoDate', date );
+	room = "Room"+arg1
+	expect page.has_css? room
+	expect page.has_css? counselor
 end
 
-Then(/^I should see "([^"]*)" has an appointment with me on (\d+)\-(\d+)\-(\d+)$/) do |arg1, arg2, arg3, arg4|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should see "([^"]*)" has an appointment with (.*) on (.*)$/) do |client, counselor, date|
+	('#calendar').fullCalendar( 'gotoDate', date );
+	expect page.has_css? client
+	expect page.has_css? counselor
 end

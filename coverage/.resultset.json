@@ -660,10 +660,8 @@
         null,
         null,
         1,
-        3,
         null,
-        null,
-        1,
+        0,
         0,
         null,
         null,
@@ -677,13 +675,14 @@
         null,
         1,
         0,
-        null,
-        null,
-        1,
+        0,
+        0,
         0,
         null,
         null,
         1,
+        0,
+        0,
         0,
         null
       ],
@@ -800,6 +799,15 @@
         0,
         0,
         0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
         null
       ],
       "/home/mrstran/ITPH/features/step_definitions/web_steps.rb": [
@@ -861,6 +869,6 @@
         null
       ]
     },
-    "timestamp": 1478136818
+    "timestamp": 1478197877
   }
 }
