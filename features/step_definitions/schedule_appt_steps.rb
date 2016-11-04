@@ -1,4 +1,3 @@
-
 Given(/^I am logged in as "([^"]*)"$/) do |arg|
   # id = session[:user_id]
   # user = User.find(:id == id)
