@@ -1,3 +1,5 @@
+Capybara.default_wait_time = 50
+
 Given(/^the following clients exist:$/) do |table|
   # table is a Cucumber::MultilineArgument::DataTable
   table.hashes.each do |client|

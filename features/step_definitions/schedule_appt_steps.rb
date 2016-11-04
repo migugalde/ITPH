@@ -1,3 +1,4 @@
+Capybara.default_wait_time = 50
 
 Given(/^I am logged in as "([^"]*)"$/) do |arg|
   # id = session[:user_id]
