@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Event do
-   user = User.create!(email: "anna@fo9922.com",
+   user = User.create!(email: "annass@fo9922.com",
                         password: "anna1");
    client = Client.create!(name: "Bob",
                               counselor: "Anna",
@@ -19,8 +19,10 @@ describe Event do
    expect(event.valid?)
  end
  it "changes the title based on if not counselors clients" do
+   user = User.create!(email: "yolo1@gmail.com",
+                        password: "anna1");
    expect(event.valid?)
-   events = Event.user_events(1, event.start, event.end, "Anna", "Bob")
+   events = Event.user_events(2, event.start, event.end, "Anna", "Bob")
    expect(events[0].title).to eq("Anna")
  end
 
