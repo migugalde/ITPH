@@ -1,63 +1,43 @@
 require 'spec_helper'
 
 describe Event do
-  #calendar = Calendar.create!( name: 'Sample Calendar', color: '#ffff00')
-  it "successfully creates an event" do
+   user = User.create!(email: "annassss@fso9922.com",
+                        password: "anna1");
+   client = Client.create!(name: "Bob",
+                              counselor: "Anna",
+                              email: "bob@max.com");
    event =  Event.create!( title: "Bobs event",
-                           counselor: 'Anna',
-                           clients: "Bob",
+                           user: user,
+                           client: client,
                            room: "Room1",
                            notes: '',
                            start: '2013-07-17 09:00am',
-                           end: '2013-07-17 10:00am')
+                           end: '2013-07-17 10:00am');
+
+  #calendar = Calendar.create!( name: 'Sample Calendar', color: '#ffff00')
+  it "successfully creates an event" do
    expect(event.valid?)
  end
  it "changes the title based on if not counselors clients" do
-   event =  Event.create!( title: "Bobs event",
-                           counselor: 'Anna',
-                           clients: "Bob",
-                           room: "Room1",
-                           notes: '',
-                           start: '2013-07-17 09:00am',
-                           end: '2013-07-17 10:00am')
+   user = User.create!(email: "yolo11@gmail.com",
+                        password: "anna1");
    expect(event.valid?)
-   Event.get_events("Yolanda")
-   expect(event.title).to eq("Anna")
+   events = Event.user_events(2, event.start, event.end, "Anna", "Bob")
+   expect(events[0].title).to eq("Anna")
  end
 
   it "changes the title based on if counselors client" do
-   event =  Event.create!( title: "Bobs event",
-                           counselor: 'Anna',
-                           clients: "Bob",
-                           room: "Room1",
-                           notes: '',
-                           start: '2013-07-17 09:00am',
-                           end: '2013-07-17 10:00am')
    expect(event.valid?)
-   Event.get_events("Anna")
-   expect(event.title).to eq("Bob")
+   events = Event.user_events(1, event.start, event.end, "Anna", "Bob")
+   expect(events[0].title).to eq("Bob")
  end
 
  it "is not an all day event" do
-   event =  Event.create!( title: "Bobs event",
-                           counselor: 'Anna',
-                           clients: "Bob",
-                           room: "Room1",
-                           notes: '',
-                           start: '2013-07-17 09:00am',
-                           end: '2013-07-17 10:00am')
    expect(event.valid?)
    expect(event.all_day_event?).to be_falsy
   end
 
-   it "shows what room is available" do
-   event =  Event.create!( title: "Bobs event",
-                           counselor: 'Anna',
-                           clients: "Bob",
-                           room: "Room1",
-                           notes: '',
-                           start: '2013-07-17 09:00am',
-                           end: '2013-07-17 10:00am')
+it "shows what room is available" do
    expect(event.valid?)
    expect(event.room).to eq("Room1")
   end
