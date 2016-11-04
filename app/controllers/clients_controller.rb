@@ -9,7 +9,6 @@ def show
 end
 
 def index
-	#render :partial => "/clients/index"
 	@clients = Client.all
 end
 
