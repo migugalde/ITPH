@@ -13,7 +13,7 @@ Background: I am a counselor
 	And I am on the home page
 	
 Scenario: I want to access the update details page
-	And I follow "Edit Counselor Profile"
+  And I follow "Edit Counselor Profile"
   Then I should be on the edit counselor page
 
 Scenario: I want to edit my information
