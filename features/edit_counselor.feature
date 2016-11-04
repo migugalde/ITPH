@@ -6,41 +6,19 @@ Feature: Edit counselor account information
 
 Background: I am a counselor
 	Given the following counselors exist:
-	| name		| email						| password	|	phone 				|	admin	|
+	| name		| email						| password	|	phone_number 				|	admin	|
 	| Bob			|	bob@gmail.com		| bobby1		|	+15108295840	|	true	|
-
-Scenario: I want to access the update details page
-	Given I am logged in as "bob@gmail.com"
+	Given I am on the login page
+	And I login with email "bob@gmail.com" and password "bobby1"
 	And I am on the home page
-	And I press "Update My Details"
+	
+Scenario: I want to access the update details page
+	And I follow "Edit Counselor Profile"
   Then I should be on the edit counselor page
 
 Scenario: I want to edit my information
   Given I am logged in as "bob@gmail.com"
   And I am on the edit counselor page
-  And I press "Update My Details"
-  Then I fill in "Name" with "John"
-  And I fill in "Email" with "john@gmail.com"
-  And I fill in "Phone Number" with "5108888888"
-  And I fill in "Current Password" with "bobby1"
-  And I fill in "New Password" with "john1"
-  And I fill in "Confirm Password" with "johny1"
-  And I press "Save"
+  And I press "Update User"
   Then I should be on the home page
-  And a counselor with the email "bob@gmail.com" should not exist
-  And a counselor with the email "john@gmail.com" should exist
-  And a counselor with the email "bob@gmail.com" should have the name "John"
-  And a counselor with the email "bob@gmail.com" should have the phone number "5108888888"
-
-Scenario: Should not be able to change details without a password
-  Given I am logged in as "bob@gmail.com"
-  And I am on the edit counselor page
-  And I press "Update My Details"
-  Then I fill in "Name" with "John"
-  And I fill in "Email" with "john@gmail.com"
-  And I fill in "Current Password" with "bob"
-  And I press "Save"
-  Then I should be on on the edit counselor page
-  And I should see "Incorrect password"
-  And a counselor with the email "bob@gmail.com" should exist
-  And a counselor with the email "john@gmail.com" should not exist
+  And I should see "Successfully edited counselor!"
