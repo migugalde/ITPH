@@ -18,3 +18,7 @@ Given(/^I login with email "(.*)" and password "(.*)"$/) do |email, password|
   find(:css, "input[name='password']").set(password)
   click_button('Login')
 end
+
+Given(/^I am not logged in$/) do
+  User.logged_in?.is_truthy
+end
