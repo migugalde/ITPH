@@ -4,7 +4,12 @@ Feature: Scheduling an Appointment
 	I want to quickly book an empty room
 
 Background: counselor has been logged in
-	Given I am logged in as "Toni"
+	Given the following counselors exist:
+	| name		| email						| password	|	phone_number 				|	admin	|
+	| Bob			|	bob@gmail.com		| bobby1		|	+15108295840	|	true	|
+	Given I am on the login page
+	And I login with email "bob@gmail.com" and password "bobby1"
+	And I am on the home page
 	And the following appointments exist:
 	| Counselor | Type       | Room | Client    	| Date 		| Time 		|
 	| Toni		| counseling | A 	| Bob Smith		| 12.12.2016| 11:00am 	| 
