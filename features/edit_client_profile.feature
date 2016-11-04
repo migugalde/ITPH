@@ -9,7 +9,12 @@ Background: clients have been added to database
 	Given the following clients exist:
 	| name	| counselor	| email 			|
 	| Bob Smith	| Toni 		| bob@smith.net 	|
-	When I am on the clients page
+	And the following counselors exist:
+	| name		| email						| password	|	phone_number		|	admin	|
+	| Toni			|	toni@gmail.com		| toni		|	+15108295840	|	true	|
+	Given I am on the login page
+	And I login with email "toni@gmail.com" and password "toni"
+	And I am on the clients page
 	And I follow "Bob Smith"
 
 Scenario: I want to update my clients intake form
