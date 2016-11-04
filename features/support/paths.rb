@@ -19,6 +19,7 @@ module NavigationHelpers
       '/login'
     when /^the new user\s?page$/
       '/users/new'
+    
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
