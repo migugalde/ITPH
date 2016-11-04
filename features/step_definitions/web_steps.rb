@@ -1,4 +1,4 @@
-Capybara.default_wait_time = 50
+Capybara.default_max_wait_time = 50
 
 require 'uri'
 require 'cgi'

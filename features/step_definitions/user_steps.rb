@@ -1,4 +1,4 @@
-Capybara.default_wait_time = 50
+Capybara.default_max_wait_time = 50
 
 When(/^I enter the email as "([^"]*)"$/) do |arg1|
 find(:css, "input[name='user[email]']").set(arg1)
