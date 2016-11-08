@@ -4,6 +4,11 @@
 
 [![Build Status](https://travis-ci.org/msmith3/ITPH.svg?branch=master)](https://travis-ci.org/msmith3/ITPH)
 
+Iteration Checkpoint:
+https://boiling-fjord-19462.herokuapp.com/
+Username: test1@gmail.com
+Password: test1
+
 https://itph-169.herokuapp.com/
 
 https://www.pivotaltracker.com/n/projects/1882909
