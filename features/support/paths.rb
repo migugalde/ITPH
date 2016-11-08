@@ -22,7 +22,7 @@ module NavigationHelpers
     when /^the new user\s?page$/
       '/users/new'
     when /^the edit counselor\s?page$/
-      '/users/3/edit'
+      '/users/1/edit'
     
 
     # Add more mappings here.
