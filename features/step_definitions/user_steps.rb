@@ -22,3 +22,7 @@ end
 Given(/^I am not logged in$/) do
   User.logged_in?.is_truthy
 end
+
+Then(/^I can edit the counselor's info$/) do
+  find(:css, "input[name='user[name]']")
+end

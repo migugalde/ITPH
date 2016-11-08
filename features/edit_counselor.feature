@@ -14,11 +14,12 @@ Background: I am a counselor
 	
 Scenario: I want to access the update details page
   And I follow "Edit Counselor Profile"
-  Then I should be on the edit counselor page
+  Then I can edit the counselor's info
 
 Scenario: I want to edit my information
   Given I am logged in as "bob@gmail.com"
-  And I am on the edit counselor page
+  And I follow "Edit Counselor Profile"
+  Then I can edit the counselor's info
   And I press "Update User"
   Then I should be on the home page
   And I should see "Successfully edited counselor!"
