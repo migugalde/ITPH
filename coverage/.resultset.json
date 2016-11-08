@@ -1033,7 +1033,7 @@
         null
       ]
     },
-    "timestamp": 1478641997
+    "timestamp": 1478642758
   },
   "RSpec": {
     "coverage": {
@@ -1622,6 +1622,27 @@
         null
       ],
       "/home/mrstran/ITPH/spec/models/event_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         null,
         1,
@@ -1669,6 +1690,27 @@
         null
       ],
       "/home/mrstran/ITPH/app/models/event.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -1694,6 +1736,21 @@
         null
       ],
       "/home/mrstran/ITPH/app/models/user.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -1722,11 +1779,24 @@
         null
       ],
       "/home/mrstran/ITPH/app/models/client.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         null
       ]
     },
-    "timestamp": 1478639287
+    "timestamp": 1478642749
   }
 }
