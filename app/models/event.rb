@@ -1,3 +1,24 @@
+# == Schema Information
+#
+# Table name: events
+#
+#  id         :integer          not null, primary key
+#  counselor  :string
+#  title      :string
+#  clients    :string
+#  user_id    :integer
+#  client_id  :integer
+#  type       :string
+#  date       :string
+#  room       :string
+#  notes      :string
+#  start      :datetime
+#  end        :datetime
+#  color      :string
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class Event < ActiveRecord::Base
   validates :title, presence: true
   belongs_to  :user

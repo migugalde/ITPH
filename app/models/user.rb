@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id            :integer          not null, primary key
+#  name          :string
+#  email         :string
+#  password_hash :string
+#  password_salt :string
+#  phone_number  :string
+#  admin         :string
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
 class User < ActiveRecord::Base
   has_many  :events
   attr_accessor :password
