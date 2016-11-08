@@ -812,6 +812,21 @@
         null
       ],
       "/home/mrstran/ITPH/app/models/user.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -963,6 +978,19 @@
         null
       ],
       "/home/mrstran/ITPH/app/models/client.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         null
@@ -1003,7 +1031,7 @@
         null
       ]
     },
-    "timestamp": 1478639536
+    "timestamp": 1478640321
   },
   "RSpec": {
     "coverage": {
