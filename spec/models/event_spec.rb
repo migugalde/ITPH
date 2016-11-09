@@ -23,7 +23,8 @@ require 'spec_helper'
 
 describe Event do
    user = User.create!(email: "annassss@fso9922.com",
-                        password: "anna1");
+                        password: "anna1",
+			name: "Anna");
    client = Client.create!(name: "Bob",
                               counselor: "Anna",
                               email: "bob@max.com");
@@ -41,16 +42,17 @@ describe Event do
  end
  it "changes the title based on if not counselors clients" do
    user = User.create!(email: "yolo11@gmail.com",
-                        password: "anna1");
+                        password: "anna1",
+			name: "Yolo");
    expect(event.valid?)
-   events = Event.user_events(2, event.start, event.end, "Anna", "Bob")
+   events = Event.user_events(2, event.start, event.end)
    expect(events[0].title).to eq("Anna")
  end
 
   it "changes the title based on if counselors client" do
    expect(event.valid?)
-   events = Event.user_events(1, event.start, event.end, "Anna", "Bob")
-   expect(events[0].title).to eq("Bob")
+   events = Event.user_events(1, event.start, event.end)
+   expect(events[0].title).to eq("Bobs event")
  end
 
  it "is not an all day event" do

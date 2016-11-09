@@ -31,11 +31,9 @@ class Event < ActiveRecord::Base
 
   def self.user_events(user_id, e_start, e_end)
     events = Event.where(start: e_start..e_end)
-    byebug
     events.each do |event|
       if user_id == event.user.id then
         event.color = 'green'
-        event.title = event.client.name
       else
         event.title = event.user.name
       end
