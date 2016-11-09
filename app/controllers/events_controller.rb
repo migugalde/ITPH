@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   def index
-    @events = Event.user_events(session[:user_id], params[:start], params[:end], params[:counselor], params[:client])
+    @events = Event.user_events(session[:user_id], params[:start], params[:end])
   end
 
   def show
