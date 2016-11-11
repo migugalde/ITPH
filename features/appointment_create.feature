@@ -6,10 +6,10 @@ Feature: Scheduling an Appointment
 Background: counselor has been logged in
 	Given I am logged in as "Toni"
 	And the following appointments exist:
-	| Counselor | Type       | Room | Client    	| Date 		| Time 		| Repetition
-	| Toni		| counseling | A 	| Bob Smith		| 12.12.2016| 11:00am 	| None
-	| Yolanda	| counseling | B 	| White Hat		| 12.12.2016| 11:00pm	| Weekly
-	| Anna		| counseling | B 	| Danny Boy		| 12.12.2016| 11:00am	| Bi-Weekly
+	| Counselor | Type       | Room | Client    	| Date 		| Time 		| Repetition	|
+	| Toni		| counseling | A 	| Bob Smith		| 12.12.2016| 11:00am 	| None		|
+	| Yolanda	| counseling | B 	| White Hat		| 12.12.2016| 11:00pm	| Weekly	|	
+	| Anna		| counseling | B 	| Danny Boy		| 12.12.2016| 11:00am	| Bi-Weekly	|
 	And I am on the home page
 
 Scenario: I want to schedule an appointment today
