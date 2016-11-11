@@ -13,7 +13,6 @@ Background: Events and counselors are on database
 	| name		| email						| password	    |	phone_number	|	admin	|
 	| Bob		|	bob@gmail.com	    	| bobby1		|	+15108295840	|	true	|
 	| Toni		|	toni@gmail.com      	| toni			|	+19218594949	|	false	|
-	| 
 
 Scenario: Clicking on event when it is mine
     Given I am on the login page
