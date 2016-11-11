@@ -18,7 +18,7 @@ Scenario: I want to schedule an appointment today
 	And I fill in "Client Name" with "Frankie Gee"
 	And I fill in "Date" with "12.19.2016"
 	And I fill in "Time" with "8:00am"
-	And I fill in "Repitition" with "None" 
+	And I fill in "Repetition" with "None" 
 	And I press "Confirm"
 	Then I should see "Successfully scheduled counseling appointment"
 
@@ -27,6 +27,6 @@ Scenario: I want to schedule a weekly, repeating appointment
 	And I fill in "Client Name" with "Zany Sue"
 	And I fill in "Date" with "12.21.2016"
 	And I fill in "Time" with "8:00am"
-	And I fill in "Repitition" with "Weekly"
+	And I fill in "Repetition" with "Weekly"
 	And I press "Confirm"
 	Then I should see "Successfully scheduled counseling appointment"
