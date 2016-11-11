@@ -1091,14 +1091,14 @@
   },
   "RSpec": {
     "coverage": {
-      "/home/mrstran/ITPH/config/environment.rb": [
+      "/home/ubuntu/workspace/ITPH/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/mrstran/ITPH/config/application.rb": [
+      "/home/ubuntu/workspace/ITPH/config/application.rb": [
         1,
         null,
         1,
@@ -1135,12 +1135,12 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/boot.rb": [
+      "/home/ubuntu/workspace/ITPH/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/mrstran/ITPH/config/environments/test.rb": [
+      "/home/ubuntu/workspace/ITPH/config/environments/test.rb": [
         1,
         null,
         null,
@@ -1184,7 +1184,7 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/assets.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -1197,7 +1197,7 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/backtrace_silencers.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -1206,18 +1206,18 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/cookies_serializer.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/home/mrstran/ITPH/config/initializers/filter_parameter_logging.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/mrstran/ITPH/config/initializers/inflections.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -1235,18 +1235,18 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/mime_types.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/session_store.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/home/mrstran/ITPH/config/initializers/simple_form.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/simple_form.rb": [
         null,
         1,
         null,
@@ -1413,7 +1413,7 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/simple_form_bootstrap.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/simple_form_bootstrap.rb": [
         null,
         1,
         1,
@@ -1564,7 +1564,7 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/initializers/wrap_parameters.rb": [
+      "/home/ubuntu/workspace/ITPH/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -1580,7 +1580,7 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/config/routes.rb": [
+      "/home/ubuntu/workspace/ITPH/config/routes.rb": [
         1,
         1,
         1,
@@ -1654,28 +1654,28 @@
         null,
         null
       ],
-      "/home/mrstran/ITPH/app/helpers/application_helper.rb": [
+      "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/mrstran/ITPH/app/helpers/home_helper.rb": [
+      "/home/ubuntu/workspace/ITPH/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/mrstran/ITPH/app/helpers/sessions_helper.rb": [
+      "/home/ubuntu/workspace/ITPH/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/mrstran/ITPH/app/helpers/users_helper.rb": [
+      "/home/ubuntu/workspace/ITPH/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/mrstran/ITPH/spec/support/factory_girl.rb": [
+      "/home/ubuntu/workspace/ITPH/spec/support/factory_girl.rb": [
         1,
         1,
         null
       ],
-      "/home/mrstran/ITPH/spec/models/event_spec.rb": [
+      "/home/ubuntu/workspace/ITPH/spec/models/appointment_spec.rb": [
         null,
         null,
         null,
@@ -1697,16 +1697,6 @@
         null,
         null,
         null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
         null,
         null,
         null,
@@ -1715,40 +1705,21 @@
         null,
         null,
         null,
-        1,
-        1,
-        null,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
         null,
         null,
-        1,
-        1,
-        1,
+        null,
+        null,
         null,
         null,
         null
       ],
-      "/home/mrstran/ITPH/app/models/event.rb": [
+      "/home/ubuntu/workspace/ITPH/spec/models/event_spec.rb": [
         null,
         null,
         null,
@@ -1770,31 +1741,13 @@
         null,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
-        1,
-        1,
         null,
         null,
-        1,
-        2,
-        2,
-        2,
-        2,
-        1,
         null,
-        1,
         null,
         null,
-        2,
         null,
-        null
-      ],
-      "/home/mrstran/ITPH/app/models/user.rb": [
         null,
         null,
         null,
@@ -1810,34 +1763,15 @@
         null,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
         null,
-        1,
-        1,
-        1,
-        1,
         null,
-        1,
-        0,
-        0,
-        0,
         null,
         null,
         null,
         null,
         null,
-        1,
-        2,
-        2,
-        2,
         null,
         null,
-        null
-      ],
-      "/home/mrstran/ITPH/app/models/client.rb": [
         null,
         null,
         null,
@@ -1851,11 +1785,11 @@
         null,
         null,
         null,
-        1,
-        1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1478714178
+    "timestamp": 1478843263
   }
 }
