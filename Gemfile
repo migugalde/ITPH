@@ -81,3 +81,6 @@ gem 'simplecov', :require => false, :group => :test
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 gem 'simple_form'
 gem 'faker'
+
+gem 'mailgun-ruby', require: 'mailgun'
+gem 'delayed_job_active_record'

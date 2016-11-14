@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      SendEmailJob.set(wait: 20.seconds).perform_later(@user)
       redirect_to home_path
     else
       render 'new'
