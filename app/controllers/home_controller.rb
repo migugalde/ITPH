@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    byebug
   end
 
   # before_filter :require_login, :except => [:new, :create]
