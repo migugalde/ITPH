@@ -29,15 +29,15 @@ class Event < ActiveRecord::Base
     self.start == self.start.midnight && self.end == self.end.midnight ? true : false
   end
 
-  def self.user_events(user_id, e_start, e_end)
+  def self.user_events(user, e_start, e_end)
     events = Event.where(start: e_start..e_end)
     events.each do |event|
-      if user_id == event.user.id then
+      if user == event.user then
         event.color = 'green'
       else
         event.title = event.user.name
       end
     end
-    return events
+    events
   end
 end

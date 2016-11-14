@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  get 'login', to: 'sessions#new', as: 'login'
-  get 'logout', to: 'sessions#destroy', as: 'logout'
-  get '/home', to: 'home#index', as: 'home'
 
-  resources :users
-  resources :sessions
+  devise_for :users#, controllers: { sessions: 'users/registrations' }
+  get '/home', to: 'home#index', as: 'home'
   resources :clients
   resources :events
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
@@ -12,17 +9,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-  root :to => redirect('/login')
+  root :to => redirect('/home')
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  get 'admin' => 'admin#index'
-  controller :sessions do
-    get 'login' => :new
-    post 'login' => :create
-    delete 'logout' => :destroy
-  end
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

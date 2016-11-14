@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use SCSS for stylesheets
@@ -31,36 +31,28 @@ gem 'annotate'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'devise'
+
+gem 'simplecov', :require => false, :group => :test
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'simple_form'
+gem 'faker'
 
 group :development, :test do
+  # make sure sqlite3 gem ONLY occurs inside development & test groups
+  gem 'sqlite3' # use SQLite only in development and testing
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'jasmine-rails' # if you plan to use JavaScript/CoffeeScript
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
-
-# making your Gemfile safe for Heroku
-ruby '2.3.1'
-group :development, :test do
-  # make sure sqlite3 gem ONLY occurs inside development & test groups
-  gem 'sqlite3' # use SQLite only in development and testing
-end
-group :production do
-  # make sure the following gems are in your production group:
-  gem 'pg'              # use PostgreSQL in production (Heroku)
-  gem 'rails_12factor'  # Heroku-specific production settings
-end
-
-group :development, :test do
-  gem 'jasmine-rails' # if you plan to use JavaScript/CoffeeScript
-end
 # setup Cucumber, RSpec, Guard support
 group :test do
   gem 'rspec-rails'
@@ -70,14 +62,11 @@ group :test do
   gem 'database_cleaner' # required by Cucumber
   gem 'factory_girl_rails' # if using FactoryGirl
   gem 'metric_fu'        # collect code metrics
-end
-
-group :test do
   gem "codeclimate-test-reporter", "1.0.0.pre.rc2"
 end
 
-gem 'simplecov', :require => false, :group => :test
-
-gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
-gem 'simple_form'
-gem 'faker'
+group :production do
+  # make sure the following gems are in your production group:
+  gem 'pg'              # use PostgreSQL in production (Heroku)
+  gem 'rails_12factor'  # Heroku-specific production settings
+end

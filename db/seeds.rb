@@ -1,20 +1,18 @@
-6.times do
-	client = Client.new
-	client.counselor = ['Toni', 'Bob'].sample
-	client.name = Faker::Name.name
-	client.email = Faker::Internet.email(client.name)
-	client.phone_number = Faker::PhoneNumber.cell_phone
-	client.save
-end
-
-users = [{:email => 'toni@gmail.com', :password => 'toni', :phone_number => '+2412412414'},
-            {:email => 'bob@gmail.com', :password => 'bob', :phone_number => '+2412412414'},
-						{:email => 'jeff@gmail.com', :password => 'jeff', :phone_number => '+2412412414'}]
-
+users = [{:name => 'toni', :email => 'toni@gmail.com', :password => 'password', :password_confirmation => 'password',:phone_number => '+2412412414', :admin => false},
+            {:name => 'bob', :email => 'bob@gmail.com', :password => 'password', :password_confirmation => 'password', :phone_number => '+2412412414', :admin => false}]
 
 users.each do |user|
    User.create!(user)
  end
+
+6.times do
+	client = Client.new
+ 	client.counselor = ['Toni', 'Bob'].sample
+ 	client.name = Faker::Name.name
+ 	client.email = Faker::Internet.email(client.name)
+ 	client.phone_number = Faker::PhoneNumber.cell_phone
+ 	client.save
+end
 
 20.times do
   event = Event.new
