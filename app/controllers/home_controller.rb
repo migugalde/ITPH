@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
   def index
+    byebug
   end
-  
+
   # before_filter :require_login, :except => [:new, :create]
 
   # private
@@ -17,7 +18,7 @@ class HomeController < ApplicationController
   # # current_user method we created previously using a double ! operator.
   # # Note that this is not common in Ruby and is discouraged unless you
   # # really mean to convert something into true or false.
-  
+
   # def logged_in?
   #   !!session[:user_id]
   # end

@@ -4,9 +4,10 @@ class ApplicationController < ActionController::Base
 
   private
     def require_admin
-      byebug
+      #Need to call authenticate user here as it was skipped to call the sign in
+      authenticate_user!
       unless admin?
-        redirect_to new_user_session
+        redirect_to root_path
       end
     end
 
