@@ -20,7 +20,7 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
     @event.save
-    EventMailer.appointment_notification(@event).deliver_later!(queue: "high")
+    EventMailer.appointment_notification(@event).deliver_later(queue: "high")
   end
 
   def update
