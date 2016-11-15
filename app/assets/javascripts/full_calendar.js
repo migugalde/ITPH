@@ -51,7 +51,7 @@ initialize_calendar = function() {
     });
   })
 };
-$(document).on('turbolinks:load', initialize_calendar);
+$(document).ready(initialize_calendar);
 
 $(window).on('resize', function () {
     $('body').children('.blockMsg').css({
