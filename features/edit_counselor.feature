@@ -7,7 +7,7 @@ Feature: Edit counselor account information
 Background: I am a counselor
 	Given the following counselors exist:
   | name		| email						| password	|	password_confirmation |	phone_number		|	admin	|
-  | Toni		|	toni@gmail.com	| toni123		|	toni123								|	+19218594949		|	true	|
+	| Toni		|	toni@gmail.com	| toni123		|	toni123								|	+19218594949		|	true	|
 	| Bob			|	bob@gmail.com		| bob123		|	bob123								|	+15108295840		|	false	|
   Given I am logged in as "bob@gmail.com" with password "bob123"
 	And I am on the home page
