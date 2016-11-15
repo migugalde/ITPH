@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161114034148) do
+ActiveRecord::Schema.define(version: 20161115095603) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
@@ -35,6 +35,10 @@ ActiveRecord::Schema.define(version: 20161114034148) do
     t.string   "color"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "client_email"
+    t.string   "client_name"
+    t.string   "counselor_name"
+    t.string   "recurring"
   end
 
   create_table "users", force: :cascade do |t|
