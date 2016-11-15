@@ -1,14 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/environment.rb": [
+      "/home/mrstran/ITPH/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/application.rb": [
+      "/home/mrstran/ITPH/config/application.rb": [
         1,
         null,
         1,
@@ -45,12 +45,12 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/boot.rb": [
+      "/home/mrstran/ITPH/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/environments/test.rb": [
+      "/home/mrstran/ITPH/config/environments/test.rb": [
         1,
         null,
         null,
@@ -94,7 +94,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/assets.rb": [
+      "/home/mrstran/ITPH/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -107,7 +107,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/backtrace_silencers.rb": [
+      "/home/mrstran/ITPH/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -116,12 +116,12 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/cookies_serializer.rb": [
+      "/home/mrstran/ITPH/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/devise.rb": [
+      "/home/mrstran/ITPH/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -397,13 +397,13 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/filter_parameter_logging.rb": [
+      "/home/mrstran/ITPH/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/inflections.rb": [
+      "/home/mrstran/ITPH/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -421,18 +421,18 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/mime_types.rb": [
+      "/home/mrstran/ITPH/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/session_store.rb": [
+      "/home/mrstran/ITPH/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/simple_form.rb": [
+      "/home/mrstran/ITPH/config/initializers/simple_form.rb": [
         null,
         1,
         null,
@@ -599,7 +599,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/simple_form_bootstrap.rb": [
+      "/home/mrstran/ITPH/config/initializers/simple_form_bootstrap.rb": [
         null,
         1,
         1,
@@ -750,7 +750,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/wrap_parameters.rb": [
+      "/home/mrstran/ITPH/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -766,7 +766,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/config/routes.rb": [
+      "/home/mrstran/ITPH/config/routes.rb": [
         1,
         1,
         1,
@@ -837,7 +837,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/models/user.rb": [
+      "/home/mrstran/ITPH/app/models/user.rb": [
         1,
         null,
         null,
@@ -845,7 +845,7 @@
         1,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/support/paths.rb": [
+      "/home/mrstran/ITPH/features/support/paths.rb": [
         null,
         null,
         null,
@@ -894,7 +894,7 @@
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/support/selectors.rb": [
+      "/home/mrstran/ITPH/features/support/selectors.rb": [
         null,
         null,
         null,
@@ -940,12 +940,12 @@
         null,
         1
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/calendar_steps.rb": [
+      "/home/mrstran/ITPH/features/step_definitions/calendar_steps.rb": [
         1,
         1,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/client_steps.rb": [
+      "/home/mrstran/ITPH/features/step_definitions/client_steps.rb": [
         1,
         null,
         5,
@@ -992,7 +992,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/schedule_appt_steps.rb": [
+      "/home/mrstran/ITPH/features/step_definitions/schedule_appt_steps.rb": [
         1,
         null,
         null,
@@ -1050,7 +1050,7 @@
         0,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/user_steps.rb": [
+      "/home/mrstran/ITPH/features/step_definitions/user_steps.rb": [
         1,
         21,
         28,
@@ -1087,7 +1087,7 @@
         2,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/web_steps.rb": [
+      "/home/mrstran/ITPH/features/step_definitions/web_steps.rb": [
         1,
         1,
         1,
@@ -1157,7 +1157,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/application_controller.rb": [
+      "/home/mrstran/ITPH/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -1178,23 +1178,23 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/application_helper.rb": [
+      "/home/mrstran/ITPH/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/home_helper.rb": [
+      "/home/mrstran/ITPH/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/sessions_helper.rb": [
+      "/home/mrstran/ITPH/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/users_helper.rb": [
+      "/home/mrstran/ITPH/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/home_controller.rb": [
+      "/home/mrstran/ITPH/app/controllers/home_controller.rb": [
         1,
         1,
         15,
@@ -1221,7 +1221,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/users_controller.rb": [
+      "/home/mrstran/ITPH/app/controllers/users_controller.rb": [
         1,
         1,
         null,
@@ -1257,7 +1257,7 @@
         null,
         null
       ],
-      "/Users/forestfraser/Desktop/CS 169/ITPH/app/models/client.rb": [
+      "/home/mrstran/ITPH/app/models/client.rb": [
         null,
         null,
         null,
@@ -1276,7 +1276,7 @@
         null
       ]
     },
-    "timestamp": 1479195438
+    "timestamp": 1479240003
   },
   "RSpec": {
     "coverage": {
