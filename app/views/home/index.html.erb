@@ -1,6 +1,8 @@
-<h1>Welcome</h1>
+<h1>Welcome <%= @user.name %></h1>
 <%= link_to 'Edit Counselor Profile', edit_user_registration_path %>
 <%= link_to 'Client', clients_path %>
 <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <div class='calendar'></div>
-<%= link_to 'Add new counselor', new_user_registration_path %>
+<% if current_user.admin %>
+  <%= link_to 'Add new counselor', users_new_path %>
+<% end %>

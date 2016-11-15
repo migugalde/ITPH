@@ -1,21 +1,9 @@
-
-Given(/^I am logged in as "([^"]*)"$/) do |arg|
-  # id = session[:user_id]
-  # user = User.find(:id == id)
-  @user = User.new
-  @user.email = arg + "@gmail.com"
-end
-
 Given(/^the following appointments exist:$/) do |table|
   # table is a Cucumber::MultilineArgument::DataTable
   # table.hashes.each do |event|
   #   Event.create!(event)
   # end
   pending
-end
-
-When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
 end
 
 Given(/^the following events exist:$/) do |table|

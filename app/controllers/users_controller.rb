@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :require_admin
+
   def new
     @user = User.new
   end
@@ -17,7 +19,8 @@ class UsersController < ApplicationController
   end
 
   def update
-	  @user = User.find params[:id]
+    byebug
+	  @user = current_user
 	  if @user.update(user_params)
 		  flash[:notice] = "Successfully edited information!"
 		  redirect_to home_path
@@ -26,6 +29,6 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:email, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :phone_number, :admin, :password, :password_confirmation)
     end
 end

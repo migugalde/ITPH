@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-
-  devise_for :users, :controllers => { :registrations => 'users/registrations'}
+  devise_for :users, :skip => [:registrations]
+  as :user do
+    get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
+    put 'users' => 'devise/registrations#update', :as => 'user_registration'
+  end
+  get '/users/new', to: 'users#new'
+  post '/users', to: 'users#create'
   get '/home', to: 'home#index', as: 'home'
   resources :clients
   resources :events
-  resource :users,
-    as: :user_registration
 
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   # The priority is based upon order of creation: first created -> highest priority.

@@ -6,7 +6,7 @@ Feature: Display Client Profile when selected
 	Then I want to see their intake form data and contact info
 
 Background: clients have been added to database
-  
+
 
 	Given the following clients exist:
 	| name	| counselor	| email 			|
@@ -14,7 +14,7 @@ Background: clients have been added to database
 	| Joe Adams			| Yolanda 	| joe@adams.com		|
 	| Mary Adams			| Yolanda 	| mary@adams.com 	|
 	| Mary Williams			| Toni 		| mary@williams.nu	|
-	
+
 	And the following counselors exist:
 	| name		| email						| password	|	phone_number		|	admin	|
 	| Toni			|	toni@gmail.com		| toni		|	+15108295840	|	true	|

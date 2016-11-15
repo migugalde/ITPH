@@ -1,28 +1,35 @@
-When(/^I enter the email as "([^"]*)"$/) do |arg1|
-find(:css, "input[name='user[email]']").set(arg1)
-end
-
-When(/^I enter the password as "([^"]*)"$/) do |pw|
-  find(:css, "input[name='user[password]']").set(pw)
-end
-
 Given(/^the following counselors exist:$/) do |table|
-  # table is a Cucumber::MultilineArgument::DataTable
   table.hashes.each do |c|
     User.create!(c)
   end
 end
 
-Given(/^I login with email "(.*)" and password "(.*)"$/) do |email, password|
-  find(:css, "input[name='email']").set(email)
-  find(:css, "input[name='password']").set(password)
-  click_button('Login')
+Given(/^I login with email "([^"]*)" and password "([^"]*)"$/) do |email, password|
+  fill_in "user_email", :with => email
+  fill_in "user_password", :with => password
+  click_button "Log in"
 end
 
-Given(/^I am not logged in$/) do
-  User.logged_in?.is_truthy
+Given(/^I am logged in as "([^"]*)" with password "([^"]*)"$/) do |email, password|
+  visit "/users/sign_in"
+  fill_in "Email", :with => email
+  fill_in "Password", :with => password
+  click_button "Log in"
 end
 
-Then(/^I can edit the counselor's info$/) do
-  find(:css, "input[name='user[name]']")
+And(/^I fill in the passwords with "([^"]*)"$/) do |password|
+  fill_in "Password", with: password, :match => :prefer_exact
+  fill_in "Password confirmation", with: password, :match => :prefer_exact
+end
+
+Then(/^the user "([^"]*)" should exist$/) do |email|
+  expect(User.where(email: email)).to_not be_nil
+end
+
+Then(/^the user "([^"]*)" should not exist$/) do |email|
+  expect(User.where(email: email)).to be_empty
+end
+
+Then(/^the "([^"]*)" of "([^"]*)" should be "([^"]*)"$/) do |field, email, value|
+  expect(User.where(email: email).first.send(field.to_sym)).to eq(value)
 end
