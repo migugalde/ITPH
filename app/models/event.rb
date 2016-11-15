@@ -34,8 +34,6 @@ class Event < ActiveRecord::Base
     events.each do |event|
       if user == event.user then
         event.color = 'green'
-      else
-        event.title = event.user.name
       end
     end
     events
