@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   def index
-    @events = Event.user_events(current_user, params[:start], params[:end])
+    @events = Event.user_events(session[:user_id], params[:start], params[:end])
   end
 
   def show
@@ -19,8 +19,8 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
-    puts @event.valid?
     @event.save
+    EventMailer.appointment_notification(@event).deliver_later!(queue: "high")
   end
 
   def update
@@ -28,6 +28,7 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    EventMailer.appointment_cancel(@event).deliver_later!(queue: "low")
     @event.destroy
   end
 
