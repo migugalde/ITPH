@@ -2,8 +2,10 @@ Feature: Send Emails with Event Creation
 
 Background:
 	Given the following counselors exist:
-	| name		| email						| password	|	phone_number		|	admin	|
-	| Bob			|	bob@gmail.com		| bobby1		|	+15108295840	|	true	|
+	| name		| email						| password	|	password_confirmation |	phone_number		|	admin	|
+	| Bob			|	bob@gmail.com		| bob123		|	bob123								|	+15108295840		|	false	|
+
+	And I am logged in as "bob@gmail.com" with password "bob123"
 	And I am on the home page
 
 Scenario: I make a simple event and they recieve an email
