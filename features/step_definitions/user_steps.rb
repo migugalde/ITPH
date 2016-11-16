@@ -23,13 +23,13 @@ And(/^I fill in the passwords with "([^"]*)"$/) do |password|
 end
 
 Then(/^the user "([^"]*)" should exist$/) do |email|
-  expect(User.where(email: email)).to_not be_nil
+  expect(User.find_by email: email).to_not be_nil
 end
 
 Then(/^the user "([^"]*)" should not exist$/) do |email|
-  expect(User.where(email: email)).to be_empty
+  expect(User.find_by email: email).to be_nil
 end
 
 Then(/^the "([^"]*)" of "([^"]*)" should be "([^"]*)"$/) do |field, email, value|
-  expect(User.where(email: email).first.send(field.to_sym)).to eq(value)
+  expect((User.find_by email: email).send(field.to_sym)).to eq(value)
 end

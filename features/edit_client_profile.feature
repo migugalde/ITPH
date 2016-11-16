@@ -14,6 +14,7 @@ Background: clients have been added to database
 	| Toni		|	toni@gmail.com	| toni123		|	toni123								|	+19218594949		|	true	|
 
 	Given I am logged in as "toni@gmail.com" with password "toni123"
+	And I am on the clients page
 	And I follow "Bob Smith"
 
 Scenario: I want to update my clients intake form

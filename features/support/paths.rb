@@ -17,6 +17,8 @@ module NavigationHelpers
       home_path
     when /^home\s?page$/
       home_path
+    when /^clients\spage$/
+      clients_path
     when /^the login\s?page$/
       new_user_session_path
     when /^the new user\s?page$/

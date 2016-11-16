@@ -1,14 +1,24 @@
-Given(/^the following appointments exist:$/) do |table|
-  # table is a Cucumber::MultilineArgument::DataTable
-  # table.hashes.each do |event|
-  #   Event.create!(event)
-  # end
+Given(/^the following events exist:$/) do |table|
   pending
+  table.hashes.each do |event|
+    Event.create!(event)
+  end
 end
 
-Given(/^the following events exist:$/) do |table|
-  # table is a Cucumber::MultilineArgument::DataTable
-  pending # Write code here that turns the phrase above into concrete actions
+And(/^the event "([^"]*)" has the following counselors:(.*)$/) do |event_title, counselors|
+  pending
+  event = Event.find_by title: event_title
+  counselors.split(/\s*,\s*/).each do |counselor|
+    event.users << (User.find_by email: counselor)
+  end
+end
+
+And(/^the event "([^"]*)" has the following clients:(.*)$/) do |event_title, clients|
+  pending
+  event = Event.find_by title: event_title
+  clients.split(/\s*,\s*/).each do |client|
+    event.users << (Client.find_by email: client)
+  end
 end
 
 Given(/^I click on "([^"]*)"$/) do |arg1|
