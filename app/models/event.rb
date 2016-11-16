@@ -21,8 +21,8 @@
 
 class Event < ActiveRecord::Base
   validates :title, presence: true
-  belongs_to  :user
-  belongs_to  :client
+  has_and_belongs_to_many :users
+  has_and_belongs_to_many :clients
   attr_accessor :date_range
 
   def all_day_event?

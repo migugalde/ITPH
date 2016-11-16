@@ -17,8 +17,6 @@ end
 20.times do
   event = Event.new
   event.title = Faker::Book.title
-	event.user = [User.find(1),User.find(2)].sample
-	event.client_id = [1,2,3,4,5,6].sample
   event.start = Faker::Time.between(14.days.ago, Date.today + 7.days, :morning)
   event.end = Faker::Time.between(event.start, event.start + 1.hour, :evening)
   event.color = ['blue','black','red'].sample
