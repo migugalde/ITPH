@@ -70,3 +70,9 @@ group :production do
   gem 'pg'              # use PostgreSQL in production (Heroku)
   gem 'rails_12factor'  # Heroku-specific production settings
 end
+gem 'simplecov', :require => false, :group => :test
+
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'simple_form'
+gem 'faker'
+gem 'google-drive'

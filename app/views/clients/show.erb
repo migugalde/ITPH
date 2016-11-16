@@ -13,6 +13,28 @@
     Email:
     <%= @client.email %>
   </li>
+  
+  <% if @client_index == -1 %>
+    <li>
+      Client has not filled out intake form.
+    </li>
+  <% else %>
+    <% for i in 2..@spreadsheet.num_cols do %>
+      <li>
+        <% if @spreadsheet[1, i][-1] != "?" %>
+          <%= @spreadsheet[1, i] + ":" %>
+        <% else %>
+          <%= @spreadsheet[1, i] %>
+        <% end %>
+        <% if @spreadsheet[@client_index, i].empty? %>
+          Client did not answer prompt.
+        <% else %>
+          <%= @spreadsheet[@client_index, i] %>
+        <% end %>
+      </li>
+    <% end %>
+  <% end %>
+  
 </ul>
 <h3>Upcoming Appointments:</h3>
 
