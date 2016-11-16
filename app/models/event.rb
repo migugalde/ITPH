@@ -20,10 +20,13 @@
 #
 
 class Event < ActiveRecord::Base
-  validates :title, presence: true
+  validates_presence_of :title
+
   belongs_to  :user
   belongs_to  :client
   attr_accessor :date_range
+  accepts_nested_attributes_for :user, :client
+
 
   def all_day_event?
     self.start == self.start.midnight && self.end == self.end.midnight ? true : false
