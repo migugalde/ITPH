@@ -859,13 +859,21 @@
         null,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         34,
         null,
         null,
         13,
+=======
+        6,
         null,
-        1,
         null,
+        0,
+>>>>>>> spreadsheet integration
+        null,
+        0,
+        null,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         0,
         null,
         7,
@@ -873,6 +881,11 @@
         5,
         null,
         1,
+=======
+        2,
+        null,
+        0,
+>>>>>>> spreadsheet integration
         null,
         null,
         null,
@@ -882,10 +895,10 @@
         null,
         null,
         null,
-        7,
-        7,
-        7,
-        7,
+        4,
+        4,
+        4,
+        4,
         0,
         0,
         null,
@@ -944,43 +957,43 @@
       ],
       "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/calendar_steps.rb": [
         1,
-        1,
+        0,
         null
       ],
       "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/client_steps.rb": [
         1,
         null,
-        5,
-        14,
-        null,
-        null,
-        null,
-        1,
         2,
+        4,
         null,
-        null,
-        1,
-        2,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
+        0,
+        null,
+        null,
         1,
+        0,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         1,
@@ -990,7 +1003,7 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
         null
       ],
@@ -1001,6 +1014,12 @@
         0,
         null,
         null,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
+=======
+        0,
+        0,
+        null,
+>>>>>>> spreadsheet integration
         null,
         1,
         0,
@@ -1010,6 +1029,13 @@
         null,
         null,
         null,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
+=======
+        null,
+        0,
+        null,
+        null,
+>>>>>>> spreadsheet integration
         1,
         0,
         0,
@@ -1017,13 +1043,20 @@
         0,
         null,
         null,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
+=======
+        1,
+        null,
+        0,
+        null,
+>>>>>>> spreadsheet integration
         null,
         1,
         0,
         null,
         null,
         1,
-        5,
+        0,
         null,
         null,
         1,
@@ -1064,6 +1097,7 @@
       ],
       "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/user_steps.rb": [
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         23,
         30,
         null,
@@ -1073,6 +1107,13 @@
         3,
         3,
         3,
+=======
+        0,
+        null,
+        null,
+        1,
+        0,
+>>>>>>> spreadsheet integration
         null,
         null,
         1,
@@ -1081,6 +1122,11 @@
         17,
         17,
         null,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
+=======
+        2,
+        2,
+>>>>>>> spreadsheet integration
         null,
         1,
         2,
@@ -1088,7 +1134,13 @@
         null,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         1,
+=======
+        2,
+        2,
+        2,
+>>>>>>> spreadsheet integration
         null,
         null,
         1,
@@ -1096,7 +1148,7 @@
         null,
         null,
         1,
-        2,
+        0,
         null
       ],
       "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/web_steps.rb": [
@@ -1107,31 +1159,94 @@
         null,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         23,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
+=======
         6,
+>>>>>>> spreadsheet integration
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
+        1,
+=======
+        2,
+        null,
+        null,
+        1,
+        8,
+        8,
+        null,
+>>>>>>> spreadsheet integration
         null,
         null,
         1,
         1,
-        null,
-        null,
-        1,
-        1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         null,
         null,
         1,
         10,
+=======
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/models/user.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+>>>>>>> spreadsheet integration
         null,
         null,
         1,
@@ -1139,13 +1254,27 @@
         null,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         14,
         14,
+=======
+        2,
+        2,
+        2,
+        null,
+        null,
+>>>>>>> spreadsheet integration
         null,
         null,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         0,
+=======
+        2,
+        2,
+        2,
+>>>>>>> spreadsheet integration
         null,
         0,
         0,
@@ -1153,18 +1282,35 @@
         0,
         null,
         null,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         null,
         1,
         9,
         9,
         9,
+=======
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        0,
+        0,
+>>>>>>> spreadsheet integration
         null,
         null,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         1,
         1,
         null,
+=======
+        0,
+        0,
+>>>>>>> spreadsheet integration
         0,
         null,
         null
@@ -1174,6 +1320,15 @@
         1,
         1,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
+=======
+        8,
+        0,
+        0,
+        null,
+        null,
+        null,
+>>>>>>> spreadsheet integration
         null,
         1,
         null,
@@ -1186,7 +1341,11 @@
         1,
         null,
         1,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         47,
+=======
+        8,
+>>>>>>> spreadsheet integration
         null,
         null
       ],
@@ -1233,25 +1392,21 @@
         null,
         null
       ],
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
       "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/users_controller.rb": [
         1,
         1,
         null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        3,
-        3,
+=======
+      "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
+>>>>>>> spreadsheet integration
         1,
         null,
-        2,
-        null,
-        null,
+        1,
         null,
         1,
         0,
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
         null,
         null,
         1,
@@ -1292,6 +1447,21 @@
         null,
         1,
         2,
+=======
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        1,
+        1,
+>>>>>>> spreadsheet integration
+        null,
+        null,
         null,
         null,
         1,
@@ -1299,7 +1469,7 @@
         null,
         null,
         1,
-        9,
+        0,
         null,
         null,
         1,
@@ -1307,23 +1477,23 @@
         null,
         null,
         1,
-        2,
         null,
         null,
         1,
-        null,
-        null,
-        1,
-        2,
-        2,
-        2,
-        2,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null
       ]
     },
+<<<<<<< 6a0f8058ae3adb68c89fff236f85b1f02b68264f
     "timestamp": 1479264921
+=======
+    "timestamp": 1479239942
+>>>>>>> spreadsheet integration
   },
   "RSpec": {
     "coverage": {
