@@ -14,10 +14,10 @@ Background: clients have been added to database
 	
 	And the following counselors exist:
 	| name		| email					| password	|	phone_number	|	admin	|
-	| Toni		|	toni@gmail.com		| toni		|	+15108295840	|	true	|
+	| Toni		| toni@gmail.com		| toni11	|	+15108295840	|	true	|
 	
 	Given I am on the login page
-	And I login with email "toni@gmail.com" and password "toni"
+	And I login with email "toni@gmail.com" and password "toni11"
 	And I am on the clients page 
 	
 Scenario: display information from already filled out google intake form
