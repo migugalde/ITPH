@@ -52,10 +52,3 @@ initialize_calendar = function() {
   })
 };
 $(document).ready(initialize_calendar);
-
-$(window).on('resize', function () {
-    $('body').children('.blockMsg').css({
-        top  : ($(window).height() - 40) /2 + 'px', 
-        left : ($(window).width() - 200) /2 + 'px'
-    });
-});
