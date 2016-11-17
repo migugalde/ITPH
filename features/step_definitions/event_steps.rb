@@ -57,10 +57,6 @@ Given(/^I input recurring as "([^"]*)"$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Then(/^he should not recieve another one next week$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
 Then(/^"([^"]*)" should not recieve an email$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end

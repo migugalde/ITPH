@@ -51,4 +51,5 @@ initialize_calendar = function() {
     });
   })
 };
+
 $(document).ready(initialize_calendar);
