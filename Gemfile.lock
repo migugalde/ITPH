@@ -132,6 +132,10 @@ GEM
     domain_name (0.5.20161021)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.1)
+    email_spec (2.1.0)
+      htmlentities (~> 4.3.3)
+      launchy (~> 2.1)
+      mail (~> 2.6.3)
     equalizer (0.0.11)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -211,6 +215,7 @@ GEM
       concurrent-ruby (~> 1.0)
     hashie (3.4.6)
     hirb (0.7.3)
+    htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.2.4)
@@ -504,6 +509,7 @@ DEPENDENCIES
   cucumber-rails-training-wheels
   database_cleaner
   devise
+  email_spec
   factory_girl_rails
   faker
   figaro
