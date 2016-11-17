@@ -21,7 +21,9 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
     @event.save
     begin
-      EventMailer.appointment_notification(@event).deliver_later(queue: "high")
+      @event.clients.each do |client|
+        EventMailer.appointment_notification(@event, client).deliver_later(queue: "high")
+      end
     rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
       flash[:success] ="There was an error with the email server. Please try again."
     end
@@ -32,8 +34,16 @@ class EventsController < ApplicationController
   end
 
   def destroy
-    EventMailer.appointment_cancel(@event).deliver_later(queue: "low")
     @event.destroy
+    begin
+      @event.clients.each do |client|
+        puts "LOOK HERE"
+        puts client.name
+        EventMailer.appointment_cancel(@event, client).deliver_later(queue: "low")
+      end
+    rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
+      flash[:success] ="There was an error with the email server. Please try again."
+    end
   end
 
   private
