@@ -10,6 +10,8 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
+    @clients = Client.all
+    @users = User.all
   end
 
   def edit
@@ -17,6 +19,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
+    puts @event.valid?
     @event.save
   end
 
@@ -34,6 +37,6 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :color)
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :client_ids => [], :user_ids => [])
     end
 end
