@@ -17,9 +17,6 @@ class EventMailer < ApplicationMailer
   end
 
   def appointment_cancel(event)
-    puts "LOOK HERE"
-    puts ENV["FROM_EMAIL"]
-    puts "LOOK AWAY"
     @event = event
     @intake_form = ENV["INTAKE_FORM"]
     @office_location  = ENV["OFFICE_LOC"]
