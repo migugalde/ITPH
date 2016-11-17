@@ -23,7 +23,7 @@
 #   - interact with the email (e.g. click links)
 #
 # The Cucumber steps below are setup in this order.
-
+=begin
 module EmailHelpers
   def current_email_address
     # Replace with your a way to find your current email. e.g @current_user.email
@@ -32,8 +32,9 @@ module EmailHelpers
     last_email_address || @email
   end
 end
+=end
 
-World(EmailHelpers)
+#World(EmailHelpers)
 
 #
 # Reset the e-mail queue within a scenario.
@@ -63,47 +64,55 @@ Then /^"([^"]*?)" should receive an email with text "(.*)"$/ do |address, text|
   expect(@email).to have_body_text(text)
 end 
 
-Then /^(?:I|they|"([^"]*?)") should receive (an|no|\d+) emails?$/ do |address, amount|
-  expect(@email).to deliver_to(address)
-end
-
 # expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(Regexp.escape(subject)) }.size).to eql parse_email_count(amount)"
 Then /^(?:I|they|"([^"]*?)") should receive an emails? with subject "([^"]*?)"$/ do |address, subject|
   expect(@email).to have_subject(subject)
 end
 
-Then /^(?:I|they|"([^"]*?)") should receive (an|no|\d+) emails? with subject \/([^"]*?)\/$/ do |address, amount, subject|
-  expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(subject) }.size).to eql parse_email_count(amount)
+
+=begin
+Then /^(?:I|they|"([^"]*?)") should receive (an|no|\d+) emails?$/ do |address, amount|
+  expect(@email).to deliver_to(address)
 end
 
-Then /^(?:I|they|"([^"]*?)") should receive an email with the following body:$/ do |address, expected_body|
-  open_email(address, :with_text => expected_body)
+
+#  expect(current_email.default_part_body.to_s).to match Regexp.new(text)
+Then /^(?:I|they) should see \/([^"]*?)\/ in the email body$/ do |text|
+  expect(@email.body.to_s).to match Regexp.new(text)
 end
+
+#Then /^(?:I|they|"([^"]*?)") should receive (an|no|\d+) emails? with subject \/([^"]*?)\/$/ do |address, amount, subject|
+#  expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(subject) }.size).to eql parse_email_count(amount)
+#end
+
+#Then /^(?:I|they|"([^"]*?)") should receive an email with the following body:$/ do |address, expected_body|
+#  open_email(address, :with_text => expected_body)
+#end
 
 #
 # Accessing emails
 #
 
 # Opens the most recently received email
-When /^(?:I|they|"([^"]*?)") opens? the email$/ do |address|
-  open_email(address)
-end
+#When /^(?:I|they|"([^"]*?)") opens? the email$/ do |address|
+#  open_email(address)
+#end
 
-When /^(?:I|they|"([^"]*?)") opens? the email with subject "([^"]*?)"$/ do |address, subject|
-  open_email(address, :with_subject => subject)
-end
+#When /^(?:I|they|"([^"]*?)") opens? the email with subject "([^"]*?)"$/ do |address, subject|
+#  open_email(address, :with_subject => subject)
+#end
 
-When /^(?:I|they|"([^"]*?)") opens? the email with subject \/([^"]*?)\/$/ do |address, subject|
-  open_email(address, :with_subject => Regexp.new(subject))
-end
+#When /^(?:I|they|"([^"]*?)") opens? the email with subject \/([^"]*?)\/$/ do |address, subject|
+#  open_email(address, :with_subject => Regexp.new(subject))
+#end
 
-When /^(?:I|they|"([^"]*?)") opens? the email with text "([^"]*?)"$/ do |address, text|
-  open_email(address, :with_text => text)
-end
+#When /^(?:I|they|"([^"]*?)") opens? the email with text "([^"]*?)"$/ do |address, text|
+#  open_email(address, :with_text => text)
+#end
 
-When /^(?:I|they|"([^"]*?)") opens? the email with text \/([^"]*?)\/$/ do |address, text|
-  open_email(address, :with_text => Regexp.new(text))
-end
+#When /^(?:I|they|"([^"]*?)") opens? the email with text \/([^"]*?)\/$/ do |address, text|
+#  open_email(address, :with_text => Regexp.new(text))
+#end
 
 #
 # Inspect the Email Contents
@@ -133,10 +142,6 @@ Then /^(?:I|they) should not see "([^"]*?)" in the email body$/ do |text|
   expect(current_email.default_part_body.to_s).not_to include(text)
 end
 
-#  expect(current_email.default_part_body.to_s).to match Regexp.new(text)
-Then /^(?:I|they) should see \/([^"]*?)\/ in the email body$/ do |text|
-  expect(@email.body.to_s).to match Regexp.new(text)
-end
 
 Then /^(?:I|they) should not see \/([^"]*?)\/ in the email body$/ do |text|
   expect(current_email.default_part_body.to_s).not_to match Regexp.new(text)
@@ -237,3 +242,4 @@ end
 Then /^save and open all raw emails$/ do
   EmailSpec::EmailViewer::save_and_open_all_raw_emails
 end
+=end

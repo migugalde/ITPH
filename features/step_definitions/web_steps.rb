@@ -42,6 +42,7 @@ Then /^(?:|I )should see "([^"]*)"$/ do |text|
   end
 end
 
+=begin
 Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
   regexp = Regexp.new(regexp)
 
@@ -51,6 +52,7 @@ Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
     assert page.has_no_xpath?('//*', :text => regexp)
   end
 end
+=end
 
 Then /^(?:|I )should be on (.+)$/ do |page_name|
   current_path = URI.parse(current_url).path
