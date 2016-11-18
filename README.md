@@ -17,7 +17,7 @@ Thanks to https://www.driftingruby.com/episodes/fullcalendar-events-and-scheduli
 
 Client Website:
 
-https://boiling-fjord-19462.herokuapp.com/
+https://inthepottershand.herokuapp.com/
 
 In the Potter's Hands hopes to provide counseling and community to those who need it.
 
