@@ -10,6 +10,11 @@ initialize_calendar = function() {
       },
       selectable: true,
       selectHelper: true,
+      // if ($.inArray(session[:user_id], event.users) {
+      //   editable: true;
+      // } else {
+      //   editable: false;
+      // }
       editable: true,
       eventLimit: true,
       events: '/events.json',
@@ -41,11 +46,11 @@ initialize_calendar = function() {
       },
 
       eventClick: function(event, jsEvent, view) {
-        $.getScript(event.edit_url, function() {
-          $('#event_date_range').val(moment(event.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(event.end).format("MM/DD/YYYY HH:mm"))
-          date_range_picker();
-          $('.start_hidden').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
-          $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
+          $.getScript(event.edit_url, function() {
+            $('#event_date_range').val(moment(event.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(event.end).format("MM/DD/YYYY HH:mm"))
+            date_range_picker();
+            $('.start_hidden').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
+            $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
         });
       }
     });
