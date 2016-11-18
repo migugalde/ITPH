@@ -37,8 +37,6 @@ class EventsController < ApplicationController
     @event.destroy
     begin
       @event.clients.each do |client|
-        puts "LOOK HERE"
-        puts client.name
         EventMailer.appointment_cancel(@event, client).deliver_later(queue: "low")
       end
     rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e

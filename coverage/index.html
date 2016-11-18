@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-11-17T12:18:01-08:00">2016-11-17T12:18:01-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-11-17T13:05:18-08:00">2016-11-17T13:05:18-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">86.75%</span></span>
+    (<span class="covered_percent"><span class="yellow">89.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.3
+         2.6
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>37</b> files in total.
-    <b>415</b> relevant lines. 
-    <span class="green"><b>360</b> lines covered</span> and
-    <span class="red"><b>55</b> lines missed </span>
+    <b>418</b> relevant lines. 
+    <span class="green"><b>375</b> lines covered</span> and
+    <span class="red"><b>43</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -142,12 +142,12 @@
       
       <tr>
         <td class="strong"><a href="#aaf4a04203591bd479317411968103bb37b795d9" class="src_link" title="app/mailers/event_mailer.rb">app/mailers/event_mailer.rb</a></td>
-        <td class="red strong">10.0 %</td>
-        <td>44</td>
-        <td>30</td>
-        <td>3</td>
-        <td>27</td>
-        <td>0.1</td>
+        <td class="red strong">51.61 %</td>
+        <td>48</td>
+        <td>31</td>
+        <td>16</td>
+        <td>15</td>
+        <td>4.0</td>
       </tr>
       
       <tr>
@@ -362,12 +362,12 @@
       
       <tr>
         <td class="strong"><a href="#fbf2b33a098cc9b56b2dfadf47926f96fa013de4" class="src_link" title="features/step_definitions/email_steps.rb">features/step_definitions/email_steps.rb</a></td>
-        <td class="red strong">57.14 %</td>
-        <td>245</td>
-        <td>14</td>
-        <td>8</td>
+        <td class="red strong">62.5 %</td>
+        <td>249</td>
+        <td>16</td>
+        <td>10</td>
         <td>6</td>
-        <td>1.2</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -1399,11 +1399,11 @@
         <div class="source_table" id="aaf4a04203591bd479317411968103bb37b795d9">
   <div class="header">
     <h3>app/mailers/event_mailer.rb</h3>
-    <h4><span class="red">10.0 %</span> covered</h4>
+    <h4><span class="red">51.61 %</span> covered</h4>
     <div>
-      <b>30</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>27</b> lines missed.</span>
+      <b>31</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
   </div>
   
@@ -1434,50 +1434,50 @@
           <code class="ruby">  def appointment_notification(event, client)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
+        <li class="covered" data-hits="10" data-linenumber="5">
+          <span class="hits">10</span>
           
           <code class="ruby">    @event = event</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="10" data-linenumber="6">
+          <span class="hits">10</span>
           
           <code class="ruby">    @intake_form = ENV[&quot;INTAKE_FORM&quot;]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="10" data-linenumber="7">
+          <span class="hits">10</span>
           
           <code class="ruby">    @office_location  = ENV[&quot;OFFICE_LOC&quot;]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="10" data-linenumber="8">
+          <span class="hits">10</span>
           
           <code class="ruby">    @counselors = &quot;&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="10" data-linenumber="9">
+          <span class="hits">10</span>
           
           <code class="ruby">    @event.users.each do | counselor|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
+        <li class="covered" data-hits="14" data-linenumber="10">
+          <span class="hits">14</span>
           
           <code class="ruby">      if counselor == @event.users.last</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="10" data-linenumber="11">
+          <span class="hits">10</span>
           
           <code class="ruby">        if counselor != @event.users.first</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
           <code class="ruby">          @counselors += &quot; and &quot;</code>
         </li>
@@ -1488,8 +1488,8 @@
           <code class="ruby">        end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="10" data-linenumber="14">
+          <span class="hits">10</span>
           
           <code class="ruby">        @counselors += counselor.name</code>
         </li>
@@ -1512,8 +1512,8 @@
           <code class="ruby">      else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
           
           <code class="ruby">        @counselors += counselor.name</code>
         </li>
@@ -1530,145 +1530,169 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
+        <li class="covered" data-hits="10" data-linenumber="21">
+          <span class="hits">10</span>
           
           <code class="ruby">    @name = client.name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
-          
-          <code class="ruby">    puts &quot;LOOK HERE TOO&quot;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
-          
-          <code class="ruby">    puts @name</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="24">
-          
-          
-          <code class="ruby">    puts client.email</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
+        <li class="covered" data-hits="10" data-linenumber="22">
+          <span class="hits">10</span>
           
           <code class="ruby">    email_with_name = %(&quot;#{client.name}&quot; &lt;#{client.email}&gt;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="26">
-          
+        <li class="covered" data-hits="10" data-linenumber="23">
+          <span class="hits">10</span>
           
           <code class="ruby">    mail(to: email_with_name, subject: &#39;Appointment reminder and intake form for ITPH&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
           <code class="ruby">  def appointment_cancel(event, client)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
+        <li class="missed" data-hits="0" data-linenumber="27">
           
           
           <code class="ruby">    @event = event</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
+        <li class="missed" data-hits="0" data-linenumber="28">
           
           
           <code class="ruby">    @intake_form = ENV[&quot;INTAKE_FORM&quot;]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
+        <li class="missed" data-hits="0" data-linenumber="29">
           
           
           <code class="ruby">    @office_location  = ENV[&quot;OFFICE_LOC&quot;]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
+        <li class="missed" data-hits="0" data-linenumber="30">
           
           
           <code class="ruby">    @counselors = &quot;&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="34">
+        <li class="missed" data-hits="0" data-linenumber="31">
           
           
           <code class="ruby">    @event.users.each do | counselor|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="35">
+        <li class="missed" data-hits="0" data-linenumber="32">
           
           
-          <code class="ruby">      @counselors += counselor.name</code>
+          <code class="ruby">      if counselor == @event.users.last</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="missed" data-hits="0" data-linenumber="33">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        if counselor != @event.users.first</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
+        <li class="missed" data-hits="0" data-linenumber="34">
           
           
-          <code class="ruby">    @event.clients.each do |client|</code>
+          <code class="ruby">          @counselors += &quot; and &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">        @counselors += counselor.name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">      elsif counselor != @event.users.first</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="38">
           
           
-          <code class="ruby">      @name = client.name</code>
+          <code class="ruby">        @counselors += counselor.name + &quot;, &quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">      email_with_name = %(&quot;#{client.name}&quot; &lt;#{client.email}&gt;)</code>
+          <code class="ruby">      else</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="40">
           
           
-          <code class="ruby">      mail(to: email_with_name, subject: &#39;Appointment cancellation notification for ITPH&#39;)</code>
+          <code class="ruby">        @counselors += counselor.name</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="43">
+          
+          
+          <code class="ruby">    @name = client.name</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">    email_with_name = %(&quot;#{client.name}&quot; &lt;#{client.email}&gt;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">    mail(to: email_with_name, subject: &#39;Appointment cancellation notification for ITPH&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">end</code>
@@ -7555,10 +7579,10 @@
         <div class="source_table" id="fbf2b33a098cc9b56b2dfadf47926f96fa013de4">
   <div class="header">
     <h3>features/step_definitions/email_steps.rb</h3>
-    <h4><span class="red">57.14 %</span> covered</h4>
+    <h4><span class="red">62.5 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
@@ -7833,73 +7857,73 @@
         <li class="covered" data-hits="4" data-linenumber="45">
           <span class="hits">4</span>
           
-          <code class="ruby">  @email = EventMailer.appointment_notification(event).deliver_now!</code>
+          <code class="ruby">  event.clients.each do |client|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
+        <li class="covered" data-hits="10" data-linenumber="46">
+          <span class="hits">10</span>
           
-          
-          <code class="ruby">  expect(@email).to deliver_from(&quot;533petersave@gmail.com&quot;)</code>
+          <code class="ruby">    EventMailer.appointment_notification(event, client).deliver_later(queue: &quot;high&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="48">
+          <span class="hits">4</span>
+          
+          <code class="ruby">  expect(@email).to deliver_from(&quot;533petersave@gmail.com&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
+        <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
           <code class="ruby">When /^I send the cancellation email for the event &quot;([^&quot;]*?)&quot;$/ do |event_title|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
+        <li class="missed" data-hits="0" data-linenumber="52">
           
           
           <code class="ruby">  event = Event.find_by title: event_title</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="51">
+        <li class="missed" data-hits="0" data-linenumber="53">
           
           
-          <code class="ruby">  @email = EventMailer.appointment_cancel(event).deliver_now!</code>
+          <code class="ruby">  @event.clients.each do |client|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">    EventMailer.appointment_cancel(@event, client).deliver_later(queue: &quot;low&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
           
           
           <code class="ruby">  expect(@email).to deliver_from(&quot;533petersave@gmail.com&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
-          
-          <code class="ruby">Given /^(?:a clear email queue|no emails have been sent)$/ do</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="56">
-          <span class="hits">4</span>
-          
-          <code class="ruby">  reset_mailer</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
@@ -7914,22 +7938,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#</code>
+          <code class="ruby">Given /^(?:a clear email queue|no emails have been sent)$/ do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="covered" data-hits="4" data-linenumber="60">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby"># Check how many emails have been sent/received</code>
+          <code class="ruby">  reset_mailer</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">#   expect(unread_emails_for(address).size).to eql parse_email_count(amount)</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
@@ -7938,22 +7962,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="63">
           
-          <code class="ruby">Then /^&quot;([^&quot;]*?)&quot; should receive an email with text &quot;(.*)&quot;$/ do |address, text|</code>
+          
+          <code class="ruby">#</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">  expect(@email).to have_body_text(text)</code>
+          <code class="ruby"># Check how many emails have been sent/received</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">end </code>
+          <code class="ruby">#   expect(unread_emails_for(address).size).to eql parse_email_count(amount)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
@@ -7962,124 +7986,124 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby"># expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(Regexp.escape(subject)) }.size).to eql parse_email_count(amount)&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="68">
+        <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive an emails? with subject &quot;([^&quot;]*?)&quot;$/ do |address, subject|</code>
+          <code class="ruby">Then /^&quot;([^&quot;]*?)&quot; should receive an email with text &quot;(.*)&quot;$/ do |address, text|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="69">
+        <li class="missed" data-hits="0" data-linenumber="68">
           
           
-          <code class="ruby">  expect(@email).to have_subject(subject)</code>
+          <code class="ruby">  expect(@email).to have_body_text(text)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">end </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby"></code>
+          <code class="ruby"># expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(Regexp.escape(subject)) }.size).to eql parse_email_count(amount)&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive an emails? with subject &quot;([^&quot;]*?)&quot;$/ do |address, subject|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="missed" data-hits="0" data-linenumber="73">
           
           
-          <code class="ruby">=begin</code>
+          <code class="ruby">  expect(@email).to have_subject(subject)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive (an|no|\d+) emails?$/ do |address, amount|</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">  expect(@email).to deliver_to(address)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">=begin</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive (an|no|\d+) emails?$/ do |address, amount|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">#  expect(current_email.default_part_body.to_s).to match Regexp.new(text)</code>
+          <code class="ruby">  expect(@email).to deliver_to(address)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">Then /^(?:I|they) should see \/([^&quot;]*?)\/ in the email body$/ do |text|</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">  expect(@email.body.to_s).to match Regexp.new(text)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#  expect(current_email.default_part_body.to_s).to match Regexp.new(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">#Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive (an|no|\d+) emails? with subject \/([^&quot;]*?)\/$/ do |address, amount, subject|</code>
+          <code class="ruby">Then /^(?:I|they) should see \/([^&quot;]*?)\/ in the email body$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby">#  expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(subject) }.size).to eql parse_email_count(amount)</code>
+          <code class="ruby">  expect(@email.body.to_s).to match Regexp.new(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
           
           
-          <code class="ruby">#end</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
@@ -8091,13 +8115,13 @@
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">#Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive an email with the following body:$/ do |address, expected_body|</code>
+          <code class="ruby">#Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive (an|no|\d+) emails? with subject \/([^&quot;]*?)\/$/ do |address, amount, subject|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
           
           
-          <code class="ruby">#  open_email(address, :with_text =&gt; expected_body)</code>
+          <code class="ruby">#  expect(unread_emails_for(address).select { |m| m.subject =~ Regexp.new(subject) }.size).to eql parse_email_count(amount)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
@@ -8115,19 +8139,19 @@
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#Then /^(?:I|they|&quot;([^&quot;]*?)&quot;) should receive an email with the following body:$/ do |address, expected_body|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby"># Accessing emails</code>
+          <code class="ruby">#  open_email(address, :with_text =&gt; expected_body)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
@@ -8139,43 +8163,43 @@
         <li class="never" data-hits="" data-linenumber="96">
           
           
-          <code class="ruby"># Opens the most recently received email</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="97">
           
           
-          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email$/ do |address|</code>
+          <code class="ruby"># Accessing emails</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby">#  open_email(address)</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">#end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby"></code>
+          <code class="ruby"># Opens the most recently received email</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with subject &quot;([^&quot;]*?)&quot;$/ do |address, subject|</code>
+          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email$/ do |address|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby">#  open_email(address, :with_subject =&gt; subject)</code>
+          <code class="ruby">#  open_email(address)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
@@ -8193,13 +8217,13 @@
         <li class="never" data-hits="" data-linenumber="105">
           
           
-          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with subject \/([^&quot;]*?)\/$/ do |address, subject|</code>
+          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with subject &quot;([^&quot;]*?)&quot;$/ do |address, subject|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">#  open_email(address, :with_subject =&gt; Regexp.new(subject))</code>
+          <code class="ruby">#  open_email(address, :with_subject =&gt; subject)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
@@ -8217,13 +8241,13 @@
         <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with text &quot;([^&quot;]*?)&quot;$/ do |address, text|</code>
+          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with subject \/([^&quot;]*?)\/$/ do |address, subject|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="110">
           
           
-          <code class="ruby">#  open_email(address, :with_text =&gt; text)</code>
+          <code class="ruby">#  open_email(address, :with_subject =&gt; Regexp.new(subject))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="111">
@@ -8241,13 +8265,13 @@
         <li class="never" data-hits="" data-linenumber="113">
           
           
-          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with text \/([^&quot;]*?)\/$/ do |address, text|</code>
+          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with text &quot;([^&quot;]*?)&quot;$/ do |address, text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="114">
           
           
-          <code class="ruby">#  open_email(address, :with_text =&gt; Regexp.new(text))</code>
+          <code class="ruby">#  open_email(address, :with_text =&gt; text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="115">
@@ -8265,19 +8289,19 @@
         <li class="never" data-hits="" data-linenumber="117">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#When /^(?:I|they|&quot;([^&quot;]*?)&quot;) opens? the email with text \/([^&quot;]*?)\/$/ do |address, text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="118">
           
           
-          <code class="ruby"># Inspect the Email Contents</code>
+          <code class="ruby">#  open_email(address, :with_text =&gt; Regexp.new(text))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="119">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">#end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="120">
@@ -8289,19 +8313,19 @@
         <li class="never" data-hits="" data-linenumber="121">
           
           
-          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email subject$/ do |text|</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="122">
           
           
-          <code class="ruby">  expect(current_email).to have_subject(text)</code>
+          <code class="ruby"># Inspect the Email Contents</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="123">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="124">
@@ -8313,13 +8337,13 @@
         <li class="never" data-hits="" data-linenumber="125">
           
           
-          <code class="ruby">Then /^(?:I|they) should see \/([^&quot;]*?)\/ in the email subject$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email subject$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="126">
           
           
-          <code class="ruby">  expect(current_email).to have_subject(Regexp.new(text))</code>
+          <code class="ruby">  expect(current_email).to have_subject(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="127">
@@ -8337,13 +8361,13 @@
         <li class="never" data-hits="" data-linenumber="129">
           
           
-          <code class="ruby">Then /^(?:I|they) should not see &quot;([^&quot;]*?)&quot; in the email subject$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should see \/([^&quot;]*?)\/ in the email subject$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="130">
           
           
-          <code class="ruby">  expect(current_email).not_to have_subject(text)</code>
+          <code class="ruby">  expect(current_email).to have_subject(Regexp.new(text))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="131">
@@ -8361,13 +8385,13 @@
         <li class="never" data-hits="" data-linenumber="133">
           
           
-          <code class="ruby">Then /^(?:I|they) should not see \/([^&quot;]*?)\/ in the email subject$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should not see &quot;([^&quot;]*?)&quot; in the email subject$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="134">
           
           
-          <code class="ruby">  expect(current_email).not_to have_subject(Regexp.new(text))</code>
+          <code class="ruby">  expect(current_email).not_to have_subject(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="135">
@@ -8385,13 +8409,13 @@
         <li class="never" data-hits="" data-linenumber="137">
           
           
-          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email body$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should not see \/([^&quot;]*?)\/ in the email subject$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="138">
           
           
-          <code class="ruby">  expect(current_email.default_part_body.to_s).to include(text)</code>
+          <code class="ruby">  expect(current_email).not_to have_subject(Regexp.new(text))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="139">
@@ -8409,13 +8433,13 @@
         <li class="never" data-hits="" data-linenumber="141">
           
           
-          <code class="ruby">Then /^(?:I|they) should not see &quot;([^&quot;]*?)&quot; in the email body$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email body$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="142">
           
           
-          <code class="ruby">  expect(current_email.default_part_body.to_s).not_to include(text)</code>
+          <code class="ruby">  expect(current_email.default_part_body.to_s).to include(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="143">
@@ -8433,25 +8457,25 @@
         <li class="never" data-hits="" data-linenumber="145">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">Then /^(?:I|they) should not see &quot;([^&quot;]*?)&quot; in the email body$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="146">
           
           
-          <code class="ruby">Then /^(?:I|they) should not see \/([^&quot;]*?)\/ in the email body$/ do |text|</code>
+          <code class="ruby">  expect(current_email.default_part_body.to_s).not_to include(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="147">
           
           
-          <code class="ruby">  expect(current_email.default_part_body.to_s).not_to match Regexp.new(text)</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="148">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="149">
@@ -8463,13 +8487,13 @@
         <li class="never" data-hits="" data-linenumber="150">
           
           
-          <code class="ruby">Then /^(?:I|they) should see the email delivered from &quot;([^&quot;]*?)&quot;$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should not see \/([^&quot;]*?)\/ in the email body$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="151">
           
           
-          <code class="ruby">  expect(current_email).to be_delivered_from(text)</code>
+          <code class="ruby">  expect(current_email.default_part_body.to_s).not_to match Regexp.new(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="152">
@@ -8487,13 +8511,13 @@
         <li class="never" data-hits="" data-linenumber="154">
           
           
-          <code class="ruby">Then /^(?:I|they) should see the email reply to &quot;([^&quot;]*?)&quot;$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should see the email delivered from &quot;([^&quot;]*?)&quot;$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="155">
           
           
-          <code class="ruby">  expect(current_email).to have_reply_to(text)</code>
+          <code class="ruby">  expect(current_email).to be_delivered_from(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="156">
@@ -8511,13 +8535,13 @@
         <li class="never" data-hits="" data-linenumber="158">
           
           
-          <code class="ruby">Then /^(?:I|they) should see &quot;([^\&quot;]*)&quot; in the email &quot;([^&quot;]*?)&quot; header$/ do |text, name|</code>
+          <code class="ruby">Then /^(?:I|they) should see the email reply to &quot;([^&quot;]*?)&quot;$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="159">
           
           
-          <code class="ruby">  expect(current_email).to have_header(name, text)</code>
+          <code class="ruby">  expect(current_email).to have_reply_to(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="160">
@@ -8535,13 +8559,13 @@
         <li class="never" data-hits="" data-linenumber="162">
           
           
-          <code class="ruby">Then /^(?:I|they) should see \/([^\&quot;]*)\/ in the email &quot;([^&quot;]*?)&quot; header$/ do |text, name|</code>
+          <code class="ruby">Then /^(?:I|they) should see &quot;([^\&quot;]*)&quot; in the email &quot;([^&quot;]*?)&quot; header$/ do |text, name|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="163">
           
           
-          <code class="ruby">  expect(current_email).to have_header(name, Regexp.new(text))</code>
+          <code class="ruby">  expect(current_email).to have_header(name, text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="164">
@@ -8559,13 +8583,13 @@
         <li class="never" data-hits="" data-linenumber="166">
           
           
-          <code class="ruby">Then /^I should see it is a multi\-part email$/ do</code>
+          <code class="ruby">Then /^(?:I|they) should see \/([^\&quot;]*)\/ in the email &quot;([^&quot;]*?)&quot; header$/ do |text, name|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="167">
           
           
-          <code class="ruby">    expect(current_email).to be_multipart</code>
+          <code class="ruby">  expect(current_email).to have_header(name, Regexp.new(text))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="168">
@@ -8583,13 +8607,13 @@
         <li class="never" data-hits="" data-linenumber="170">
           
           
-          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email html part body$/ do |text|</code>
+          <code class="ruby">Then /^I should see it is a multi\-part email$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="171">
           
           
-          <code class="ruby">    expect(current_email.html_part.body.to_s).to include(text)</code>
+          <code class="ruby">    expect(current_email).to be_multipart</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="172">
@@ -8607,13 +8631,13 @@
         <li class="never" data-hits="" data-linenumber="174">
           
           
-          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email text part body$/ do |text|</code>
+          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email html part body$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="175">
           
           
-          <code class="ruby">    expect(current_email.text_part.body.to_s).to include(text)</code>
+          <code class="ruby">    expect(current_email.html_part.body.to_s).to include(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="176">
@@ -8631,19 +8655,19 @@
         <li class="never" data-hits="" data-linenumber="178">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">Then /^(?:I|they) should see &quot;([^&quot;]*?)&quot; in the email text part body$/ do |text|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="179">
           
           
-          <code class="ruby"># Inspect the Email Attachments</code>
+          <code class="ruby">    expect(current_email.text_part.body.to_s).to include(text)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="180">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="181">
@@ -8655,19 +8679,19 @@
         <li class="never" data-hits="" data-linenumber="182">
           
           
-          <code class="ruby">Then /^(?:I|they) should see (an|no|\d+) attachments? with the email$/ do |amount|</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="183">
           
           
-          <code class="ruby">  expect(current_email_attachments.size).to eql parse_email_count(amount)</code>
+          <code class="ruby"># Inspect the Email Attachments</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="184">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="185">
@@ -8679,13 +8703,13 @@
         <li class="never" data-hits="" data-linenumber="186">
           
           
-          <code class="ruby">Then /^there should be (an|no|\d+) attachments? named &quot;([^&quot;]*?)&quot;$/ do |amount, filename|</code>
+          <code class="ruby">Then /^(?:I|they) should see (an|no|\d+) attachments? with the email$/ do |amount|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="187">
           
           
-          <code class="ruby">  expect(current_email_attachments.select { |a| a.filename == filename }.size).to eql parse_email_count(amount)</code>
+          <code class="ruby">  expect(current_email_attachments.size).to eql parse_email_count(amount)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="188">
@@ -8703,13 +8727,13 @@
         <li class="never" data-hits="" data-linenumber="190">
           
           
-          <code class="ruby">Then /^attachment (\d+) should be named &quot;([^&quot;]*?)&quot;$/ do |index, filename|</code>
+          <code class="ruby">Then /^there should be (an|no|\d+) attachments? named &quot;([^&quot;]*?)&quot;$/ do |amount, filename|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="191">
           
           
-          <code class="ruby">  expect(current_email_attachments[(index.to_i - 1)].filename).to eql filename</code>
+          <code class="ruby">  expect(current_email_attachments.select { |a| a.filename == filename }.size).to eql parse_email_count(amount)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="192">
@@ -8727,13 +8751,13 @@
         <li class="never" data-hits="" data-linenumber="194">
           
           
-          <code class="ruby">Then /^there should be (an|no|\d+) attachments? of type &quot;([^&quot;]*?)&quot;$/ do |amount, content_type|</code>
+          <code class="ruby">Then /^attachment (\d+) should be named &quot;([^&quot;]*?)&quot;$/ do |index, filename|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="195">
           
           
-          <code class="ruby">  expect(current_email_attachments.select { |a| a.content_type.include?(content_type) }.size).to eql parse_email_count(amount)</code>
+          <code class="ruby">  expect(current_email_attachments[(index.to_i - 1)].filename).to eql filename</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="196">
@@ -8751,13 +8775,13 @@
         <li class="never" data-hits="" data-linenumber="198">
           
           
-          <code class="ruby">Then /^attachment (\d+) should be of type &quot;([^&quot;]*?)&quot;$/ do |index, content_type|</code>
+          <code class="ruby">Then /^there should be (an|no|\d+) attachments? of type &quot;([^&quot;]*?)&quot;$/ do |amount, content_type|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="199">
           
           
-          <code class="ruby">  expect(current_email_attachments[(index.to_i - 1)].content_type).to include(content_type)</code>
+          <code class="ruby">  expect(current_email_attachments.select { |a| a.content_type.include?(content_type) }.size).to eql parse_email_count(amount)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="200">
@@ -8775,49 +8799,49 @@
         <li class="never" data-hits="" data-linenumber="202">
           
           
-          <code class="ruby">Then /^all attachments should not be blank$/ do</code>
+          <code class="ruby">Then /^attachment (\d+) should be of type &quot;([^&quot;]*?)&quot;$/ do |index, content_type|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="203">
           
           
-          <code class="ruby">  current_email_attachments.each do |attachment|</code>
+          <code class="ruby">  expect(current_email_attachments[(index.to_i - 1)].content_type).to include(content_type)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="204">
           
           
-          <code class="ruby">    expect(attachment.read.size).to_not eql 0</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="205">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="206">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">Then /^all attachments should not be blank$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="207">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  current_email_attachments.each do |attachment|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="208">
           
           
-          <code class="ruby">Then /^show me a list of email attachments$/ do</code>
+          <code class="ruby">    expect(attachment.read.size).to_not eql 0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="209">
           
           
-          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_email_attachments_list(current_email)</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="210">
@@ -8835,19 +8859,19 @@
         <li class="never" data-hits="" data-linenumber="212">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">Then /^show me a list of email attachments$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="213">
           
           
-          <code class="ruby"># Interact with Email Contents</code>
+          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_email_attachments_list(current_email)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="214">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="215">
@@ -8859,19 +8883,19 @@
         <li class="never" data-hits="" data-linenumber="216">
           
           
-          <code class="ruby">When /^(?:I|they|&quot;([^&quot;]*?)&quot;) follows? &quot;([^&quot;]*?)&quot; in the email$/ do |address, link|</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="217">
           
           
-          <code class="ruby">  visit_in_email(link, address)</code>
+          <code class="ruby"># Interact with Email Contents</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="218">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="219">
@@ -8883,13 +8907,13 @@
         <li class="never" data-hits="" data-linenumber="220">
           
           
-          <code class="ruby">When /^(?:I|they) click the first link in the email$/ do</code>
+          <code class="ruby">When /^(?:I|they|&quot;([^&quot;]*?)&quot;) follows? &quot;([^&quot;]*?)&quot; in the email$/ do |address, link|</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="221">
           
           
-          <code class="ruby">  click_first_link_in_email</code>
+          <code class="ruby">  visit_in_email(link, address)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="222">
@@ -8907,25 +8931,25 @@
         <li class="never" data-hits="" data-linenumber="224">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby">When /^(?:I|they) click the first link in the email$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="225">
           
           
-          <code class="ruby"># Debugging</code>
+          <code class="ruby">  click_first_link_in_email</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="226">
           
           
-          <code class="ruby"># These only work with Rails and OSx ATM since EmailViewer uses RAILS_ROOT and OSx&#39;s &#39;open&#39; command.</code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="227">
           
           
-          <code class="ruby"># Patches accepted. ;)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="228">
@@ -8937,25 +8961,25 @@
         <li class="never" data-hits="" data-linenumber="229">
           
           
-          <code class="ruby"></code>
+          <code class="ruby"># Debugging</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="230">
           
           
-          <code class="ruby">Then /^save and open current email$/ do</code>
+          <code class="ruby"># These only work with Rails and OSx ATM since EmailViewer uses RAILS_ROOT and OSx&#39;s &#39;open&#39; command.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="231">
           
           
-          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_email(current_email)</code>
+          <code class="ruby"># Patches accepted. ;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="232">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="233">
@@ -8967,13 +8991,13 @@
         <li class="never" data-hits="" data-linenumber="234">
           
           
-          <code class="ruby">Then /^save and open all text emails$/ do</code>
+          <code class="ruby">Then /^save and open current email$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="235">
           
           
-          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_all_text_emails</code>
+          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_email(current_email)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="236">
@@ -8991,13 +9015,13 @@
         <li class="never" data-hits="" data-linenumber="238">
           
           
-          <code class="ruby">Then /^save and open all html emails$/ do</code>
+          <code class="ruby">Then /^save and open all text emails$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="239">
           
           
-          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_all_html_emails</code>
+          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_all_text_emails</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="240">
@@ -9015,13 +9039,13 @@
         <li class="never" data-hits="" data-linenumber="242">
           
           
-          <code class="ruby">Then /^save and open all raw emails$/ do</code>
+          <code class="ruby">Then /^save and open all html emails$/ do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="243">
           
           
-          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_all_raw_emails</code>
+          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_all_html_emails</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="244">
@@ -9031,6 +9055,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="245">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="246">
+          
+          
+          <code class="ruby">Then /^save and open all raw emails$/ do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="247">
+          
+          
+          <code class="ruby">  EmailSpec::EmailViewer::save_and_open_all_raw_emails</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="248">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="249">
           
           
           <code class="ruby">=end</code>
