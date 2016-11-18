@@ -7,7 +7,7 @@
 Iteration Checkpoint:
 https://boiling-fjord-19462.herokuapp.com/
 Username: toni@gmail.com
-Password: toni
+Password: password
 
 https://itph-169.herokuapp.com/
 

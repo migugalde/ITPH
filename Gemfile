@@ -15,8 +15,6 @@ gem 'haml'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -63,6 +61,7 @@ group :test do
   gem 'factory_girl_rails' # if using FactoryGirl
   gem 'metric_fu'        # collect code metrics
   gem "codeclimate-test-reporter", "1.0.0.pre.rc2"
+  gem 'email_spec'
 end
 
 group :production do
@@ -72,3 +71,4 @@ group :production do
 end
 
 gem 'google-drive'
+gem 'figaro'

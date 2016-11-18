@@ -19,7 +19,6 @@ class UsersController < ApplicationController
   end
 
   def update
-    byebug
 	  @user = current_user
 	  if @user.update(user_params)
 		  flash[:notice] = "Successfully edited information!"
