@@ -13,12 +13,15 @@
     Email:
     <%= @client.email %>
   </li>
+</ul>
   
-  <% if @client_index == -1 %>
-    <li>
-      Client has not filled out intake form.
-    </li>
-  <% else %>
+<% if @client_index == -1 %>
+  <h3>Client has not filled out intake form.</h3>
+<% else %>
+<h3>Intake Form Results:</h3>
+  <h4>Last filled out on <%= @spreadsheet[@client_index, 1].split(" ")[0] %>
+    at <%= @spreadsheet[@client_index, 1].split(" ")[1] %> </h4>
+  <ul id="details">
     <% for i in 2..@spreadsheet.num_cols do %>
       <li>
         <% if @spreadsheet[1, i][-1] != "?" %>
@@ -34,8 +37,8 @@
       </li>
     <% end %>
   <% end %>
-  
 </ul>
+
 <h3>Upcoming Appointments:</h3>
 
 <% flash.each do |key, value| %>
