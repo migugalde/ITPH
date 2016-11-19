@@ -6,6 +6,7 @@
 
 Iteration Checkpoint & Client Website:
 https://inthepottershand.herokuapp.com/
+
 Username: toni@gmail.com
 Password: password
 
