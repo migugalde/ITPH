@@ -4,20 +4,14 @@
 
 [![Build Status](https://travis-ci.org/msmith3/ITPH.svg?branch=master)](https://travis-ci.org/msmith3/ITPH)
 
-Iteration Checkpoint:
-https://boiling-fjord-19462.herokuapp.com/
+Iteration Checkpoint & Client Website:
+https://inthepottershand.herokuapp.com/
 Username: toni@gmail.com
 Password: password
-
-https://itph-169.herokuapp.com/
 
 https://www.pivotaltracker.com/n/projects/1882909
 
 Thanks to https://www.driftingruby.com/episodes/fullcalendar-events-and-scheduling who created a great starting point for including Fullcalendar.io in our app!
-
-Client Website:
-
-https://inthepottershand.herokuapp.com/
 
 In the Potter's Hands hopes to provide counseling and community to those who need it.
 
