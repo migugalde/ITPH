@@ -45,7 +45,7 @@ When /^I send the email for the event "([^"]*?)"$/ do |event_title|
   event.clients.each do |client|
     @email = EventMailer.appointment_notification(event, client).deliver_now()
   end
-  expect(@email).to deliver_from("533petersave@gmail.com")
+  expect(@email).to deliver_from(ENV["FROM_EMAIL"])
 end
 
 When /^I send the cancellation email for the event "([^"]*?)"$/ do |event_title|
@@ -53,7 +53,7 @@ When /^I send the cancellation email for the event "([^"]*?)"$/ do |event_title|
   event.clients.each do |client|
     @email = EventMailer.appointment_cancel(event, client).deliver_now()
   end
-  expect(@email).to deliver_from("533petersave@gmail.com")
+  expect(@email).to deliver_from(ENV["FROM_EMAIL"])
 end
 
 Given /^(?:a clear email queue|no emails have been sent)$/ do

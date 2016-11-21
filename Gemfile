@@ -72,3 +72,4 @@ end
 
 gem 'google-drive'
 gem 'figaro'
+gem 'postmark-rails'
