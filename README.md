@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/msmith3/ITPH.svg?branch=master)](https://travis-ci.org/msmith3/ITPH)
 
 Iteration Checkpoint & Client Website:
-https://inthepottershand.herokuapp.com/
+https://inthepottershands.herokuapp.com/
 
 Username: toni@gmail.com
 Password: password
