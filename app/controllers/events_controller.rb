@@ -19,6 +19,12 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
+    if params[:new_name] && params[:new_email]
+      new_client = Client.create(:name => params[:new_name], :email => params[:new_email])
+      puts "LOOK HERE"
+      puts new_client.name
+      @events.clients << new_client
+    end
     @event.save
     begin
       @event.clients.each do |client|
@@ -31,6 +37,13 @@ class EventsController < ApplicationController
 
   def update
     @event.update(event_params)
+    begin
+      @event.clients.each do |client|
+        EventMailer.appointment_notification(@event, client).deliver_later
+      end
+    rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
+      flash[:success] ="There was an error with the email server. Please try again."
+    end
   end
 
   def destroy
@@ -50,6 +63,6 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :client_ids => [], :user_ids => [])
     end
 end

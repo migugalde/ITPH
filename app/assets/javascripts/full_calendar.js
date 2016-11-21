@@ -10,11 +10,7 @@ initialize_calendar = function() {
       },
       selectable: true,
       selectHelper: true,
-      // if ($.inArray(session[:user_id], event.users) {
-      //   editable: true;
-      // } else {
-      //   editable: false;
-      // }
+      //timezoneParam: "America/Los_Angeles",
       editable: true,
       eventLimit: true,
       events: '/events.json',
