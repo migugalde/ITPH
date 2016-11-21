@@ -42,13 +42,17 @@ end
 #
 When /^I send the email for the event "([^"]*?)"$/ do |event_title|
   event = Event.find_by title: event_title
-  @email = EventMailer.appointment_notification(event).deliver_now!
+  event.clients.each do |client|
+    @email = EventMailer.appointment_notification(event, client).deliver_now()
+  end
   expect(@email).to deliver_from("533petersave@gmail.com")
 end
 
 When /^I send the cancellation email for the event "([^"]*?)"$/ do |event_title|
   event = Event.find_by title: event_title
-  @email = EventMailer.appointment_cancel(event).deliver_now!
+  event.clients.each do |client|
+    @email = EventMailer.appointment_cancel(event, client).deliver_now()
+  end
   expect(@email).to deliver_from("533petersave@gmail.com")
 end
 
