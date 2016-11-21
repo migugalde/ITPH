@@ -21,12 +21,7 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
     unless @event.new_name.blank? || @event.new_email.blank?
       new_client = Client.create(name: @event.new_name, email: @event.new_email)
-      puts "LOOK HERE"
-      puts new_client.name
       @event.clients << new_client
-    else
-      puts "FAIL"
-      puts @event.new_name
     end
     @event.save
     begin
@@ -53,6 +48,7 @@ class EventsController < ApplicationController
     @event.destroy
     begin
       @event.clients.each do |client|
+        puts client.name
         EventMailer.appointment_cancel(@event, client).deliver_later(queue: "low")
       end
     rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
@@ -66,6 +62,6 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :recurring, :client_ids => [], :user_ids => [])
     end
 end
