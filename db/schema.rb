@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161116014856) do
+ActiveRecord::Schema.define(version: 20161121063454) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20161116014856) do
     t.string   "color"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "new_name"
+    t.string   "new_email"
   end
 
   create_table "events_users", id: false, force: :cascade do |t|

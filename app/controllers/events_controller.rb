@@ -19,11 +19,14 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
-    if params[:new_name] && params[:new_email]
-      new_client = Client.create(:name => params[:new_name], :email => params[:new_email])
+    unless @event.new_name.blank? || @event.new_email.blank?
+      new_client = Client.create(name: @event.new_name, email: @event.new_email)
       puts "LOOK HERE"
       puts new_client.name
-      @events.clients << new_client
+      @event.clients << new_client
+    else
+      puts "FAIL"
+      puts @event.new_name
     end
     @event.save
     begin
