@@ -11,9 +11,9 @@ engines:
   csslint:
     enabled: true
   duplication:
-  	enabled: true
+    enabled: true
     config:
-    	languages:
+      languages:
       - ruby
       	#mass_threshold: 30
       - javascript
