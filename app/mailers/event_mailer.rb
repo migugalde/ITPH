@@ -19,7 +19,7 @@ class EventMailer < ApplicationMailer
     return @counselors
   end
 
-  #NOTE: this does one counselor, one client 
+  #NOTE: this does one counselor, one client
   def appointment_notification(event, client)
     @event = event
     @counselors = return_counselor_lists(@event.users)

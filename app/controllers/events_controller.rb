@@ -23,13 +23,17 @@ class EventsController < ApplicationController
       new_client = Client.create(name: @event.new_name, email: @event.new_email)
       @event.clients << new_client
     end
-    @event.save
-    begin
-      @event.clients.each do |client|
-        EventMailer.appointment_notification(@event, client).deliver_later(queue: "high")
+    if @event.valid?
+      @event.save
+      begin
+        @event.clients.each do |client|
+          EventMailer.appointment_notification(@event, client).deliver_later(queue: "high")
+        end
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
+        flash[:success] ="There was an error with the email server. No email was sent."
       end
-    rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
-      flash[:success] ="There was an error with the email server. Please try again."
+    else
+      flash[:success] ="I'm sorry, that is not a valid date. Please try again"
     end
   end
 
