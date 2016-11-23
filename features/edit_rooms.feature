@@ -32,6 +32,6 @@ Scenario: Editing the rooms name
 Scenario: Deleting existing room
   pending
   Given I press "Delete"
-  I should see a new popup
+  Then I should see a new popup
   And I press "Yes"
   Then a room with name "Room 1" should not exist
