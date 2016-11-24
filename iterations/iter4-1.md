@@ -30,3 +30,8 @@ Feature: Edit existing rooms
 	Since the event calendar will have many events
 	I want to be able to filter the events based on room
 	And I want to be able to filter events based on whether I am involved
+
+Feature: Scheduling an Appointment
+	As a counselor
+	So that I can schedule an appointment with my client
+	I want to quickly book an empty room
