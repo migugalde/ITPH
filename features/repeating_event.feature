@@ -6,7 +6,7 @@ Feature: Scheduling an Appointment
 Background: counselor has been logged in
 	Given the following counselors exist:
 	| name		| email						| password	|	password_confirmation |	phone_number		|	admin	|
-	| Toni		|	toni@gmail.com	| toni123		|	toni123								|	+19218594949		|	true	|
+	| Toni		|	toni@gmail.com	| password		|	password								|	+19218594949		|	true	|
 
 	And the following appointments exist:
 	| Counselor | Type       | Room | Client    	| Date 		| Time 		| Repetition	|
@@ -23,5 +23,14 @@ Scenario: I want to schedule a weekly, repeating appointment
 	And I fill in "Date" with "12.21.2016"
 	And I fill in "Time" with "8:00am"
 	And I fill in "Repetition" with "Weekly"
+	And I press "Confirm"
+	Then I should see "Successfully scheduled counseling appointment"
+
+Scenario: I want to schedule a bi-weekly, repeating appointment
+	When I press "Schedule an appointment"
+	And I fill in "Client Name" with "Miranda Chen"
+	And I fill in "Date" with "12.15.2016"
+	And I fill in "Time" with "10:00am"
+	And I fill in "Repetition" with "Bi-Weekly"
 	And I press "Confirm"
 	Then I should see "Successfully scheduled counseling appointment"
