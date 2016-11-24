@@ -25,6 +25,8 @@ Scenario: I want to schedule a weekly, repeating appointment
 	And I fill in "Repetition" with "Weekly"
 	And I press "Confirm"
 	Then I should see "Successfully scheduled counseling appointment"
+	Then there should be an event with date "12.21.2016" and client "Zany Sue" and time "8:00am"
+	Then there should be an event with date "12.28.2016" and client "Zany Sue" and time "8:00am"
 
 Scenario: I want to schedule a bi-weekly, repeating appointment
 	When I press "Schedule an appointment"
@@ -34,3 +36,5 @@ Scenario: I want to schedule a bi-weekly, repeating appointment
 	And I fill in "Repetition" with "Bi-Weekly"
 	And I press "Confirm"
 	Then I should see "Successfully scheduled counseling appointment"
+	Then there should be an event with date "12.15.2016" and client "Miranda Chen" and time "10:00am"
+	Then there should be an event with date "12.29.2016" and client "Miranda Chen" and time "10:00am"
