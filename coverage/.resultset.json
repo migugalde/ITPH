@@ -1,14 +1,1010 @@
 {
+  "RSpec": {
+    "coverage": {
+      "/home/mrstran/ITPH/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/home/mrstran/ITPH/config/application.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/boot.rb": [
+        1,
+        null,
+        1
+      ],
+      "/home/mrstran/ITPH/config/environments/test.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/assets.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/cookies_serializer.rb": [
+        null,
+        null,
+        1
+      ],
+      "/home/mrstran/ITPH/config/initializers/devise.rb": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/home/mrstran/ITPH/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/session_store.rb": [
+        null,
+        null,
+        1
+      ],
+      "/home/mrstran/ITPH/config/initializers/simple_form.rb": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/simple_form_bootstrap.rb": [
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/config/routes.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/spec/support/factory_girl.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/mrstran/ITPH/spec/models/appointment_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/mrstran/ITPH/spec/models/event_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1479847282
+  },
   "Cucumber Features": {
     "coverage": {
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/environment.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/environment.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         1,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/application.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/application.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
         1,
@@ -42,15 +1038,27 @@
         null,
         null,
         1,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/boot.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/boot.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/environments/test.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/environments/test.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
         null,
@@ -94,7 +1102,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/assets.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/assets.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -107,7 +1119,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/backtrace_silencers.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/backtrace_silencers.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -116,12 +1132,20 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/cookies_serializer.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/cookies_serializer.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/devise.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/devise.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         1,
@@ -397,13 +1421,21 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/filter_parameter_logging.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/filter_parameter_logging.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/inflections.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/inflections.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -421,18 +1453,30 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/mime_types.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/mime_types.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/session_store.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/session_store.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/simple_form.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/simple_form.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         1,
         null,
@@ -599,7 +1643,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/simple_form_bootstrap.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/simple_form_bootstrap.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         1,
         1,
@@ -750,7 +1798,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/wrap_parameters.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/initializers/wrap_parameters.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -766,7 +1818,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/routes.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/config/routes.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         1,
@@ -837,7 +1893,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/models/user.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/models/user.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
         null,
@@ -845,7 +1905,11 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/support/paths.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/support/paths.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -896,7 +1960,11 @@
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/support/selectors.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/support/selectors.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -942,12 +2010,20 @@
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/calendar_steps.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/calendar_steps.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/client_steps.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/client_steps.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
         7,
@@ -994,7 +2070,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/email_steps.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/email_steps.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -1040,12 +2120,16 @@
         1,
         4,
         4,
+        10,
+        null,
         4,
         null,
         null,
         1,
         1,
         1,
+        2,
+        null,
         1,
         null,
         null,
@@ -1241,7 +2325,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/event_steps.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/event_steps.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         4,
         4,
@@ -1264,10 +2352,14 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/user_steps.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/user_steps.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
-        22,
-        33,
+        31,
+        51,
         null,
         null,
         null,
@@ -1301,7 +2393,11 @@
         2,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/web_steps.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/features/step_definitions/web_steps.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         1,
@@ -1373,7 +2469,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/controllers/application_controller.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/application_controller.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         1,
@@ -1394,6 +2494,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
         1,
         null
@@ -1411,6 +2512,25 @@
         null
       ],
       "/home/ubuntu/workspace/ITPH/app/controllers/home_controller.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/home_controller.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         30,
@@ -1437,7 +2557,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/controllers/users_controller.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/users_controller.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         null,
@@ -1472,7 +2596,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/models/client.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -1490,7 +2618,11 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/controllers/clients_controller.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
         1,
@@ -1505,7 +2637,7 @@
         6,
         6,
         6,
-        18,
+        30,
         1,
         1,
         null,
@@ -1536,7 +2668,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/models/event.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/models/event.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         null,
         null,
         null,
@@ -1558,6 +2694,8 @@
         null,
         null,
         null,
+        1,
+        1,
         1,
         1,
         1,
@@ -1580,49 +2718,66 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/mailers/event_mailer.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/mailers/event_mailer.rb": [
+        1,
+        1,
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         null,
-        null,
         1,
-        4,
-        4,
-        4,
-        4,
-        4,
+        12,
+        12,
+        18,
+        12,
         6,
         null,
-        4,
+        12,
+        null,
+        0,
+        null,
+        6,
+        null,
+        null,
+        12,
+        null,
+        null,
+        null,
+        1,
         10,
         10,
         10,
+        10,
+        10,
         null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        2,
         null,
         1,
         2,
         2,
         2,
-        null,
+        2,
+        2,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/mailers/application_mailer.rb": [
+=======
+      "/Users/forestfraser/Desktop/CS 169/ITPH/app/mailers/application_mailer.rb": [
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
         1,
         1,
         1,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1479446214
+=======
+    "timestamp": 1479943240
+>>>>>>> 18d84de7cd35f11125ba34dbd7fde6abd852bde5
   }
 }

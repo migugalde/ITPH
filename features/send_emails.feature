@@ -9,8 +9,8 @@ Background:
 	| Bob		|bob@gmail.com	| bob123	|	bob123	|	+15108295840	|	false	|
 	| Toni Z	|t@gmail.com	| t123456	|	t123456	|	+15108295840	|	false	|
 	And the following events exist:
-	| title			| date 		| room 	|
-	| Zany Dan	| 2115-12-12 | blue	|
+	| title			| date 		| room 	| start | end |
+	| Zany Dan	| 2115-12-12 | blue	| 12:00am | 5:00pm |
 	And the event "Zany Dan" has the following clients: Fred, fred@gmail.com
 	And the event "Zany Dan" has the following counselors: bob@gmail.com
 	Given I am logged in as "bob@gmail.com" with password "bob123"

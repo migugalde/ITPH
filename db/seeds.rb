@@ -2,7 +2,7 @@
 	client = Client.new
  	client.counselor = ['Toni', 'Bob'].sample
  	client.name = Faker::Name.name
- 	client.email = Faker::Internet.email(client.name)
+ 	client.email = "533petersave@gmail.com"
  	client.phone_number = Faker::PhoneNumber.cell_phone
  	client.save
 end

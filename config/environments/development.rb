@@ -14,12 +14,14 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Action mailer config
+=begin  
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.default_options = {from: ENV["FROM_EMAIL"]}
-  config.action_mailer.smtp_settings = {
+config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'gmail.com',
@@ -28,6 +30,21 @@ Rails.application.configure do
     authentication:       'login',
     enable_starttls_auto: true
   }
+=end
+POSTMARK_API_KEY =  ENV["POSTMARK_API_KEY"]
+config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_options = {from: ENV["FROM_EMAIL"]}
+config.action_mailer.smtp_settings = {
+  :address              => "smtp.postmarkapp.com",
+  :port                 => 2525,
+  :domain               => 'itph.org',
+  :user_name            => POSTMARK_API_KEY,
+  :password             => POSTMARK_API_KEY,
+  :authentication       => 'plain',
+  :enable_starttls_auto => true  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

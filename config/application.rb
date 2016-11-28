@@ -31,5 +31,9 @@ module ITPH
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+	config.action_mailer.delivery_method = :postmark
+	config.action_mailer.postmark_settings = { :api_token => "53a2a5d4-1eb5-47a1-aabe-aec59818bbdd" }
+
   end
 end
