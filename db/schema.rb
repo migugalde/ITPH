@@ -75,22 +75,32 @@ ActiveRecord::Schema.define(version: 20161201093934) do
     t.string   "title"
     t.string   "event_type"
     t.string   "date"
-    t.string   "room"
     t.string   "notes"
-    t.boolean  "weekly"
-    t.boolean  "biweekly"
     t.datetime "start"
     t.datetime "end"
-    t.string   "color"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "new_name"
     t.string   "new_email"
+    t.integer  "room_id"
+    t.boolean  "editable",   default: false
   end
+
+  add_index "events", ["room_id"], name: "index_events_on_room_id"
 
   create_table "events_users", id: false, force: :cascade do |t|
     t.integer "user_id",  null: false
     t.integer "event_id", null: false
+  end
+
+  add_index "events_users", ["event_id", "user_id"], name: "index_events_users_on_event_id_and_user_id"
+  add_index "events_users", ["user_id", "event_id"], name: "index_events_users_on_user_id_and_event_id"
+
+  create_table "rooms", force: :cascade do |t|
+    t.string   "name"
+    t.string   "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
