@@ -34,7 +34,6 @@ class EventsController < ApplicationController
     oldE = Marshal::load(Marshal.dump(@event))
     @event.update(event_params)
     create_new_client(@event.new_name, @event.new_email)
-    byebug
     oldE.clients.each do |client|
       unless @event.clients.include? client
         send_cancel(oldE, client)
@@ -81,7 +80,7 @@ class EventsController < ApplicationController
       end
     end
 
-    def send_cancel(event)
+    def send_cancel(event, client)
       begin
           EventMailer.appointment_cancel(event, client).deliver_later(queue: "low")
       rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
@@ -90,7 +89,7 @@ class EventsController < ApplicationController
     end
 
     def create_new_client(name, email)
-      unless name.blank? || email.blank?
+      unless name.blank? || email.blank? || Client.where(["name = ? and email = ?", name, email]).length > 0
         new_client = Client.create(name: name, email: email)
         @event.clients << new_client
       end
