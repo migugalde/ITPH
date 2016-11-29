@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121063454) do
+ActiveRecord::Schema.define(version: 20161124073017) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20161121063454) do
     t.string   "title"
     t.string   "event_type"
     t.string   "date"
-    t.string   "room"
     t.string   "notes"
     t.datetime "start"
     t.datetime "end"
@@ -40,7 +39,10 @@ ActiveRecord::Schema.define(version: 20161121063454) do
     t.datetime "updated_at"
     t.string   "new_name"
     t.string   "new_email"
+    t.integer  "room_id"
   end
+
+  add_index "events", ["room_id"], name: "index_events_on_room_id"
 
   create_table "events_users", id: false, force: :cascade do |t|
     t.integer "user_id",  null: false
@@ -49,6 +51,13 @@ ActiveRecord::Schema.define(version: 20161121063454) do
 
   add_index "events_users", ["event_id", "user_id"], name: "index_events_users_on_event_id_and_user_id"
   add_index "events_users", ["user_id", "event_id"], name: "index_events_users_on_user_id_and_event_id"
+
+  create_table "rooms", force: :cascade do |t|
+    t.string   "name"
+    t.string   "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false

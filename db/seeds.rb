@@ -15,18 +15,24 @@ users.each do |user|
 end
 
 
-color = {'Room 1' => 'red', 'Room 2' => 'black', 'Room 3' => 'blue'}
+rooms = [{:name => 'Room 1', :color => '#FF0000'},
+				{:name => 'Room 2', :color => '#000000'},
+				{:name => 'Room 3', :color => '#0000FF'}]
+
+rooms.each do |room|
+	Room.create!(room)
+end
 
 20.times do
   event = Event.new
   event.title = Faker::Book.title
   event.event_type = ["Meeting", "Group Event"].sample
-  event.room = ['Room 1', 'Room 2', 'Room 3'].sample
+  event.room = Room.all.sample
   event.notes = Faker::Hipster.paragraph
   event.start = Faker::Time.between(7.days.ago, 14.days.from_now + 7.days, :day)
   event.end = event.start + [1,2,3].sample.hours
   event.date = event.start.to_date
-  event.color = color[event.room]
+  event.color = event.room.color
   event.save
 end
 
