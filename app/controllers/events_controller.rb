@@ -34,6 +34,7 @@ class EventsController < ApplicationController
     oldE = Marshal::load(Marshal.dump(@event))
     @event.update(event_params)
     create_new_client(@event.new_name, @event.new_email)
+    byebug
     oldE.clients.each do |client|
       unless @event.clients.include? client
         send_cancel(oldE, client)
@@ -42,7 +43,7 @@ class EventsController < ApplicationController
       end
     end
     @event.clients.each do |client|
-      unless @event.clients.include? client
+      unless oldE.clients.include? client
         send_new(@event, client)
       end
     end
@@ -67,15 +68,15 @@ class EventsController < ApplicationController
     def send_new(event, client)
       begin
           EventMailer.appointment_notification(event, client).deliver_later(queue: "high")
-      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
         flash[:success] ="There was an error with the email server. No email was sent to #{client.name}."
       end
     end
 
     def send_update(event, client)
       begin
-        EventMailer.appointment_update(event, client).deliver_later
-      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
+        EventMailer.appointment_update(event, client).deliver_later(queue: "low")
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
         flash[:success] ="There was an error with the email server. No email was sent to #{client.name}."
       end
     end
@@ -83,7 +84,7 @@ class EventsController < ApplicationController
     def send_cancel(event)
       begin
           EventMailer.appointment_cancel(event, client).deliver_later(queue: "low")
-      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
         flash[:success] ="There was an error with the email server. No email was sent to #{client.name}."
       end
     end
