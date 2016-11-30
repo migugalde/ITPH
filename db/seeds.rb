@@ -10,11 +10,10 @@ end
 users = [{:name => 'Toni', :email => 'toni@gmail.com', :password => 'password', :password_confirmation => 'password',:phone_number => '+2412412414', :admin => true},
             {:name => 'Bob', :email => 'bob@gmail.com', :password => 'password', :password_confirmation => 'password', :phone_number => '+2412412414', :admin => false}]
 
-unless User.find_by(email: "toni@gmail.com")
-  users.each do |user|
-    User.create!(user)
-  end
+users.each do |user|
+  User.create!(user)
 end
+
 
 color = {'Room 1' => 'red', 'Room 2' => 'black', 'Room 3' => 'blue'}
 

@@ -11,7 +11,7 @@
     <%= render "home/navbar" %>
   <% end %>
 	<% flash.each do |name, msg| %>
-	  <div class="alert alert-info"><%= msg %></div>
+	  <div class="alert alert-info alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><%= msg %></div>
 	<% end %>
     <main role="main">
       <div class='container'>
