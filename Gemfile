@@ -22,8 +22,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 gem 'annotate'
-gem 'jquery-ui-rails'
-gem 'jquery-colorpicker-rails'
+gem 'jquery-simplecolorpicker-rails'
 gem 'devise'
 
 gem 'simplecov', :require => false, :group => :test

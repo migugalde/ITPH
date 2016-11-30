@@ -16,5 +16,5 @@
 //= require moment
 //= require fullcalendar
 //= require daterangepicker
-//= require palette-color-picker
+//= require jquery.simplecolorpicker.js
 //= require_tree .
