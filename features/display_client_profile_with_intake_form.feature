@@ -26,7 +26,6 @@ Scenario: display information from already filled out google intake form
     Then I should see "Intake Information for Hannah Tran"
     And I should see "Gender: Female"
     And I should see "Mailing Address: 533 peters"
-    And I should see "How did you hear about ITPH? facebook"
     And I should see "Emergency Contact's Phone Number: Client did not answer prompt."
     And I should see "May we send you emails related to our programs and activities here at In the Potters Hands? I agree."
     
