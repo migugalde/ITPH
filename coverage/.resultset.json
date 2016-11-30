@@ -1,6 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/environment.rb": [
@@ -10,12 +11,16 @@
 =======
       "/home/mrstran/ITPH/config/environment.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/environment.rb": [
+>>>>>>> implemented basic validations
         null,
         1,
         null,
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/application.rb": [
@@ -25,6 +30,9 @@
 =======
       "/home/mrstran/ITPH/config/application.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/application.rb": [
+>>>>>>> implemented basic validations
         1,
         null,
         1,
@@ -65,6 +73,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/boot.rb": [
@@ -74,10 +83,14 @@
 =======
       "/home/mrstran/ITPH/config/boot.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/boot.rb": [
+>>>>>>> implemented basic validations
         1,
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/environments/test.rb": [
@@ -87,6 +100,9 @@
 =======
       "/home/mrstran/ITPH/config/environments/test.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/environments/test.rb": [
+>>>>>>> implemented basic validations
         1,
         null,
         null,
@@ -130,6 +146,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/assets.rb": [
@@ -139,6 +156,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/assets.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/assets.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -151,6 +171,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/backtrace_silencers.rb": [
@@ -160,6 +181,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/backtrace_silencers.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/backtrace_silencers.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -168,6 +192,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/cookies_serializer.rb": [
@@ -177,10 +202,14 @@
 =======
       "/home/mrstran/ITPH/config/initializers/cookies_serializer.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/cookies_serializer.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/devise.rb": [
@@ -190,6 +219,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/devise.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/devise.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         1,
@@ -465,6 +497,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/filter_parameter_logging.rb": [
@@ -474,11 +507,15 @@
 =======
       "/home/mrstran/ITPH/config/initializers/filter_parameter_logging.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/filter_parameter_logging.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/inflections.rb": [
@@ -488,6 +525,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/inflections.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/inflections.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -505,6 +545,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/mime_types.rb": [
@@ -514,11 +555,15 @@
 =======
       "/home/mrstran/ITPH/config/initializers/mime_types.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/mime_types.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/session_store.rb": [
@@ -528,10 +573,14 @@
 =======
       "/home/mrstran/ITPH/config/initializers/session_store.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/session_store.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/simple_form.rb": [
@@ -541,6 +590,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/simple_form.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/simple_form.rb": [
+>>>>>>> implemented basic validations
         null,
         1,
         null,
@@ -707,6 +759,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/simple_form_bootstrap.rb": [
@@ -716,6 +769,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/simple_form_bootstrap.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/simple_form_bootstrap.rb": [
+>>>>>>> implemented basic validations
         null,
         1,
         1,
@@ -866,6 +922,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/initializers/wrap_parameters.rb": [
@@ -875,6 +932,9 @@
 =======
       "/home/mrstran/ITPH/config/initializers/wrap_parameters.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/initializers/wrap_parameters.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -890,6 +950,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/config/routes.rb": [
@@ -899,6 +960,9 @@
 =======
       "/home/mrstran/ITPH/config/routes.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/config/routes.rb": [
+>>>>>>> implemented basic validations
         1,
         1,
         1,
@@ -969,6 +1033,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/models/user.rb": [
@@ -978,13 +1043,19 @@
 =======
       "/home/mrstran/ITPH/app/models/user.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/models/user.rb": [
+>>>>>>> implemented basic validations
         1,
         null,
         null,
+        1,
+        1,
         1,
         1,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/support/paths.rb": [
@@ -994,6 +1065,9 @@
 =======
       "/home/mrstran/ITPH/features/support/paths.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/features/support/paths.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1007,10 +1081,17 @@
         null,
         null,
         1,
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         26,
         null,
         null,
         9,
+=======
+        52,
+        null,
+        null,
+        25,
+>>>>>>> implemented basic validations
         null,
         1,
         null,
@@ -1044,6 +1125,7 @@
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/support/selectors.rb": [
@@ -1053,6 +1135,9 @@
 =======
       "/home/mrstran/ITPH/features/support/selectors.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/features/support/selectors.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1098,6 +1183,7 @@
         null,
         1
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/calendar_steps.rb": [
@@ -1107,10 +1193,14 @@
 =======
       "/home/mrstran/ITPH/features/step_definitions/calendar_steps.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/calendar_steps.rb": [
+>>>>>>> implemented basic validations
         1,
         1,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/client_steps.rb": [
@@ -1124,6 +1214,13 @@
         null,
         3,
         12,
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/client_steps.rb": [
+        1,
+        null,
+        24,
+        47,
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1166,6 +1263,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/email_steps.rb": [
@@ -1175,6 +1273,9 @@
 =======
       "/home/mrstran/ITPH/features/step_definitions/email_steps.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/email_steps.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1218,36 +1319,36 @@
         null,
         null,
         1,
-        4,
-        4,
-        10,
+        0,
+        0,
+        0,
         null,
-        4,
-        null,
-        null,
-        1,
-        1,
-        1,
-        2,
-        null,
-        1,
+        0,
         null,
         null,
         1,
-        4,
+        0,
+        0,
+        0,
         null,
-        null,
-        null,
-        null,
+        0,
         null,
         null,
         1,
-        1,
+        0,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         1,
-        5,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         null,
@@ -1425,6 +1526,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/event_steps.rb": [
@@ -1434,6 +1536,9 @@
 =======
       "/home/mrstran/ITPH/features/step_definitions/event_steps.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/event_steps.rb": [
+>>>>>>> implemented basic validations
         1,
         4,
         4,
@@ -1441,21 +1546,22 @@
         null,
         null,
         1,
-        6,
-        6,
-        6,
-        8,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
         1,
-        5,
-        5,
-        5,
-        12,
+        4,
+        4,
+        4,
+        4,
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/user_steps.rb": [
@@ -1468,6 +1574,12 @@
         1,
         16,
         25,
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/user_steps.rb": [
+        1,
+        50,
+        70,
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1501,6 +1613,7 @@
         0,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/features/step_definitions/web_steps.rb": [
@@ -1510,6 +1623,9 @@
 =======
       "/home/mrstran/ITPH/features/step_definitions/web_steps.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/web_steps.rb": [
+>>>>>>> implemented basic validations
         1,
         1,
         1,
@@ -1517,7 +1633,11 @@
         null,
         null,
         1,
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         18,
+=======
+        41,
+>>>>>>> implemented basic validations
         null,
         null,
         1,
@@ -1549,8 +1669,13 @@
         null,
         null,
         1,
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         9,
         9,
+=======
+        21,
+        21,
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1581,6 +1706,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/controllers/application_controller.rb": [
@@ -1590,6 +1716,9 @@
 =======
       "/home/mrstran/ITPH/app/controllers/application_controller.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/controllers/application_controller.rb": [
+>>>>>>> implemented basic validations
         1,
         1,
         1,
@@ -1606,12 +1735,19 @@
         1,
         null,
         1,
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         34,
         null,
         null
       ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+        58,
+        null,
+        null
+      ],
+>>>>>>> implemented basic validations
       "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
         1,
         null
@@ -1629,6 +1765,7 @@
         null
       ],
       "/home/ubuntu/workspace/ITPH/app/controllers/home_controller.rb": [
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 =======
       "/Users/forestfraser/Desktop/CS 169/ITPH/app/helpers/application_helper.rb": [
 =======
@@ -1659,6 +1796,11 @@
         1,
         1,
         21,
+=======
+        1,
+        1,
+        22,
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1682,6 +1824,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/controllers/users_controller.rb": [
@@ -1691,6 +1834,9 @@
 =======
       "/home/mrstran/ITPH/app/controllers/users_controller.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/controllers/users_controller.rb": [
+>>>>>>> implemented basic validations
         1,
         1,
         null,
@@ -1725,6 +1871,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
@@ -1734,6 +1881,9 @@
 =======
       "/home/mrstran/ITPH/app/models/client.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1747,10 +1897,14 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
         1,
         1,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
@@ -1760,6 +1914,9 @@
 =======
       "/home/mrstran/ITPH/app/controllers/clients_controller.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
+>>>>>>> implemented basic validations
         1,
         null,
         1,
@@ -1805,6 +1962,7 @@
         null,
         null
       ],
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/models/event.rb": [
@@ -1814,6 +1972,9 @@
 =======
       "/home/mrstran/ITPH/app/models/event.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/models/event.rb": [
+>>>>>>> implemented basic validations
         null,
         null,
         null,
@@ -1858,6 +2019,7 @@
         0,
         null,
         null
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
       ],
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1940,5 +2102,10 @@
 =======
     "timestamp": 1480650288
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      ]
+    },
+    "timestamp": 1480473007
+>>>>>>> implemented basic validations
   }
 }

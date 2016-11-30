@@ -49,9 +49,6 @@ ActiveRecord::Schema.define(version: 20161121063454) do
     t.integer "event_id", null: false
   end
 
-  add_index "events_users", ["event_id", "user_id"], name: "index_events_users_on_event_id_and_user_id"
-  add_index "events_users", ["user_id", "event_id"], name: "index_events_users_on_user_id_and_event_id"
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false

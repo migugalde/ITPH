@@ -18,18 +18,28 @@ class EventsController < ApplicationController
   end
 
   def create
-      @event = Event.new(event_params)
-      create_new_client(@event.new_name, @event.new_email)
-      if @event.valid?
-        @event.save
-        if @event.event_type == "counseling"
-          @event.clients.each do |client|
-            send_new(@event, client)
-          end
+    @event = Event.new(event_params)
+    if @event.users.blank?
+      @event.users = [current_user]
+    end
+    events = Event.where(start: @event.start..@event.end, end: @event.start..@event.end)
+    events.each do |e|
+      if e.users.include?(current_user)
+        flash[:success] = "Cannot schedule overlapping events"
+        break
+      end
+    end
+    create_new_client(@event.new_name, @event.new_email)
+    if @event.valid?
+      @event.save
+      if @event.event_type == "counseling"
+        @event.clients.each do |client|
+          send_new(@event, client)
         end
       else
         flash[:success] ="I'm sorry, that is not a valid date. Please try again"
       end
+    end
   end
 
   def update
@@ -106,7 +116,12 @@ class EventsController < ApplicationController
     def create_new_client(name, email)
       unless name.blank? || email.blank? || Client.where(["name = ? and email = ?", name, email]).length > 0
         new_client = Client.create(name: name, email: email)
-        @event.clients << new_client
+        if new_client.valid?
+          @event.clients << new_client
+          new_client.users << @event.users
+        else
+          new_client.delete
+          flash[:success] ="New clients need a name and a valid email"
       end
     end
 

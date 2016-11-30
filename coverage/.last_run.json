@@ -1,5 +1,9 @@
 {
   "result": {
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
     "covered_percent": 89.57
+=======
+    "covered_percent": 90.59
+>>>>>>> implemented basic validations
   }
 }
