@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Rooms</h1>
 
 <table id='room_table'>
@@ -13,16 +11,11 @@
 
   <tbody>
     <% @rooms.each do |room| %>
-      <tr>
-        <td><%= room.name %></td>
-        <td><%= room.color %></td>
-        <td><%= link_to 'Edit', edit_room_path(room) %></td>
-        <td><%= link_to 'Delete', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <%= render partial: "room", locals: {room: room} %>
     <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Room', new_room_path%>
+<%= button_to 'New Room', new_room_path, method: :get, :remote => true %>

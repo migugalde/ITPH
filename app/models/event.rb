@@ -38,6 +38,8 @@ class Event < ActiveRecord::Base
     events.each do |event|
       if event.users.include?(user) then
         event.color = '#00FF00'
+      else
+        event.color = event.room.color
       end
     end
     events

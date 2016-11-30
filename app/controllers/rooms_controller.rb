@@ -1,6 +1,7 @@
 class RoomsController < ApplicationController
   before_action :require_admin
   before_action :set_room, only: [:show, :edit, :update, :destroy]
+  before_action :set_colors
 
   # GET /rooms
   # GET /rooms.json
@@ -29,8 +30,9 @@ class RoomsController < ApplicationController
 
     respond_to do |format|
       if @room.save
-        format.html { redirect_to @room, notice: 'Room was successfully created.' }
+        format.html { redirect_to rooms_path, notice: 'Room was successfully created.' }
         format.json { render :show, status: :created, location: @room }
+        format.js
       else
         format.html { render :new }
         format.json { render json: @room.errors, status: :unprocessable_entity }
@@ -43,8 +45,9 @@ class RoomsController < ApplicationController
   def update
     respond_to do |format|
       if @room.update(room_params)
-        format.html { redirect_to @room, notice: 'Room was successfully updated.' }
+        format.html { redirect_to rooms_path, notice: 'Room was successfully updated.' }
         format.json { render :show, status: :ok, location: @room }
+        format.js
       else
         format.html { render :edit }
         format.json { render json: @room.errors, status: :unprocessable_entity }
@@ -63,13 +66,18 @@ class RoomsController < ApplicationController
   end
 
   private
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def room_params
+      params.require(:room).permit(:name, :color)
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_room
       @room = Room.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def room_params
-      params.require(:room).permit(:name, :color)
+    def set_colors
+      @colors = Room.colors
+      @default_color = Room.default_color
     end
 end
