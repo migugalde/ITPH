@@ -15,6 +15,16 @@ initialize_calendar = function() {
       eventLimit: true,
       events: '/events.json',
 
+      eventRender: function eventRender( event, element, view ) {
+        var match = false;
+        $('.calendar_filter').each(function(){
+          if (event.room.name == "Room 1"){
+            match = true;
+          }
+        });
+        return match;
+      },
+
       select: function(start, end) {
         $.getScript('/events/new', function() {
           $('#event_date_range').val(moment(start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(end).format("MM/DD/YYYY HH:mm"))
@@ -50,6 +60,10 @@ initialize_calendar = function() {
         });
       }
     });
+  })
+
+  $('#calendar_filters').on('click',function(){
+    $('.calendar').fullCalendar('rerenderEvents');
   })
 };
 
