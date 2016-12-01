@@ -11,8 +11,9 @@ users = [{:name => 'Toni', :email => 'toni@gmail.com', :password => 'password', 
             {:name => 'Bob', :email => 'bob@gmail.com', :password => 'password', :password_confirmation => 'password', :phone_number => '+2412412414', :admin => false}]
 
 users.each do |user|
-   User.create!(user)
- end
+  User.create!(user)
+end
+
 
 color = {'Room 1' => 'red', 'Room 2' => 'black', 'Room 3' => 'blue'}
 
