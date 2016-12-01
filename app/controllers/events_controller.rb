@@ -10,15 +10,17 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
-    @clients = Client.all
-    @users = User.all
   end
 
   def edit
+    unless Event.find(params[:id]).users.include?(current_user)
+      redirect_to root_path
+    end
   end
 
   def create
     @event = Event.new(event_params)
+<<<<<<< 627a1219d94e70eca9d16c3e08354f7c1a16f3cf
     if @event.users.blank?
       @event.users = [current_user]
     end
@@ -31,6 +33,9 @@ class EventsController < ApplicationController
         break
       end
     end
+=======
+    @event.editable = true;
+>>>>>>> updated room association in forms
     create_new_client(@event.new_name, @event.new_email)
     if @event.valid? and not overlap
       @event.save
@@ -47,6 +52,7 @@ class EventsController < ApplicationController
   def update
     oldE = Marshal::load(Marshal.dump(@event))
     @event.update(event_params)
+    @event.editable = true;
     create_new_client(@event.new_name, @event.new_email)
     if (@event.event_type == "counseling" and oldE.event_type == "counseling")
       oldE.clients.each do |client|
@@ -88,7 +94,7 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :notes, :room, :weekly, :biweekly, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :notes, :room_id, :weekly, :biweekly, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
     end
 
     def send_new(event, client)
