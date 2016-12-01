@@ -10,15 +10,17 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
-    @clients = Client.all
-    @users = User.all
   end
 
   def edit
+    unless Event.find(params[:id]).users.include?(current_user)
+      redirect_to root_path
+    end
   end
 
   def create
     @event = Event.new(event_params)
+    @event.editable = true;
     create_new_client(@event.new_name, @event.new_email)
     if @event.valid?
       @event.save
@@ -33,6 +35,7 @@ class EventsController < ApplicationController
   def update
     oldE = Marshal::load(Marshal.dump(@event))
     @event.update(event_params)
+    @event.editable = true;
     create_new_client(@event.new_name, @event.new_email)
     oldE.clients.each do |client|
       unless @event.clients.include? client
@@ -61,7 +64,7 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :notes, :room, :new_name, :new_email, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :notes, :room_id, :new_name, :new_email, :client_ids => [], :user_ids => [])
     end
 
     def send_new(event, client)
