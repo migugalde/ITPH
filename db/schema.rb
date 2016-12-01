@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161124073017) do
+ActiveRecord::Schema.define(version: 20161201034510) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 20161124073017) do
     t.string   "notes"
     t.datetime "start"
     t.datetime "end"
-    t.string   "color"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "new_name"
     t.string   "new_email"
     t.integer  "room_id"
+    t.boolean  "editable",   default: false
   end
 
   add_index "events", ["room_id"], name: "index_events_on_room_id"

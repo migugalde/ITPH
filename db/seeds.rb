@@ -32,7 +32,6 @@ end
   event.start = Faker::Time.between(7.days.ago, 14.days.from_now + 7.days, :day)
   event.end = event.start + [1,2,3].sample.hours
   event.date = event.start.to_date
-  event.color = event.room.color
   event.save
 end
 
