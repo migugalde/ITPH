@@ -1,5 +1,3 @@
-console.log('testing');
-
 $(document).ready(function() {
     $('.appointment-button').click(function(e, start, end) {
         e.preventDefault();

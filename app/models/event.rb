@@ -36,11 +36,7 @@ class Event < ActiveRecord::Base
   def self.user_events(user, e_start, e_end)
     events = Event.where(start: e_start..e_end)
     events.each do |event|
-      if event.users.include?(user) then
-        event.color = '#00FF00'
-      else
-        event.color = event.room.color
-      end
+      event.editable = event.users.include?(user)
     end
     events
   end

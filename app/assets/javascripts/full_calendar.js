@@ -13,12 +13,28 @@ initialize_calendar = function() {
       //timezoneParam: "America/Los_Angeles",
       editable: true,
       eventLimit: true,
+      eventStartEditable: false,
+      eventEndEditable: false,
       events: '/events.json',
 
+      eventDataTransform: function( eventData ) {
+        console.log(eventData);
+        if (eventData.editable){
+          eventData.borderColor = "#00FF00";
+        }
+        return eventData;
+      },
+
       eventRender: function eventRender( event, element, view ) {
+        //Filter non-personal events
+        if($('#counselor_filter').is(':checked') && !event.editable){
+          console.log('hi')
+          return false;
+        }
+        //Filter based on room
         var match = false;
-        $('.calendar_filter').each(function(){
-          if (event.room.name == "Room 1"){
+        $('.room_filter:checked').each(function(){
+          if ($(this).attr('name') == event.room){
             match = true;
           }
         });
@@ -32,37 +48,25 @@ initialize_calendar = function() {
           $('.start_hidden').val(moment(start).format('YYYY-MM-DD HH:mm'));
           $('.end_hidden').val(moment(end).format('YYYY-MM-DD HH:mm'));
         });
-
         calendar.fullCalendar('unselect');
       },
 
-      eventDrop: function(event, delta, revertFunc) {
-        event_data = {
-          event: {
-            id: event.id,
-            start: event.start.format(),
-            end: event.end.format()
-          }
-        };
-        $.ajax({
-            url: event.update_url,
-            data: event_data,
-            type: 'PATCH'
-        });
-      },
-
       eventClick: function(event, jsEvent, view) {
-          $.getScript(event.edit_url, function() {
-            $('#event_date_range').val(moment(event.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(event.end).format("MM/DD/YYYY HH:mm"))
-            date_range_picker();
-            $('.start_hidden').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
-            $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
-        });
+        if (event.editable){
+            $.getScript(event.edit_url, function() {
+              $('#event_date_range').val(moment(event.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(event.end).format("MM/DD/YYYY HH:mm"))
+              date_range_picker();
+              $('.start_hidden').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
+              $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
+          });
+        }
       }
     });
   })
-
   $('#calendar_filters').on('click',function(){
+    $('.calendar').fullCalendar('rerenderEvents');
+  })
+  $('#counselor_filter').on('click',function(){
     $('.calendar').fullCalendar('rerenderEvents');
   })
 };
