@@ -5,7 +5,7 @@
     <%= f.hint "No client names, please. All counselors can see the Title." %>
     <table class="table-condensed">
         <tr>
-            <th> <%= f.input :type_of_event, selected: "counseling", collection: [[ "Counseling Appt", 'counseling' ], [ "Class", 'class' ], [ "Community Life", 'community_life' ], [ "Bible Study", 'bible_study' ]] %> </th>
+            <th> <%= f.input :event_type, selected: "counseling", collection: [[ "Counseling Appt", 'counseling' ], [ "Class", 'class' ], [ "Community Life", 'community_life' ], [ "Bible Study", 'bible_study' ]] %> </th>
             <th> <%= f.input :room, as: :select, selected: "black", collection: [['Room1','black'], ['Room2','green'], ['Room3','red']] %> </th>
         </tr>
     </table> 

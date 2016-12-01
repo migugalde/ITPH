@@ -22,8 +22,10 @@ class EventsController < ApplicationController
     create_new_client(@event.new_name, @event.new_email)
     if @event.valid?
       @event.save
-      @event.clients.each do |client|
-        send_new(@event, client)
+      if @event.event_type == "counseling"
+        @event.clients.each do |client|
+          send_new(@event, client)
+        end
       end
     else
       flash[:success] ="I'm sorry, that is not a valid date. Please try again"
@@ -34,23 +36,36 @@ class EventsController < ApplicationController
     oldE = Marshal::load(Marshal.dump(@event))
     @event.update(event_params)
     create_new_client(@event.new_name, @event.new_email)
-    oldE.clients.each do |client|
-      unless @event.clients.include? client
-        send_cancel(oldE, client)
-      else
-        send_update(@event, client)
+    if (@event.event_type == "counseling" and oldE.event_type == "counseling")
+      oldE.clients.each do |client|
+        unless @event.clients.include? client
+          send_cancel(oldE, client)
+        else
+          send_update(@event, client)
+        end
       end
     end
-    @event.clients.each do |client|
-      unless oldE.clients.include? client
-        send_new(@event, client)
+    if @event.event_type == "counseling"
+      @event.clients.each do |client|
+        unless oldE.clients.include? client
+          send_new(@event, client)
+        end
+      end
+      if oldE.event_type != "counseling" #no email was sent if it didnt use to be counseling
+        oldE.clients.each do |client|
+          unless @event.clients.include? client
+            send_new(@event, client)
+          end
+        end
       end
     end
   end
 
   def destroy
-    @event.clients.each do |client|
-      send_cancel(@event, client)
+    if @event.event_type == "counseling"
+      @event.clients.each do |client|
+        send_cancel(@event, client)
+      end
     end
     @event.destroy
   end
@@ -61,7 +76,7 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
     end
 
     def send_new(event, client)
