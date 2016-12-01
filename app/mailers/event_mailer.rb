@@ -1,6 +1,20 @@
 class EventMailer < ApplicationMailer
+  include Devise::Mailers::Helpers
+
   @intake_form = ENV["INTAKE_FORM"]
   @office_location  = ENV["OFFICE_LOC"]
+
+  def confirmation_instructions(record)
+    devise_mail(record, :confirmation_instructions)
+  end
+
+  def reset_password_instructions(record)
+    devise_mail(record, :reset_password_instructions)
+  end
+
+  def unlock_instructions(record)
+    devise_mail(record, :unlock_instructions)
+  end
 
   def return_counselor_lists(event_users)
     @counselors = ""
