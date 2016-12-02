@@ -12,6 +12,7 @@
  *
  *= require fullcalendar
  *= require daterangepicker
+ *= require jquery.simplecolorpicker.css
  *= require_tree .
  *= require_self
  */
@@ -39,15 +40,16 @@
    max-height:200px;/* you can change as you need it */
    max-width:auto;
    overflow:auto;/* to get scroll */
-}
-
-tr.header
-{
-    cursor:pointer;
+   padding-left: 10px;
 }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('/assets/bootstrap/glyphicons-halflings-regular.eot');
   src: url('/assets/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('/assets/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.table {
+   border-top:none;
+   border-top-style: bold;
 }

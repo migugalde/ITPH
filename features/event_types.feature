@@ -12,48 +12,33 @@ Background:
 	| name	| counselor	| email 			|
 	| Bob Smith			| Jack 		| bob@smith.net 	|
 	| Fred Astaire		| Toni 		| bob@smith.net 	|
-	Then I am on the home page
-	And I click "Schedule Group Event"
-	And I check "Bob Smith"
+	And the following events exist:
+	| title			| date 			| start | end |
+	| Zany Dan	| 2115-12-12| 12:00am | 5:00pm |
+	And the following rooms exist:
+	| name		| color 	|
+	| Room 1	|	#FF0000	|
+	And the event "Zany Dan" has the following clients: Bob Smith, bob@smith.com
+	And the event "Zany Dan" has the following counselors: t@gmail.com
+	And the event "Zany Dan" belongs the room "Room 1"
+	Given I am logged in as "t@gmail.com" with password "t123456"
+	And I am on the home page
 
 Scenario: I make a class successfully
-	Given I select "type" as "Class"
-	And I save the event
-	Then there should be an event with type "Class" and client "Bob Smith"
+	Given the event "Zany Dan" has type "Class"
+	Then there should be an event with type "Class" and name "Zany Dan"
 
 Scenario: I make a community life meeting successfully
-	Given I select "type" as "Community Life Meeting"
-	And I save the event
-	Then there should be an event with type "Community Life Meeting" and client "Bob Smith"
-
-Scenario: I make a team event successfully
-	Given I select "type" as "Team Event"
-	And I save the event
-	Then there should be an event with type "Team Event" and client "Bob Smith"
+	Given the event "Zany Dan" has type "Community Life"
+	Then there should be an event with type "Community Life" and name "Zany Dan"
 
 Scenario: I make a Bible Study event successfully
-	Given I select "type" as "Community Life Meeting"
-	And I save the event
-	Then there should be an event with type "Community Life Meeting" and client "Bob Smith"
+	Given the event "Zany Dan" has type "Bible Study"
+	Then there should be an event with type "Bible Study" and name "Zany Dan"
 
-Scenario: I make a generic event successfully
-	Given I select "type" as "Other"
-	And I save the event
-	Then there should be an event with type "Other" and client "Bob Smith"
 
-Scenario: I define a different meeting location successfully
-	Given I select "type" as "Other"
-	And I select "location" as "1111 East Bay St, Pleasanton, CA"
-	And I save the event
-	Then there should be an event with type "Other" and client "Bob Smith" and location "1111 East Bay St, Pleasanton, CA"
-
-Scenario: I do not become the clients counselor after creating the event
-	Given there should be an event with type "Other" and client "Bob Smith" and location "1111 East Bay St, Pleasanton, CA"
-	And I click "Client"
-	Then I should see the counselor for "Bob Smith" is "Jack"
-
-Scenario: I am currently the clients counselor and nothing changes
-	Given there should be an event with type "Other" and client "Fred Astaire" and location "1111 East Bay St, Pleasanton, CA"
-	And I click "Client"
-	Then I should see the counselor for "Bob Smith" is "Jack"
-	Then I should see the counselor for "Fred Astaire" is "Toni"
+Scenario: I make a counseling appt successfully and it sends an email
+	Given the event "Zany Dan" has type "Bible Study"
+	Then there should be an event with type "Bible Study" and name "Zany Dan"
+	When I send the email for the event "Zany Dan"
+	And "bob@smith.com" should receive an email with subject "Appointment reminder and intake form for ITPH"

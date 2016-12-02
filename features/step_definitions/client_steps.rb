@@ -43,3 +43,11 @@ Then(/^I should see no upcoming appointments$/) do
   expect page.should_not have_content "Next Appointment"
 end
 
+And(/^the client "([^"]*)" has the following counselors: (.*)$/) do |client_name, counselors|
+  client = Client.find_by name: client_name
+  client.users = []
+  counselors.split(/\s*,\s*/).each do |counselor|
+    client.users << (User.find_by email: counselor)
+  end
+end
+

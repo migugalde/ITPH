@@ -1,14 +1,19 @@
 <%= simple_form_for @event, remote: true do |f| %>
 
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "flash #{key}" %>
+  <% end %>
+
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.hint "No client names, please. All counselors can see the Title." %>
     <table class="table-condensed">
         <tr>
             <th> <%= f.input :event_type, selected: "counseling", collection: [[ "Counseling Appt", 'counseling' ], [ "Class", 'class' ], [ "Community Life", 'community_life' ], [ "Bible Study", 'bible_study' ]] %> </th>
-            <th> <%= f.input :room, as: :select, selected: "black", collection: [['Room1','black'], ['Room2','green'], ['Room3','red']] %> </th>
+            <th> <%= f.association :room, as: :select %> </th>
         </tr>
-    </table> 
+    </table>
+
     <strong> Please add Clients below: </strong>
             <div class="container">
               <div class="row">
@@ -51,7 +56,8 @@
             <th> <%= f.input :new_name %></th>
             <th> <%= f.input :new_email %></th>
         </tr>
-    </table> 
+    </table>
+    <%= f.hint "If you wish to add a new client, please enter their name and a valid email." %>
     <%= f.input :date_range, input_html: { class: "form-control input-sm date-range-picker" } %>
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
@@ -69,11 +75,11 @@
   </div>
   <div class="form-actions">
     <%= f.button :submit %>
-    <%= link_to 'Delete', 
-                event, 
-                method: :delete, 
-                class: 'btn btn-danger', 
-                data: { confirm: 'Are you sure?' }, 
+    <%= link_to 'Delete',
+                event,
+                method: :delete,
+                class: 'btn btn-danger',
+                data: { confirm: 'Are you sure?' },
                 remote: true unless @event.new_record? %>
   </div>
 

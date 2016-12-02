@@ -8,15 +8,7 @@ end
 
 def show
 	@client = Client.find(params[:id])
-	drive = GoogleDrive::Session.from_config("config.json")
-	@spreadsheet = drive.spreadsheet_by_key("1JCqPMgGr1UEHYwWtQp1c2E0HnuEHMJ68i2xSdDgYQw0").worksheets[0]
-	@client_index = -1
-	@spreadsheet.num_rows.downto(2) do |row|
-		if @spreadsheet[row, 2] == @client.name
-			@client_index = row
-			break
-		end
-	end
+	@client.update_variables(current_user)	
 end
 
 def index
@@ -32,6 +24,7 @@ def edit
 end
 
 def create
+	@client.users << current_user
 end
 
 def update

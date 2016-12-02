@@ -10,52 +10,31 @@ Background:
 	| Toni Z	|t@gmail.com	| t123456	|	t123456	|	+15108295840	|	false	|
 	And the following clients exist:
 	| name	| counselor	| email 			|
-	| Bob Smith			| Toni 		| bob@smith.net 	|
-	Then I am on the home page
-	And I click "Schedule Appointment"
-
-Scenario: I do not see new client input when I open the form
-	Then I should see "Bob Smith"
-	And I should not see "new email"
-	And I should see "Add new Client"
-
-Scenario: I open the dynamic form and see the correct input for new client
-	Given I click "Add new Client"
-	Then I should see "new client name"
-	And I should see "new client email"
-	And I should see "new client phone number"
-	And I should see "Save new Client"
-
+	| Bob Smith			| Jack 		| bob@smith.net 	|
+	| Fred Astaire		| Toni 		| bob@smith.net 	|
+	And the following events exist:
+	| title			| date 		| start | end |
+	| Zany Dan	| 2115-12-12 | 12:00am | 5:00pm |
+	And the following rooms exist:
+	| name		| color 	|
+	| Room 1	|	#FF0000	|
+	And the event "Zany Dan" has the following clients: Bob Smith, bob@smith.com
+	And the event "Zany Dan" has the following counselors: t@gmail.com
+	And the event "Zany Dan" belongs the room "Room 1"
+	Given I am logged in as "t@gmail.com" with password "t123456"
+	And I am on the home page
+	
 Scenario: I want to create one new clients for this event
-	Given I click "Add new Client"
-	And I input "name" as "Dan Grey"
-	And I input "email" as "dan@grey.com"
-	And I input "phone number" as "444-999-0012"
-	And I click "Save new Client"
-	Then I should see "Dan Grey" is checked
-
-Scenario: I want to create several new clients for this event
-	Given I click "Add new Client"
-	And I input "name" as "Dan Grey"
-	And I input "email" as "dan@grey.com"
-	And I input "phone number" as "444-999-0012"
-	And I click "Save new Client"
-	Then I click "Add new Client"
-	And I input "name" as "Dan Purple"
-	And I input "email" as "dan@purple.com"
-	And I input "phone number" as "444-777-0012"
-	And I click "Save new Client"
-	Then I should see "Dan Grey" is checked
-	And I should see "Dan Purple" is checked
+	And I input new_name as "Dan Grey" for "Zany Dan"
+	And I input new_email as "dan@grey.com" for "Zany Dan"
+	And I create a new client
+	Then I should see "Dan Grey" is a client
 
 Scenario: I create a new client through the form and its reflected in the database
-	Given I click "Add new Client"
-	And I input "name" as "Dan Grey"
-	And I input "email" as "dan@grey.com"
-	And I input "phone number" as "444-999-0012"
-	And I click "Save new Client"
-	And I create a new event with "Dan Grey"
-	Then I click "Client"
+	And I input new_name as "Dan Grey" for "Zany Dan"
+	And I input new_email as "dan@grey.com" for "Zany Dan"
+	And I create a new client
+	Then I should see "Dan Grey" is a client
+	And I am on the clients page
 	Then I should see "Dan Grey"
 	And I should see "dan@grey.com"
-	And I should see "444-999-0012"

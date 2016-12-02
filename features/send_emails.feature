@@ -9,10 +9,14 @@ Background:
 	| Bob		|bob@gmail.com	| bob123	|	bob123	|	+15108295840	|	false	|
 	| Toni Z	|t@gmail.com	| t123456	|	t123456	|	+15108295840	|	false	|
 	And the following events exist:
-	| title			| date 		| room 	| start | end |
-	| Zany Dan	| 2115-12-12 | blue	| 12:00am | 5:00pm |
+	| title			| date 			| start | end |
+	| Zany Dan	| 2115-12-12| 12:00am | 5:00pm |
+	And the following rooms exist:
+	| name		| color 	|
+	| Room 1	|	#FF0000	|
 	And the event "Zany Dan" has the following clients: Fred, fred@gmail.com
 	And the event "Zany Dan" has the following counselors: bob@gmail.com
+	And the event "Zany Dan" belongs the room "Room 1"
 	Given I am logged in as "bob@gmail.com" with password "bob123"
 	And I am on the home page
 	And no emails have been sent
@@ -22,7 +26,7 @@ Scenario: I make a simple event and they recieve an email
 	Then "dan@gmail.com" should receive an email with subject "Appointment reminder and intake form for ITPH"
 
 Scenario: I make an event with multiple clients and they all recieve an email
-	Given the event "Zany Dan" has the following clients: Fred, fred@gmail.com, Amy, amy@gmail.com
+	Given the event "Zany Dan" has the following clients: Fred, fred@gmail.com,, Amy, amy@gmail.com
 	When I send the email for the event "Zany Dan"
 	Then "dan@gmail.com" should receive an email with subject "Appointment reminder and intake form for ITPH"
 	Then "amy@gmail.com" should receive an email with subject "Appointment reminder and intake form for ITPH"
