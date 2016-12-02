@@ -18,18 +18,18 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(event_params)
-    create_new_client(@event.new_name, @event.new_email)
-    if @event.valid?
-      @event.save
-      if @event.event_type == "counseling"
-        @event.clients.each do |client|
-          send_new(@event, client)
+      @event = Event.new(event_params)
+      create_new_client(@event.new_name, @event.new_email)
+      if @event.valid?
+        @event.save
+        if @event.event_type == "counseling"
+          @event.clients.each do |client|
+            send_new(@event, client)
+          end
         end
+      else
+        flash[:success] ="I'm sorry, that is not a valid date. Please try again"
       end
-    else
-      flash[:success] ="I'm sorry, that is not a valid date. Please try again"
-    end
   end
 
   def update
