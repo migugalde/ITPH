@@ -6,14 +6,43 @@ initialize_calendar = function() {
       header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'month,agendaWeek,agendaDay'
+        right: 'month,agendaWeek,agendaDay',
       },
+      height: 'auto',
+      contentHeight: 'parent',
+      defaultView: 'agendaWeek',
+      minTime: '07:00',
+      allDaySlot: false,
       selectable: true,
       selectHelper: true,
       //timezoneParam: "America/Los_Angeles",
       editable: true,
       eventLimit: true,
+      eventStartEditable: false,
+      eventEndEditable: false,
       events: '/events.json',
+
+      eventDataTransform: function( eventData ) {
+        if (eventData.editable){
+          eventData.borderColor = "#00FF00";
+        }
+        return eventData;
+      },
+
+      eventRender: function eventRender( event, element, view ) {
+        //Filter non-personal events
+        if($('#counselor_filter').is(':checked') && !event.editable){
+          return false;
+        }
+        //Filter based on room
+        var match = false;
+        $('.room_filter:checked').each(function(){
+          if ($(this).attr('name') == event.room){
+            match = true;
+          }
+        });
+        return match;
+      },
 
       select: function(start, end) {
         $.getScript('/events/new', function() {
@@ -22,34 +51,26 @@ initialize_calendar = function() {
           $('.start_hidden').val(moment(start).format('YYYY-MM-DD HH:mm'));
           $('.end_hidden').val(moment(end).format('YYYY-MM-DD HH:mm'));
         });
-
         calendar.fullCalendar('unselect');
       },
 
-      eventDrop: function(event, delta, revertFunc) {
-        event_data = {
-          event: {
-            id: event.id,
-            start: event.start.format(),
-            end: event.end.format()
-          }
-        };
-        $.ajax({
-            url: event.update_url,
-            data: event_data,
-            type: 'PATCH'
-        });
-      },
-
       eventClick: function(event, jsEvent, view) {
-          $.getScript(event.edit_url, function() {
-            $('#event_date_range').val(moment(event.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(event.end).format("MM/DD/YYYY HH:mm"))
-            date_range_picker();
-            $('.start_hidden').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
-            $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
-        });
+        if (event.editable){
+            $.getScript(event.edit_url, function() {
+              $('#event_date_range').val(moment(event.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(event.end).format("MM/DD/YYYY HH:mm"))
+              date_range_picker();
+              $('.start_hidden').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
+              $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
+          });
+        }
       }
     });
+  })
+  $('#calendar_filters').on('click',function(){
+    $('.calendar').fullCalendar('rerenderEvents');
+  })
+  $('#counselor_filter').on('click',function(){
+    $('.calendar').fullCalendar('rerenderEvents');
   })
 };
 

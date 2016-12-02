@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
     #Need to call authenticate user here as it was skipped to call the sign in
     authenticate_user!
     unless current_user.admin
+      flash[:alert] = "Admin access required."
       redirect_to root_path
     end
   end

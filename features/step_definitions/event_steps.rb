@@ -21,6 +21,11 @@ And(/^the event "([^"]*)" has the following clients:(.*)$/) do |event_title, cli
   end
 end
 
+And(/^the event "([^"]*)" belongs the room "([^"]*)"$/) do |event_title, room|
+  event = Event.find_by title: event_title
+  event.room = Room.find_by name: room
+end
+
 And(/^the event "([^"]*)" has type "([^"]*)"$/) do |event_title, type|
   event = Event.find_by title: event_title
   event.event_type = ""

@@ -12,6 +12,7 @@
  *
  *= require fullcalendar
  *= require daterangepicker
+ *= require jquery.simplecolorpicker.css
  *= require_tree .
  *= require_self
  */
