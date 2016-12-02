@@ -1398,7 +1398,7 @@
         1,
         4,
         4,
-        4,
+        5,
         null,
         4,
         null,
@@ -1646,8 +1646,8 @@
         5,
         5,
         5,
-        5,
-        5,
+        6,
+        6,
         null,
         null
       ],
@@ -2516,13 +2516,13 @@
 >>>>>>> fixed feature files
         null,
         1,
-        5,
-        5,
-        8,
-        5,
+        6,
+        6,
+        9,
+        6,
         3,
         null,
-        5,
+        6,
         null,
         0,
         null,
@@ -2534,16 +2534,16 @@
         3,
         null,
         null,
-        5,
+        6,
         null,
         null,
         null,
         1,
-        4,
-        4,
-        4,
-        4,
-        4,
+        5,
+        5,
+        5,
+        5,
+        5,
         null,
         null,
         1,
@@ -2635,6 +2635,7 @@
         null
       ]
     },
+<<<<<<< 5495a9243ac832fa7d8054be8c65a905b23ff3df
 <<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2657,5 +2658,8 @@
 =======
     "timestamp": 1480649535
 >>>>>>> fixed feature files
+=======
+    "timestamp": 1480651734
+>>>>>>> checkout to master
   }
 }
