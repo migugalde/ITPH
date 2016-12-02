@@ -32,7 +32,7 @@ class EventsController < ApplicationController
       end
     end
     create_new_client(@event.new_name, @event.new_email)
-    if @event.valid and not overlap?
+    if @event.valid? and not overlap
       @event.save
       if @event.event_type == "counseling"
         @event.clients.each do |client|

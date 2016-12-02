@@ -23,6 +23,7 @@ class Event < ActiveRecord::Base
   validates :title, presence: true
   validates :start, presence: true
   validates :end, presence: true
+  validates :clients, presence: true
   has_and_belongs_to_many :users, :uniq => true
   has_and_belongs_to_many :clients, :uniq => true
   accepts_nested_attributes_for :users, :clients
