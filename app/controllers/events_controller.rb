@@ -10,6 +10,8 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
+    @clients = Client.all
+    @users = User.all
   end
 
   def edit
@@ -39,6 +41,23 @@ class EventsController < ApplicationController
       if @event.event_type == "counseling"
         @event.clients.each do |client|
           send_new(@event, client)
+        end
+        if @event.weekly
+          for i in 1..52 do
+            @event = Event.new(event_params)
+            @event.end = @event.end + i*7.days
+            @event.start = @event.start + i*7.days
+            @event.weekly = false
+            @event.save
+          end
+        elsif @event.biweekly
+          for i in 1..26 do
+            @event = Event.new(event_params)
+            @event.end = @event.end + i*14.days
+            @event.start = @event.start + i*14.days
+            @event.weekly = false
+            @event.save
+          end
         end
       else
         flash[:success] ="I'm sorry, that is not a valid date. Please try again"
@@ -91,7 +110,7 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :notes, :room_id, :weekly, :biweekly, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :none, :weekly, :biweekly, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
     end
 
     def send_new(event, client)
