@@ -31,3 +31,24 @@ Then(/^there should be an event with type "([^"]*)" and name "([^"]*)"$/) do |ty
   event = Event.find_by title: event_title
   expect event.event_type == type
 end
+
+Given(/^I input new_name as "([^"]*)" for "([^"]*)"$/) do |text, event_title|
+  @new_name = text
+  event = Event.find_by title: event_title
+  event.new_name = text
+end
+
+Given(/^I input new_email as "([^"]*)" for "([^"]*)"$/) do |text, event_title|
+  @new_email = text
+  event = Event.find_by title: event_title
+  event.new_email = text
+end
+
+Given(/^I create a new client$/) do
+  new_client = Client.create(name: @new_name, email: @new_email)
+end
+
+Then(/^I should see "([^"]*)" is a client$/) do |arg1|
+  expect Client.find_by name: arg1
+end
+
