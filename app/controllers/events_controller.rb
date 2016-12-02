@@ -25,8 +25,8 @@ class EventsController < ApplicationController
     overlap = false
     events = Event.where(start: @event.start..@event.end, end: @event.start..@event.end)
     events.each do |e|
-      if e.users.include?(current_user)
-        flash[:success] = "Cannot schedule overlapping events"
+      if e.rooms.include?(@event.room)
+        flash[:success] = "Cannot schedule two events in the same room at the same time"
         overlap = true
         break
       end

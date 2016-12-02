@@ -39,7 +39,7 @@
    max-height:200px;/* you can change as you need it */
    max-width:auto;
    overflow:auto;/* to get scroll */
-   padding-left: 7px;
+   padding-left: 10px;
 }
 
 @font-face {
