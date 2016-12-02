@@ -8,7 +8,7 @@ Background:
 	| name		| email						| password	|	password_confirmation |	phone_number		|	admin	|
 	| Toni		|	toni@gmail.com	| toni123		|	toni123								|	+19218594949		|	true	|
   | Bob			|	bob@gmail.com		| bob123		|	bob123								|	+15108295840		|	false	|
-  And the following rooms exist
+  And the following rooms exist:
   | name		| color 	|
 	| Room 1	|	#FF0000	|
   Given I am logged in as "toni@gmail.com" with password "toni123"

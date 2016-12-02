@@ -28,7 +28,6 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-    byebug
     respond_to do |format|
       if @room.save
         format.html { redirect_to rooms_path, notice: 'Room was successfully created.' }

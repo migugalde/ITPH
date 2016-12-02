@@ -1,4 +1,4 @@
-Given(/^the following rooms exist$/) do |table|
+Given(/^the following rooms exist:$/) do |table|
   table.hashes.each do |room|
     Room.create!(room)
   end
