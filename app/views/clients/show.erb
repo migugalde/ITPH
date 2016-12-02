@@ -268,9 +268,16 @@
       <li>
         <%= e.title %>
         with
-        <%= e.users[0].name %>
+        <% e.users.each do |u| %>
+          <%= u.name %>
+          <% if e.users.last != u %>
+            & 
+          <% end %>
+        <% end %>
         on
-        <%= e.start.to_s %>
+        <%= e.start.to_s.split(" ")[0] %>
+        at
+        <%= e.start.to_s.split(" ")[1..2].join(" ") %>
       </li>
     </ul>
   <% end %>
