@@ -37,7 +37,7 @@
 }
 
 .dropdown-menu {
-   max-height:200px;/* you can change as you need it */
+   max-height:300px;/* you can change as you need it */
    max-width:auto;
    overflow:auto;/* to get scroll */
    padding-left: 10px;
@@ -52,9 +52,9 @@
 table {
    border-top:none;
    border-top-style: bold;
-  width: 100%;
+   width: 100%;
 }
 
 td {
-width: 100%;
+  /*width: 100%;*/
 }
