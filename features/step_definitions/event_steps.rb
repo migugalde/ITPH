@@ -20,3 +20,14 @@ And(/^the event "([^"]*)" has the following clients:(.*)$/) do |event_title, cli
     event.clients << (Client.create(:name => name, :email => email))
   end
 end
+
+And(/^the event "([^"]*)" has type "([^"]*)"$/) do |event_title, type|
+  event = Event.find_by title: event_title
+  event.event_type = ""
+  event.event_type = type
+end
+
+Then(/^there should be an event with type "([^"]*)" and name "([^"]*)"$/) do |type, event_title|
+  event = Event.find_by title: event_title
+  expect event.event_type == type
+end
