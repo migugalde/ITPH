@@ -22,7 +22,7 @@ Scenario: I make a simple event and they recieve an email
 	Then "dan@gmail.com" should receive an email with subject "Appointment reminder and intake form for ITPH"
 
 Scenario: I make an event with multiple clients and they all recieve an email
-	Given the event "Zany Dan" has the following clients: Fred, fred@gmail.com, Amy, amy@gmail.com
+	Given the event "Zany Dan" has the following clients: Fred, fred@gmail.com,, Amy, amy@gmail.com
 	When I send the email for the event "Zany Dan"
 	Then "dan@gmail.com" should receive an email with subject "Appointment reminder and intake form for ITPH"
 	Then "amy@gmail.com" should receive an email with subject "Appointment reminder and intake form for ITPH"
