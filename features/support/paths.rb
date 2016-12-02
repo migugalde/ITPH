@@ -25,6 +25,8 @@ module NavigationHelpers
       users_new_path
     when /^the edit user\s?page$/
       edit_user_registration_path
+    when /^the edit client\s?page for "(.*)"$/
+      edit_client_path(Client.find_by name: $1)
 
 
     # Add more mappings here.

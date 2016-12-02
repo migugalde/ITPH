@@ -15,7 +15,8 @@ end
 And(/^the event "([^"]*)" has the following clients:(.*)$/) do |event_title, clients|
   event = Event.find_by title: event_title
   event.clients = []
-  clients.split(/\s*,\s*/).each do |name, email|
+  clients.split(",, ").each do |client|
+    name, email = clients.split(", ")
     event.clients << (Client.create(:name => name, :email => email))
   end
 end

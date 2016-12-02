@@ -1,6 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +13,8 @@
       "/home/mrstran/ITPH/config/environment.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
 =======
+=======
+>>>>>>> fixed feature files
       "/home/ubuntu/workspace/ITPH/config/environment.rb": [
 >>>>>>> implemented basic validations
         null,
@@ -1083,6 +1086,7 @@
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         26,
@@ -1101,29 +1105,41 @@
         null,
         0,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        61,
+        null,
+        null,
+        29,
+>>>>>>> fixed feature files
+        null,
+        1,
         null,
         0,
         null,
-        0,
-        null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         7,
 =======
         3,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        10,
+>>>>>>> fixed feature files
         null,
-        0,
+        5,
         null,
-        0,
+        1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        2,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         4,
         4,
@@ -1135,6 +1151,13 @@
         6,
         6,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        null,
+        13,
+        13,
+        13,
+        13,
+>>>>>>> fixed feature files
         0,
         0,
         null,
@@ -1217,7 +1240,7 @@
       "/home/ubuntu/workspace/ITPH/features/step_definitions/calendar_steps.rb": [
 >>>>>>> implemented basic validations
         1,
-        0,
+        1,
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1238,6 +1261,7 @@
       "/home/ubuntu/workspace/ITPH/features/step_definitions/client_steps.rb": [
         1,
         null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         24,
         47,
@@ -1246,49 +1270,57 @@
         3,
         9,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        25,
+        52,
+>>>>>>> fixed feature files
         null,
         null,
         null,
         1,
-        0,
+        2,
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         1,
 =======
         0,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        2,
+>>>>>>> fixed feature files
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
         null,
         null,
         1,
         0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
         0,
         null,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -1300,6 +1332,7 @@
         null,
         null
       ],
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1313,6 +1346,10 @@
 =======
       "/home/ubuntu/workspace/ITPH/features/step_definitions/email_steps.rb": [
 >>>>>>> implemented basic validations
+=======
+      "/home/ubuntu/workspace/ITPH/features/step_definitions/email_steps.rb": [
+        null,
+>>>>>>> fixed feature files
         null,
         null,
         null,
@@ -1335,7 +1372,10 @@
         null,
         null,
         null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         null,
+=======
+>>>>>>> fixed feature files
         null,
         null,
         null,
@@ -1356,40 +1396,52 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        4,
+        4,
+        4,
         null,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
+        4,
         null,
         null,
         1,
-        0,
+        1,
+        1,
+        1,
         null,
-        null,
-        null,
-        null,
+        1,
         null,
         null,
         1,
-        0,
+        4,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         0,
         null,
         null,
         null,
+        1,
+        0,
+=======
+        1,
         null,
+>>>>>>> fixed feature files
+        null,
+        null,
+        1,
+        5,
+        null,
+        null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
+=======
+        null,
+        null,
+>>>>>>> fixed feature files
         null,
         null,
         null,
@@ -1577,24 +1629,25 @@
       "/home/ubuntu/workspace/ITPH/features/step_definitions/event_steps.rb": [
 >>>>>>> implemented basic validations
         1,
-        0,
-        0,
+        4,
+        4,
         null,
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        6,
+        6,
+        6,
+        8,
         null,
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        5,
+        5,
+        5,
+        5,
+        5,
         null,
         null
       ],
@@ -1614,6 +1667,7 @@
 =======
       "/home/ubuntu/workspace/ITPH/features/step_definitions/user_steps.rb": [
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         50,
         70,
@@ -1622,37 +1676,41 @@
         3,
         6,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        51,
+        74,
+>>>>>>> fixed feature files
         null,
         null,
         null,
         1,
-        3,
-        3,
-        3,
+        6,
+        6,
+        6,
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
+        16,
+        16,
+        16,
+        16,
         null,
         null,
         1,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
+        2,
         null,
         null,
         1,
-        0,
+        2,
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1675,6 +1733,7 @@
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         18,
@@ -1684,45 +1743,57 @@
 =======
         9,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        50,
+>>>>>>> fixed feature files
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         3,
 =======
         0,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        6,
+>>>>>>> fixed feature files
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         7,
 =======
         0,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        10,
+>>>>>>> fixed feature files
         null,
         null,
         1,
-        3,
+        12,
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         9,
@@ -1735,6 +1806,10 @@
         10,
         10,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        24,
+        24,
+>>>>>>> fixed feature files
         null,
         null,
         null,
@@ -1751,6 +1826,7 @@
         null,
         null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         7,
         7,
@@ -1760,17 +1836,23 @@
         0,
         0,
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+        9,
+        9,
+        9,
+>>>>>>> fixed feature files
         null,
         null,
         null,
         1,
-        4,
-        4,
+        5,
+        5,
         null,
         0,
         null,
         null
       ],
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
@@ -1785,10 +1867,222 @@
 =======
       "/home/ubuntu/workspace/ITPH/app/controllers/application_controller.rb": [
 >>>>>>> implemented basic validations
+=======
+      "/home/ubuntu/workspace/ITPH/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         1,
+        null,
+        1,
+        null,
+        8,
+        8,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        70,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/controllers/home_controller.rb": [
+        1,
+        1,
+        31,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/controllers/users_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        3,
+        3,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        3,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        7,
+        3,
+        null,
+        null,
+        7,
+        7,
+        7,
+        7,
+        42,
+        1,
+        1,
+        null,
+        null,
+        null,
+        7,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+>>>>>>> fixed feature files
+        1,
+        1,
+        1,
+        1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 =======
       "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
@@ -1814,6 +2108,20 @@
       ],
 >>>>>>> implemented basic validations
       "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
+=======
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+>>>>>>> fixed feature files
         1,
         null
       ],
@@ -1827,6 +2135,7 @@
       ],
       "/home/ubuntu/workspace/ITPH/app/helpers/users_helper.rb": [
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         null
       ],
       "/home/ubuntu/workspace/ITPH/app/controllers/home_controller.rb": [
@@ -1873,26 +2182,59 @@
         null,
         null,
         null,
+=======
+        1,
+        1,
         null,
         null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
+        1,
+>>>>>>> fixed feature files
+        null,
+        1,
+        null,
+        1,
+        2,
         null,
         null,
+        1,
+        7,
+        7,
         null,
         null,
+        1,
+        15,
         null,
         null,
+        1,
+        0,
         null,
         null,
+        1,
+        2,
         null,
         null,
+        1,
+        0,
         null,
         null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
+=======
+        1,
+        2,
+        2,
+        2,
+        2,
+>>>>>>> fixed feature files
         null,
         null,
         null,
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         null
       ],
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1910,6 +2252,9 @@
         1,
 =======
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+      "/home/ubuntu/workspace/ITPH/app/models/event.rb": [
+>>>>>>> fixed feature files
         null,
         null,
         null,
@@ -1918,6 +2263,7 @@
         null,
         null,
         null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         null,
         null,
         null,
@@ -1941,6 +2287,8 @@
 >>>>>>> implemented basic validations
 =======
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+>>>>>>> fixed feature files
         null,
         null,
         null,
@@ -1956,6 +2304,7 @@
         null,
         1,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         1,
         1,
         1,
@@ -1977,9 +2326,11 @@
 >>>>>>> implemented basic validations
 =======
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+>>>>>>> fixed feature files
         1,
-        null,
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         3,
         0,
         null,
@@ -2038,6 +2389,9 @@
         1,
         1,
         1,
+=======
+        1,
+>>>>>>> fixed feature files
         1,
         1,
         1,
@@ -2076,6 +2430,7 @@
         0,
         null,
         null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         1,
         0,
@@ -2091,12 +2446,18 @@
       ],
       "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
         1,
+=======
+        1,
+        0,
+        null,
+>>>>>>> fixed feature files
         null,
         1,
         0,
         0,
         0,
         0,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 =======
         0,
@@ -2126,10 +2487,17 @@
       ],
       "/home/ubuntu/workspace/ITPH/app/helpers/sessions_helper.rb": [
         1,
+=======
+        null,
+        null,
+        0,
+        null,
+>>>>>>> fixed feature files
         null
       ],
-      "/home/ubuntu/workspace/ITPH/app/helpers/users_helper.rb": [
+      "/home/ubuntu/workspace/ITPH/app/mailers/event_mailer.rb": [
         1,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         null
       ],
       "/home/ubuntu/workspace/ITPH/app/controllers/home_controller.rb": [
@@ -2142,52 +2510,40 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
+=======
         1,
+        1,
+>>>>>>> fixed feature files
         null,
         1,
+        5,
+        5,
+        8,
+        5,
+        3,
         null,
-        1,
+        5,
+        null,
         0,
         null,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         null,
         1,
-        3,
+=======
+>>>>>>> fixed feature files
         3,
         null,
         null,
-        1,
-        6,
+        5,
         null,
-        null,
-        1,
-        0,
         null,
         null,
         1,
-        0,
-        null,
-        null,
-        1,
-        0,
+        4,
+        4,
+        4,
+        4,
+        4,
         null,
         null,
         1,
@@ -2195,6 +2551,7 @@
         0,
         0,
         0,
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
         null,
         null,
         null
@@ -2244,19 +2601,22 @@
         0,
         0,
         0,
+=======
+>>>>>>> fixed feature files
         0,
         null,
         null,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ],
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/home/ubuntu/workspace/ITPH/app/mailers/application_mailer.rb": [
@@ -2266,12 +2626,16 @@
 =======
       "/home/mrstran/ITPH/app/mailers/application_mailer.rb": [
 >>>>>>> 695b7beb23f117a2ab4c325f6ea79a627d74dfb1
+=======
+      "/home/ubuntu/workspace/ITPH/app/mailers/application_mailer.rb": [
+>>>>>>> fixed feature files
         1,
         1,
         1,
         null
       ]
     },
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
 <<<<<<< HEAD
 <<<<<<< HEAD
     "timestamp": 1479446214
@@ -2290,5 +2654,8 @@
 =======
     "timestamp": 1480644870
 >>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+    "timestamp": 1480649535
+>>>>>>> fixed feature files
   }
 }
