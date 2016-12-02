@@ -17,9 +17,9 @@ unless User.find_by( email: "toni@gmail.com" )
 end
 
 
-rooms = [{:name => 'Room 1', :color => '#FF0000'},
-				{:name => 'Room 2', :color => '#000000'},
-				{:name => 'Room 3', :color => '#0000FF'}]
+rooms = [{:name => 'Room 1', :color => '#a4bdfc'},
+				{:name => 'Room 2', :color => '#ffb878'},
+				{:name => 'Room 3', :color => '#dbadff'}]
 
 rooms.each do |room|
 	Room.create!(room)
