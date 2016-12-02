@@ -28,6 +28,14 @@ class EventMailer < ApplicationMailer
     mail(to: email_with_name, subject: 'Appointment reminder and intake form for ITPH')
   end
 
+  def appointment_update(event, client)
+    @event = event
+    @counselors = return_counselor_lists(@event.users)
+    @name = client.name
+    email_with_name = %("#{client.name}" <#{client.email}>)
+    mail(to: email_with_name, subject: 'Appointment UPDATE notification for ITPH')
+  end
+
   def appointment_cancel(event, client)
     @event = event
     @counselors = return_counselor_lists(@event.users)

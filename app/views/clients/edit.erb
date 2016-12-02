@@ -1,16 +1,15 @@
 <% # in app/views/clients/view.erb %>
 <h2>Editing Intake Information for <%=@client.name%></h2>
-<%= form_for [@client] do |form| %>
-<%= form.label:Name %><br>
-<%= form.text_field:name %> <br>
-<%= form.label:Counselor %><br>
-<%= form.text_field:counselor %> <br>
-<%= form.label:Email %><br>
-<%= form.text_field:email %> <br>
-<%= form.label:"Phone Number" %><br>
-<%= form.text_field:phone_number %> <br>
-<%= form.submit %><br>
+<div class="form-inputs">
+    <%= simple_form_for [@client] do |form| %>
+        <%= form.input:name %>
+        <%= form.input:counselor %>
+        <%= form.input:email %>
+        <%= form.input:phone_number %>
+        <%= form.submit %>
+ </div>
 <% end %>
+
 
 <% flash.each do |key, value| %>
   <%= content_tag :div, value, class: "flash #{key}" %>

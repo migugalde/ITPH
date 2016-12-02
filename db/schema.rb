@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 20161121063454) do
     t.string   "date"
     t.string   "room"
     t.string   "notes"
+    t.boolean  "weekly"
+    t.boolean  "biweekly"
     t.datetime "start"
     t.datetime "end"
     t.string   "color"
