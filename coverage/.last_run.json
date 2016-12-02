@@ -1,5 +1,17 @@
 {
   "result": {
+<<<<<<< 7f7dc9310fcb25f87ba21a3996d377215fb9b633
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
+<<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
     "covered_percent": 89.57
+=======
+    "covered_percent": 90.59
+>>>>>>> implemented basic validations
+=======
+    "covered_percent": 81.28
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+=======
+    "covered_percent": 93.1
+>>>>>>> fixed feature files
   }
 }
