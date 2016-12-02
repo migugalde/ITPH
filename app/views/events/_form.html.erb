@@ -64,6 +64,7 @@
     <table class="table-condensed">
     <p><b>Recurring</b>
     <%= f.hint "Please only check one." %>
+    <%= f.input :recurring, as: :radio_buttons, selected: "none", collection: [[ "No Repeats", 'none' ], [ "Weekly", 'weekly' ], ["Biweekly", 'biweekly'] %>
     <tr>
       <th> <%= f.input :none, as: :boolean, :input_html => { :checked => true, :unchecked => false } %> </th>
       <th> <%= f.input :weekly, as: :boolean, :input_html => { :checked => false, :unchecked => true } %> </th>
