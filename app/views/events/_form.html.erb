@@ -30,7 +30,7 @@
                 </div>
               </div>
             </div>
-
+    <p></p><p></p>
     <strong> Please add Counselors below: </strong>
             <div class="container">
               <div class="row">
@@ -47,9 +47,10 @@
                 </div>
               </div>
             </div>
-
+<p></p><p></p>
 
 <strong> Please add any new clients: </strong>
+    <%= f.hint "If you wish to add a new client, please enter their name and a valid email." %>
     <table class="table-condensed">
         <tr>
             <th> <%= f.input :new_name %></th>
@@ -61,15 +62,17 @@
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
     <table class="table-condensed">
+    <p><b>Recurring</b>
+    <%= f.hint "Please only check one." %>
     <tr>
-      <th> <%= f.input :weekly, as: :boolean, checked_value: true, unchecked_value: false %> </th>
-      <th> <%= f.input :biweekly, as: :boolean, checked_value: true, unchecked_value: false %> </th>
+      <th> <%= f.input :none, as: :boolean, :input_html => { :checked => true, :unchecked => false } %> </th>
+      <th> <%= f.input :weekly, as: :boolean, :input_html => { :checked => false, :unchecked => true } %> </th>
+      <th> <%= f.input :biweekly, as: :boolean, :input_html => { :checked => false, :unchecked => true } %> </th>
     </tr>
-    </table>
+    </table> 
+    </p>
     <%= f.input :notes %>
   </div>
-
-
   <div class="form-actions">
     <%= f.button :submit %>
     <%= link_to 'Delete',
