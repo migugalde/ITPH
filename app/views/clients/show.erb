@@ -263,6 +263,18 @@
 <% end %>
 
 <h3>Upcoming Appointments:</h3>
+  <% @client_events.each do |e| %>
+    <ul id="details">
+      <li>
+        <%= e.title %>
+        with
+        <%= e.users[0].name %>
+        on
+        <%= e.start.to_s %>
+      </li>
+    </ul>
+  <% end %>
+
 
 <% flash.each do |key, value| %>
   <%= content_tag :div, value, class: "flash #{key}" %>
