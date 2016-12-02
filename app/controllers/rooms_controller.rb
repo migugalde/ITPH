@@ -7,15 +7,9 @@ class RoomsController < ApplicationController
     @rooms = Room.all
   end
 
-  def show
-  end
-
   def new
     @room = Room.new
-    respond_to do |format|
-      format.html
-      format.js
-    end
+    @default_color = @room.color
   end
 
   def edit
@@ -31,12 +25,11 @@ class RoomsController < ApplicationController
     respond_to do |format|
       if @room.save
         format.html { redirect_to rooms_path, notice: 'Room was successfully created.' }
-        format.json
         format.js
       else
         format.html { render 'new' }
-        format.json
         format.js
+        format.json { render json: @room.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -48,6 +41,8 @@ class RoomsController < ApplicationController
         format.js
       else
         format.html { render :edit }
+        format.js
+        format.json { render json: @room.errors, status: :unprocessable_entity }
       end
     end
   end
