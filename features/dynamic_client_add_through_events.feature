@@ -13,10 +13,14 @@ Background:
 	| Bob Smith			| Jack 		| bob@smith.net 	|
 	| Fred Astaire		| Toni 		| bob@smith.net 	|
 	And the following events exist:
-	| title			| date 		| room 	| start | end |
-	| Zany Dan	| 2115-12-12 | blue	| 12:00am | 5:00pm |
+	| title			| date 		| start | end |
+	| Zany Dan	| 2115-12-12 | 12:00am | 5:00pm |
+	And the following rooms exist:
+	| name		| color 	|
+	| Room 1	|	#FF0000	|
 	And the event "Zany Dan" has the following clients: Bob Smith, bob@smith.com
 	And the event "Zany Dan" has the following counselors: t@gmail.com
+	And the event "Zany Dan" belongs the room "Room 1"
 	Given I am logged in as "t@gmail.com" with password "t123456"
 	And I am on the home page
 	
