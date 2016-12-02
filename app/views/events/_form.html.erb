@@ -1,26 +1,67 @@
 <%= simple_form_for @event, remote: true do |f| %>
 
+  <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+            <%= value %>
+      </div>
+  <% end %>
 
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.hint "No client names, please. All counselors can see the Title." %>
-    <%= f.association :clients, as: :check_boxes %>
     <table class="table-condensed">
-    <thead>
-    <tr>
-        <th> <%= f.input :new_name %></th>
-        <th> <%= f.input :new_email %></th>
-    </tr>
-    </thead>
-    <tbody>
-    </tbody>
+        <tr>
+            <th> <%= f.input :event_type, selected: "counseling", collection: [[ "Counseling Appt", 'counseling' ], [ "Class", 'class' ], [ "Community Life", 'community_life' ], [ "Bible Study", 'bible_study' ]] %> </th>
+            <th> <%= f.input :room, as: :select, selected: "black", collection: [['Room1','black'], ['Room2','green'], ['Room3','red']] %> </th>
+        </tr>
+    </table> 
+
+    <strong> Please add Clients below: </strong>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                 <div class="button-group">
+                    <button type="button" class="btn btn-default" data-toggle="dropdown">
+                        <strong> Clients </strong>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <%= f.association :clients, as: :check_boxes %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <strong> Please add Counselors below: </strong>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                 <div class="button-group">
+                    <button type="button" class="btn btn-default" data-toggle="dropdown">
+                        <strong> Counselors </strong>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <%= f.association :users, as: :check_boxes %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+<strong> Please add any new clients: </strong>
+    <table class="table-condensed">
+        <tr>
+            <th> <%= f.input :new_name %></th>
+            <th> <%= f.input :new_email %></th>
+        </tr>
     </table> 
     <%= f.hint "If you wish to add a new client, please enter their name and a valid email." %>
-    <%= f.association :users, as: :check_boxes %>
     <%= f.input :date_range, input_html: { class: "form-control input-sm date-range-picker" } %>
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
-    <%= f.input :room, as: :select, collection: [['Room1','black'], ['Room2','green'], ['Room3','red']] %>
     <%= f.input :notes %>
   </div>
 
@@ -34,4 +75,6 @@
                 data: { confirm: 'Are you sure?' }, 
                 remote: true unless @event.new_record? %>
   </div>
+
+
 <% end %>
