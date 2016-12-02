@@ -49,7 +49,12 @@
   src: url('/assets/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('/assets/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
-.table {
+table {
    border-top:none;
    border-top-style: bold;
+  width: 100%;
+}
+
+td {
+width: 100%;
 }

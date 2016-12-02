@@ -10,7 +10,7 @@
     <table class="table-condensed">
         <tr>
             <th> <%= f.input :event_type, selected: "counseling", collection: [[ "Counseling Appt", 'counseling' ], [ "Class", 'class' ], [ "Community Life", 'community_life' ], [ "Bible Study", 'bible_study' ]] %> </th>
-            <th> <%= f.association :room, as: :select %> </th>
+            <th> <%= f.association :room, as: :select, selected: 1 %> </th>
         </tr>
     </table>
 

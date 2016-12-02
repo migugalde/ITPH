@@ -76,6 +76,8 @@ ActiveRecord::Schema.define(version: 20161201093934) do
     t.string   "event_type"
     t.string   "date"
     t.string   "notes"
+    t.boolean  "weekly"
+    t.boolean  "biweekly"
     t.datetime "start"
     t.datetime "end"
     t.datetime "created_at"
@@ -92,9 +94,6 @@ ActiveRecord::Schema.define(version: 20161201093934) do
     t.integer "user_id",  null: false
     t.integer "event_id", null: false
   end
-
-  add_index "events_users", ["event_id", "user_id"], name: "index_events_users_on_event_id_and_user_id"
-  add_index "events_users", ["user_id", "event_id"], name: "index_events_users_on_user_id_and_event_id"
 
   create_table "rooms", force: :cascade do |t|
     t.string   "name"
