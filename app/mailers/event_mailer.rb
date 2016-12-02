@@ -1,6 +1,4 @@
 class EventMailer < ApplicationMailer
-  @intake_form = ENV["INTAKE_FORM"]
-  @office_location  = ENV["OFFICE_LOC"]
 
   def return_counselor_lists(event_users)
     @counselors = ""
@@ -21,6 +19,8 @@ class EventMailer < ApplicationMailer
 
   #NOTE: this does one counselor, one client
   def appointment_notification(event, client)
+    @intake_form = ENV["INTAKE_FORM"]
+    @office_location  = ENV["OFFICE_LOC"]
     @event = event
     @counselors = return_counselor_lists(@event.users)
     @name = client.name
@@ -29,6 +29,8 @@ class EventMailer < ApplicationMailer
   end
 
   def appointment_update(event, client)
+    @intake_form = ENV["INTAKE_FORM"]
+    @office_location  = ENV["OFFICE_LOC"]
     @event = event
     @counselors = return_counselor_lists(@event.users)
     @name = client.name
@@ -37,6 +39,8 @@ class EventMailer < ApplicationMailer
   end
 
   def appointment_cancel(event, client)
+    @intake_form = ENV["INTAKE_FORM"]
+    @office_location  = ENV["OFFICE_LOC"]
     @event = event
     @counselors = return_counselor_lists(@event.users)
     @name = client.name
