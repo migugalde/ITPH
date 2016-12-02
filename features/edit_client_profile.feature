@@ -19,6 +19,7 @@ Background: clients have been added to database
 
 Scenario: I want to update my clients intake form
 	When I follow "Edit"
+	And I am on the edit client page for "Bob Smith"
 	Then I should see "Editing Intake Information for Bob Smith"
 	Then I should see "Counselor"
 	Then I change the counselor to Anna
@@ -29,6 +30,7 @@ Scenario: I want to update my clients intake form
 
 Scenario: I want to create a new client
 	Given I follow "Edit"
+	And I am on the edit client page for "Bob Smith"
 	And I change the name to "Danny Boy"
 	And I change the counselor to Samurai
 	And I change the email to "ddd@gmail.com"
