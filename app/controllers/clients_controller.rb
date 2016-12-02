@@ -41,4 +41,5 @@ def update
 		redirect_to clients_path
 	end
 end
+
 end

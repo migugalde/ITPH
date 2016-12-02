@@ -63,6 +63,16 @@ class EventsController < ApplicationController
         flash[:success] ="I'm sorry, that is not a valid date. Please try again"
       end
     end
+    respond_to do |format|
+      if @event.save
+        format.html { redirect_to events_path, notice: 'Event was successfully created.' }
+        format.js
+      else
+        format.html { render 'new' }
+        format.js
+        format.json { render json: @event.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def update
@@ -91,6 +101,16 @@ class EventsController < ApplicationController
             send_new(@event, client)
           end
         end
+      end
+    end
+    respond_to do |format|
+      if @event.save
+        format.html { redirect_to events_path, notice: 'Event was successfully created.' }
+        format.js
+      else
+        format.html { render 'new' }
+        format.js
+        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end

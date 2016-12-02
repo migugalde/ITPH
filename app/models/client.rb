@@ -55,8 +55,8 @@
 class Client < ActiveRecord::Base
   has_and_belongs_to_many :events, :uniq => true
   has_many :users
-  validates :name, presence: true
-  validates :email, presence: true
+  validates :name, presence: { message: "Client must have a name." }
+  validates :email, presence: { message: "Client must have a valid email." }
   validates_format_of :email, :with => Devise::email_regexp
   
   def update_variables(current_user)

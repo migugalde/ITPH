@@ -20,7 +20,7 @@
 #
 
 class Event < ActiveRecord::Base
-  validates :title, presence: true
+  validates :title, presence: { message: "Event must have title." }
   validates :start, presence: true
   validates :end, presence: true
   belongs_to :room
