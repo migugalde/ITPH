@@ -50,4 +50,3 @@ Scenario: cannot view intake form of another counselor's client
     When I follow "Matt Smith"
     Then I should see "Intake Information for Matt Smith"
     And I should not see "intake form"
-	

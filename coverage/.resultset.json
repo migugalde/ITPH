@@ -1053,6 +1053,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1081,6 +1083,7 @@
         null,
         null,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         26,
         null,
@@ -1092,14 +1095,24 @@
         null,
         25,
 >>>>>>> implemented basic validations
+=======
+        9,
         null,
-        1,
+        null,
+        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         0,
         null,
+        0,
+        null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         7,
+=======
+        3,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
-        5,
+        0,
         null,
         0,
         null,
@@ -1111,10 +1124,17 @@
         null,
         null,
         null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         4,
         4,
         4,
         4,
+=======
+        6,
+        6,
+        6,
+        6,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         0,
         0,
         null,
@@ -1197,7 +1217,7 @@
       "/home/ubuntu/workspace/ITPH/features/step_definitions/calendar_steps.rb": [
 >>>>>>> implemented basic validations
         1,
-        1,
+        0,
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1218,9 +1238,14 @@
       "/home/ubuntu/workspace/ITPH/features/step_definitions/client_steps.rb": [
         1,
         null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         24,
         47,
 >>>>>>> implemented basic validations
+=======
+        3,
+        9,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
@@ -1229,7 +1254,11 @@
         null,
         null,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         1,
+=======
+        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         1,
@@ -1249,7 +1278,7 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
@@ -1259,7 +1288,15 @@
         null,
         null,
         1,
+        0,
+        null,
+        null,
         1,
+        3,
+        3,
+        3,
+        3,
+        null,
         null,
         null
       ],
@@ -1540,8 +1577,16 @@
       "/home/ubuntu/workspace/ITPH/features/step_definitions/event_steps.rb": [
 >>>>>>> implemented basic validations
         1,
-        4,
-        4,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
@@ -1550,14 +1595,6 @@
         0,
         0,
         0,
-        null,
-        null,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
         null,
         null
       ],
@@ -1577,9 +1614,14 @@
 =======
       "/home/ubuntu/workspace/ITPH/features/step_definitions/user_steps.rb": [
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         50,
         70,
 >>>>>>> implemented basic validations
+=======
+        3,
+        6,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
@@ -1590,23 +1632,23 @@
         null,
         null,
         1,
-        12,
-        12,
-        12,
-        12,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         1,
-        2,
-        2,
+        0,
+        0,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         1,
@@ -1633,15 +1675,15 @@
         null,
         null,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         18,
 =======
         41,
 >>>>>>> implemented basic validations
-        null,
-        null,
-        1,
-        1,
+=======
+        9,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         1,
@@ -1649,19 +1691,31 @@
         null,
         null,
         1,
+        0,
+        null,
+        null,
+        1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         3,
+=======
+        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         7,
+=======
+        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         1,
@@ -1669,6 +1723,7 @@
         null,
         null,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         9,
         9,
@@ -1676,6 +1731,10 @@
         21,
         21,
 >>>>>>> implemented basic validations
+=======
+        10,
+        10,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
@@ -1692,20 +1751,27 @@
         null,
         null,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         7,
         7,
         7,
+=======
+        0,
+        0,
+        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
         1,
-        1,
-        1,
+        4,
+        4,
         null,
         0,
         null,
         null
       ],
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1723,17 +1789,16 @@
         1,
         1,
         1,
-        null,
-        1,
-        null,
-        8,
-        8,
-        1,
+=======
+      "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
-        1,
         null,
+        null,
+        null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         1,
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
         34,
@@ -1801,6 +1866,9 @@
         1,
         22,
 >>>>>>> implemented basic validations
+=======
+        null,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
@@ -1822,6 +1890,7 @@
         null,
         null,
         null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1839,36 +1908,22 @@
 >>>>>>> implemented basic validations
         1,
         1,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        3,
-        3,
-        1,
-        null,
-        2,
+=======
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
         null,
         null,
         null,
-        1,
-        1,
-        3,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1884,6 +1939,8 @@
 =======
       "/home/ubuntu/workspace/ITPH/app/models/client.rb": [
 >>>>>>> implemented basic validations
+=======
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
@@ -1902,6 +1959,7 @@
         1,
         1,
         1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         null
       ],
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -1917,15 +1975,73 @@
 =======
       "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
 >>>>>>> implemented basic validations
+=======
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         1,
         null,
         1,
-        null,
-        1,
+        3,
         0,
         null,
         null,
+        3,
+        3,
+        3,
+        3,
+        18,
         1,
+        1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
+        0,
+=======
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+        null,
+        null,
+        null,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
         2,
         2,
         2,
@@ -1934,34 +2050,62 @@
         12,
         0,
         0,
-        null,
-        null,
-        null,
-        null,
+=======
         1,
-        4,
-        null,
-        null,
         1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null
       ],
+      "/home/ubuntu/workspace/ITPH/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
+        4,
+        null,
+=======
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+        null,
+        1,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
+        1,
+        0,
+=======
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+        null,
+        1,
+        null,
+        1,
+        6,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/application_helper.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
+=======
+        0,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
+        null,
+        null,
+        null
+      ],
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1975,6 +2119,24 @@
 =======
       "/home/ubuntu/workspace/ITPH/app/models/event.rb": [
 >>>>>>> implemented basic validations
+=======
+      "/home/ubuntu/workspace/ITPH/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/controllers/home_controller.rb": [
+        1,
+        1,
+        3,
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
         null,
         null,
         null,
@@ -1994,16 +2156,35 @@
         null,
         null,
         null,
+        null,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/ITPH/app/controllers/clients_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
         null,
         null,
         1,
+        3,
+        3,
+        null,
+        null,
         1,
+        6,
+        null,
+        null,
         1,
+        0,
+        null,
+        null,
         1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        null,
         null,
         1,
         0,
@@ -2015,8 +2196,6 @@
         0,
         0,
         null,
-        null,
-        0,
         null,
         null
 <<<<<<< 034e75fcecf790f021c2544ae08c8d0b31109d40
@@ -2105,7 +2284,11 @@
 =======
       ]
     },
+<<<<<<< a1be5b8e50aa1584c5d88d1e7000bd67b0fc8a57
     "timestamp": 1480473007
 >>>>>>> implemented basic validations
+=======
+    "timestamp": 1480644870
+>>>>>>> integrated intake form with database, restricted viewing on intake information, added client-user association. currently working on validations
   }
 }

@@ -22,15 +22,17 @@ class EventsController < ApplicationController
     if @event.users.blank?
       @event.users = [current_user]
     end
+    overlap = false
     events = Event.where(start: @event.start..@event.end, end: @event.start..@event.end)
     events.each do |e|
       if e.users.include?(current_user)
         flash[:success] = "Cannot schedule overlapping events"
+        overlap = true
         break
       end
     end
     create_new_client(@event.new_name, @event.new_email)
-    if @event.valid?
+    if @event.valid and not overlap?
       @event.save
       if @event.event_type == "counseling"
         @event.clients.each do |client|

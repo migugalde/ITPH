@@ -14,30 +14,253 @@
     <%= @client.email %>
   </li>
 </ul>
-  
-<% if @client_index == -1 %>
-  <h3>Client has not filled out intake form.</h3>
-<% else %>
-<h3>Intake Form Results:</h3>
-  <h4>Last filled out on <%= @spreadsheet[@client_index, 1].split(" ")[0] %>
-    at <%= @spreadsheet[@client_index, 1].split(" ")[1] %> </h4>
-  <ul id="details">
-    <% for i in 2..@spreadsheet.num_cols do %>
+
+<% if @client.users.include?(current_user) %>
+  <% if @client.form_updated_at.nil? %>
+    <h3>Client has not filled out intake form.</h3>
+  <% else %>
+  <h3>Intake Form Results:</h3>
+    <h4>Last filled out on <%= @client.form_updated_at.split(" ")[0] %>
+      at <%= @client.form_updated_at.split(" ")[1] %> </h4>
+    <ul id="details">
       <li>
-        <% if @spreadsheet[1, i][-1] != "?" %>
-          <%= @spreadsheet[1, i] + ":" %>
-        <% else %>
-          <%= @spreadsheet[1, i] %>
-        <% end %>
-        <% if @spreadsheet[@client_index, i].empty? %>
-          Client did not answer prompt.
-        <% else %>
-          <%= @spreadsheet[@client_index, i] %>
-        <% end %>
+        Date of Birth:
+        <%= @client.date_of_birth %>
       </li>
+      <li>
+        Age:
+        <%= @client.age %>
+      </li>
+      <li>
+        Gender:
+        <%= @client.gender %>
+      </li>
+      <% if not @client.address.empty? %>
+        <li>
+          Address:
+          <%= @client.address %>
+        </li>
+      <% end %>
+      <% if not @client.does_phone_number_have_texting.empty? %>
+        <li>
+          Would you like to receive text messages at this number?
+          <%= @client.does_phone_number_have_texting %>
+        </li>
+      <% end %>
+      <% if not @client.alternate_phone_number.empty? %>
+        <li>
+          Alternate Phone Number:
+          <%= @client.alternate_phone_number %>
+        </li>
+      <% end %>
+      <% if not @client.occupation.empty? %>
+        <li>
+          Occupation:
+          <%= @client.occupation %>
+        </li>
+      <% end %>
+      <% if not @client.employer.empty? %>
+        <li>
+          Employer:
+          <%= @client.employer %>
+        </li>
+      <% end %>
+      <% if not @client.length_of_employment.empty? %>
+        <li>
+          Length of employment:
+          <%= @client.length_of_employment %>
+        </li>
+      <% end %>
+      <% if not @client.marital_status.empty? %>
+        <li>
+          Marital Status:
+          <%= @client.marital_status %>
+        </li>
+      <% end %>
+      <% if not @client.address.empty? %>
+        <li>
+          Length of Marriage:
+          <%= @client.length_of_marriage %>
+        </li>
+      <% end %>
+      <% if not @client.spouses_name.empty? %>
+        <li>
+          Spouse's Name:
+          <%= @client.spouses_name %>
+        </li>
+      <% end %>
+      <% if not @client.spouses_dob.empty? %>
+        <li>
+          Spouse's Date of Birth:
+          <%= @client.spouses_dob %>
+        </li>
+      <% end %>
+      <% if not @client.spouses_employed.empty? %>
+        <li>
+          Spouse's Employer:
+          <%= @client.spouses_employed %>
+        </li>
+      <% end %>
+      <% if not @client.emergency_contact_name.empty? %>
+        <li>
+          Emergency Contact:
+          <%= @client.emergency_contact_name %>
+        </li>
+      <% end %>
+      <% if not @client.emergency_contact_relationship.empty? %>
+        <li>
+          Relationship to Emergency Contact:
+          <%= @client.emergency_contact_relationship %>
+        </li>
+      <% end %>
+      <% if not @client.emergency_contact_phone_number.empty? %>
+        <li>
+          Emergency Contact's Phone Number:
+          <%= @client.emergency_contact_phone_number %>
+        </li>
+      <% end %>
+      <% if not @client.emergency_contact_address.empty? %>
+        <li>
+          Emergency Contact's Address:
+          <%= @client.emergency_contact_address %>
+        </li>
+      <% end %>
+      <% if not @client.religious_affiliation.empty? %>
+        <li>
+          Name of church attended or religious affiliation (if any):
+          <%= @client.religious_affiliation %>
+        </li>
+      <% end %>
+      <% if not @client.housemates.empty? %>
+        <li>
+          List of Housemates:
+          <%= @client.housemates %>
+        </li>
+      <% end %>
+      <% if not @client.physician.empty? %>
+        <li>
+          Personal Physician:
+          <%= @client.physician %>
+        </li>
+      <% end %>
+      <% if not @client.date_of_last_physical_exam.empty? %>
+        <li>
+          Date of Last Physical Exam:
+          <%= @client.date_of_last_physical_exam %>
+        </li>
+      <% end %>
+      <% if not @client.illnesses_injuries_disabilities.empty? %>
+        <li>
+          List of Important Illnesses, Injuries, or Disabilities:
+          <%= @client.illnesses_injuries_disabilities %>
+        </li>
+      <% end %>
+      <% if not @client.medications.empty? %>
+        <li>
+          List of Medications:
+          <%= @client.medications %>
+        </li>
+      <% end %>
+      <% if not @client.medication_prescriber.empty? %>
+        <li>
+          Who prescribed the medication?:
+          <%= @client.medication_prescriber %>
+        </li>
+      <% end %>
+      <% if not @client.medication_prescriber_phone_number.empty? %>
+        <li>
+          Phone Number of Prescriber:
+          <%= @client.medication_prescriber_phone_number %>
+        </li>
+      <% end %>
+      <% if not @client.has_been_hospitalized.empty? %>
+        <li>
+          Has client ever been hospitalized for mental or physical difficulty?
+          <%= @client.has_been_hospitalized %>
+        </li>
+      <% end %>
+      <% if not @client.hospitalization_info.empty? %>
+        <li>
+          Dates and Reason for Hospitalization:
+          <%= @client.hospitalization_info %>
+        </li>
+      <% end %>
+      <% if not @client.has_family_member_with_abuse_problem.empty? %>
+        <li>
+          Has anyone in client's family had a mental, emotional, or substance abuse problem?
+          <%= @client.has_family_member_with_abuse_problem %>
+        </li>
+      <% end %>
+      <% if not @client.family_member_problem_explanation.empty? %>
+        <li>
+          Family member explanation:
+          <%= @client.family_member_problem_explanation %>
+        </li>
+      <% end %>
+      <% if not @client.problems.empty? %>
+        <li>
+          Problems for which client is seeking treatment:
+          <%= @client.problems %>
+        </li>
+      <% end %>
+      <% if not @client.severity_of_problem.empty? %>
+        <li>
+          Severity of problem:
+          <%= @client.address %>
+        </li>
+      <% end %>
+      <% if not @client.problem_start_time.empty? %>
+        <li>
+          Problem start time:
+          <%= @client.problem_start_time %>
+        </li>
+      <% end %>
+      <% if not @client.has_received_counseling_before.empty? %>
+        <li>
+          Has client received counseling before?
+          <%= @client.has_received_counseling_before %>
+        </li>
+      <% end %>
+      <% if not @client.prior_counselor.empty? %>
+        <li>
+          Prior counselor(s):
+          <%= @client.prior_counselor %>
+        </li>
+      <% end %>
+      <% if not @client.was_counseling_helpful.empty? %>
+        <li>
+          Was counseling helpful?
+          <%= @client.was_counseling_helpful %>
+        </li>
+      <% end %>
+      <% if not @client.list_of_problems.empty? %>
+        <li>
+          List of problems:
+          <%= @client.list_of_problems %>
+        </li>
+      <% end %>
+      <% if not @client.how_they_heard_about_itph.empty? %>
+        <li>
+          How did client hear about ITPH?
+          <%= @client.how_they_heard_about_itph %>
+        </li>
+      <% end %>
+      <% if not @client.may_send_appt_emails.empty? %>
+        <li>
+          Can we send appointment reminder emails?
+          <%= @client.may_send_appt_emails %>
+        </li>
+      <% end %>
+      <% if not @client.may_send_general_emails.empty? %>
+        <li>
+          Can we send general emails?
+          <%= @client.may_send_general_emails %>
+        </li>
+      <% end %>
+      
     <% end %>
-  <% end %>
-</ul>
+  </ul>
+<% end %>
 
 <h3>Upcoming Appointments:</h3>
 
