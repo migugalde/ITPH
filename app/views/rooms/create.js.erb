@@ -1,2 +1,6 @@
-$('.modal').modal('hide');
-$("#room_table").append('<%= j render(@room) %></tr>');
+<% if @room.valid? %>
+  $('.modal').modal('hide');
+  $("#room_table").append('<%= j render(@room) %></tr>');
+<% else %>
+  $('#remote_container').html('<%= j render "new" %>');
+<% end %>

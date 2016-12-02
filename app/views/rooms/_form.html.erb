@@ -1,8 +1,8 @@
 <%= simple_form_for @room, remote: true do |f| %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :color, collection: @colors, selected: @default_color %>
+    <%= f.input :name, id: 'form_room_name', error_html: { :id => "name_error" } %>
+    <%= f.input :color, id: 'form_room_color',collection: @colors, selected: @default_color %>
   </div>
 
   <div class="form-actions">
