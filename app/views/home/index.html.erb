@@ -1,2 +1,9 @@
 <div class='calendar'></div>
-
+<div id='calendar_filters'>
+  <% @rooms.each do |room| %>
+    <%= check_box_tag room.name, room.id, true, class: 'room_filter' %>
+    <%= room.name %>
+  <% end %>
+  <%= check_box_tag 'My Events', 0,false, id: 'counselor_filter' %>
+  <b>Only my events</b>
+</div>

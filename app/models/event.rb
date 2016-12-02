@@ -23,6 +23,7 @@ class Event < ActiveRecord::Base
   validates :title, presence: true
   validates :start, presence: true
   validates :end, presence: true
+  belongs_to :room
   has_and_belongs_to_many :users, :uniq => true
   has_and_belongs_to_many :clients, :uniq => true
   accepts_nested_attributes_for :users, :clients
@@ -35,9 +36,7 @@ class Event < ActiveRecord::Base
   def self.user_events(user, e_start, e_end)
     events = Event.where(start: e_start..e_end)
     events.each do |event|
-      if event.users.include?(user) then
-        event.color = 'green'
-      end
+      event.editable = event.users.include?(user)
     end
     events
   end
