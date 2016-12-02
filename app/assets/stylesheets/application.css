@@ -16,3 +16,38 @@
  *= require_self
  */
 
+/* ----- SimpleForm Styles ----- */
+
+.field_with_errors {
+  background-color: #ff3333;
+}
+
+.simple_form .error {
+  clear: left;
+  color: black;
+  display: block;
+}
+
+.simple_form .hint {
+  clear: left;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+
+.dropdown-menu {
+   max-height:200px;/* you can change as you need it */
+   max-width:auto;
+   overflow:auto;/* to get scroll */
+}
+
+tr.header
+{
+    cursor:pointer;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('/assets/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('/assets/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}

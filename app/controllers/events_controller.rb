@@ -22,59 +22,62 @@ class EventsController < ApplicationController
     if @event.users.blank?
       @event.users = [current_user]
     end
-    unless @event.new_name.blank? || @event.new_email.blank?
-      new_client = Client.create(name: @event.new_name, email: @event.new_email)
-      if new_client.valid?
-        @event.clients << new_client
-        new_client.users << @event.users
-      else
-        new_client.delete
-        flash[:success] ="New clients need a name and a valid email"
-      end
-    end
-    overlap = false
     events = Event.where(start: @event.start..@event.end, end: @event.start..@event.end)
     events.each do |e|
       if e.users.include?(current_user)
         flash[:success] = "Cannot schedule overlapping events"
-        redirect_to
         break
       end
     end
-    if @event.valid? and not overlap
+    create_new_client(@event.new_name, @event.new_email)
+    if @event.valid?
       @event.save
-      begin
+      if @event.event_type == "counseling"
         @event.clients.each do |client|
-          EventMailer.appointment_notification(@event, client).deliver_later(queue: "high")
+          send_new(@event, client)
         end
-      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
-        flash[:success] ="There was an error with the email server. No email was sent."
+      else
+        flash[:success] ="I'm sorry, that is not a valid date. Please try again"
       end
-    else
-      flash[:success] ="I'm sorry, that is not a valid date. Please try again"
     end
   end
 
   def update
+    oldE = Marshal::load(Marshal.dump(@event))
     @event.update(event_params)
-    begin
-      @event.clients.each do |client|
-        EventMailer.appointment_notification(@event, client).deliver_later
+    create_new_client(@event.new_name, @event.new_email)
+    if (@event.event_type == "counseling" and oldE.event_type == "counseling")
+      oldE.clients.each do |client|
+        unless @event.clients.include? client
+          send_cancel(oldE, client)
+        else
+          send_update(@event, client)
+        end
       end
-    rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
-      flash[:success] ="There was an error with the email server. Please try again."
+    end
+    if @event.event_type == "counseling"
+      @event.clients.each do |client|
+        unless oldE.clients.include? client
+          send_new(@event, client)
+        end
+      end
+      if oldE.event_type != "counseling" #no email was sent if it didnt use to be counseling
+        oldE.clients.each do |client|
+          unless @event.clients.include? client
+            send_new(@event, client)
+          end
+        end
+      end
     end
   end
 
   def destroy
-    @event.destroy
-    begin
+    if @event.event_type == "counseling"
       @event.clients.each do |client|
-        EventMailer.appointment_cancel(@event, client).deliver_later(queue: "low")
+        send_cancel(@event, client)
       end
-    rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError
-      flash[:success] ="There was an error with the email server. Please try again."
     end
+    @event.destroy
   end
 
   private
@@ -83,6 +86,43 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :weekly, :biweekly, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
     end
+
+    def send_new(event, client)
+      begin
+          EventMailer.appointment_notification(event, client).deliver_later(queue: "high")
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
+        flash[:success] ="There was an error with the email server. No email was sent to #{client.name}."
+      end
+    end
+
+    def send_update(event, client)
+      begin
+        EventMailer.appointment_update(event, client).deliver_later(queue: "low")
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
+        flash[:success] ="There was an error with the email server. No email was sent to #{client.name}."
+      end
+    end
+
+    def send_cancel(event, client)
+      begin
+          EventMailer.appointment_cancel(event, client).deliver_later(queue: "low")
+      rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError, Net::OpenTimeout
+        flash[:success] ="There was an error with the email server. No email was sent to #{client.name}."
+      end
+    end
+
+    def create_new_client(name, email)
+      unless name.blank? || email.blank? || Client.where(["name = ? and email = ?", name, email]).length > 0
+        new_client = Client.create(name: name, email: email)
+        if new_client.valid?
+          @event.clients << new_client
+          new_client.users << @event.users
+        else
+          new_client.delete
+          flash[:success] ="New clients need a name and a valid email"
+      end
+    end
+
 end

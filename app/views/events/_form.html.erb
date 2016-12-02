@@ -6,6 +6,7 @@
       </div>
   <% end %>
 
+
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.hint "No client names, please. All counselors can see the Title." %>
@@ -62,6 +63,13 @@
     <%= f.input :date_range, input_html: { class: "form-control input-sm date-range-picker" } %>
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
+    <table class="table-condensed">
+    <tr>
+      <th> <%= f.input :weekly, as: :boolean, checked_value: true, unchecked_value: false %> </th>
+      <th> <%= f.input :biweekly, as: :boolean, checked_value: true, unchecked_value: false %> </th>
+    </tr>
+    </table> 
+
     <%= f.input :notes %>
   </div>
 
