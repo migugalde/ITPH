@@ -62,15 +62,9 @@
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
     <table class="table-condensed">
-    <p><b>Recurring</b>
+    <p><b>Repeating</b>
     <%= f.hint "Please only check one." %>
-    <%= f.input :recurring, as: :radio_buttons, selected: "none", collection: [[ "No Repeats", 'none' ], [ "Weekly", 'weekly' ], ["Biweekly", 'biweekly'] %>
-    <tr>
-      <th> <%= f.input :none, as: :boolean, :input_html => { :checked => true, :unchecked => false } %> </th>
-      <th> <%= f.input :weekly, as: :boolean, :input_html => { :checked => false, :unchecked => true } %> </th>
-      <th> <%= f.input :biweekly, as: :boolean, :input_html => { :checked => false, :unchecked => true } %> </th>
-    </tr>
-    </table> 
+    <%= f.input :recurring, as: :radio_buttons, remote: true, selected: "none", collection: [[ "No Repeats", 'none' ], [ "Weekly", 'weekly' ], ["Biweekly", 'biweekly']] %>
     </p>
     <%= f.input :notes %>
   </div>
