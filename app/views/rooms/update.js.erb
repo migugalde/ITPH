@@ -1,2 +1,7 @@
-$('.modal').modal('hide');
-$('#tr_<%= @room.id %>').replaceWith('<%= j render(@room) %></tr>');
+<% if @room.valid? %>
+  $('.modal').modal('hide');
+  $('#tr_<%= @room.id %>').replaceWith('<%= j render(@room) %></tr>');
+<% else %>
+  $('.modal-body').html('<%= j render "form" %>');
+  $('#room_color').simplecolorpicker();
+<% end %>

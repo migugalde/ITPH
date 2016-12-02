@@ -8,7 +8,14 @@ end
 
 def show
 	@client = Client.find(params[:id])
-	@client.update_variables(current_user)	
+	@client.update_variables(current_user)
+	events = Event.all
+	@client_events = []
+	events.each do |e|
+		if e.clients.include?(@client)
+			@client_events << e
+		end
+	end
 end
 
 def index
