@@ -12,19 +12,32 @@ class RoomsController < ApplicationController
 
   def new
     @room = Room.new
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def edit
+    @default_color = @room.color
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def create
     @room = Room.new(room_params)
+    byebug
     respond_to do |format|
       if @room.save
         format.html { redirect_to rooms_path, notice: 'Room was successfully created.' }
+        format.json
         format.js
       else
-        format.html { render :new }
+        format.html { render 'new' }
+        format.json
+        format.js
       end
     end
   end
@@ -58,6 +71,5 @@ class RoomsController < ApplicationController
 
     def set_colors
       @colors = Room.colors
-      @default_color = Room.default_color
     end
 end

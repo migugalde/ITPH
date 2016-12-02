@@ -6,8 +6,13 @@ initialize_calendar = function() {
       header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'month,agendaWeek,agendaDay'
+        right: 'month,agendaWeek,agendaDay',
       },
+      height: 'auto',
+      contentHeight: 'parent',
+      defaultView: 'agendaWeek',
+      minTime: '07:00',
+      allDaySlot: false,
       selectable: true,
       selectHelper: true,
       //timezoneParam: "America/Los_Angeles",
@@ -18,7 +23,6 @@ initialize_calendar = function() {
       events: '/events.json',
 
       eventDataTransform: function( eventData ) {
-        console.log(eventData);
         if (eventData.editable){
           eventData.borderColor = "#00FF00";
         }
@@ -28,7 +32,6 @@ initialize_calendar = function() {
       eventRender: function eventRender( event, element, view ) {
         //Filter non-personal events
         if($('#counselor_filter').is(':checked') && !event.editable){
-          console.log('hi')
           return false;
         }
         //Filter based on room

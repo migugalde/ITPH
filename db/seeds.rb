@@ -23,14 +23,14 @@ rooms.each do |room|
 	Room.create!(room)
 end
 
-20.times do
+40.times do
   event = Event.new
   event.title = Faker::Book.title
   event.event_type = ["Meeting", "Group Event"].sample
   event.room = Room.all.sample
   event.notes = Faker::Hipster.paragraph
-  event.start = Faker::Time.between(7.days.ago, 14.days.from_now + 7.days, :day)
-  event.end = event.start + [1,2,3].sample.hours
+	event.start = Faker::Time.between(7.days.ago, 14.days.from_now + 7.days, :all)
+  event.end = event.start + [1,2].sample.hours
   event.date = event.start.to_date
   event.save
 end

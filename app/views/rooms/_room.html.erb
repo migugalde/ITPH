@@ -1,6 +1,6 @@
 <tr id="tr_<%= room.id %>">
   <td><%= room.name %></td>
   <td bgcolor= <%= room.color %>></td>
-  <td><%= button_to 'Edit', edit_room_path(room), method: :get, :remote => true %></td>
-  <td><%= button_to 'Delete', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <td><%= button_to 'Edit', edit_room_path(room), id: "edit_room_#{room.id}", method: :get, :remote => true %></td>
+  <td><%= button_to 'Delete', room, id: "delete_room_#{room.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
