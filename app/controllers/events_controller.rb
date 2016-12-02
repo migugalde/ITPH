@@ -20,7 +20,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
-<<<<<<< 627a1219d94e70eca9d16c3e08354f7c1a16f3cf
+    @event.editable = true;
     if @event.users.blank?
       @event.users = [current_user]
     end
@@ -33,9 +33,6 @@ class EventsController < ApplicationController
         break
       end
     end
-=======
-    @event.editable = true;
->>>>>>> updated room association in forms
     create_new_client(@event.new_name, @event.new_email)
     if @event.valid? and not overlap
       @event.save
