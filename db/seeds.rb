@@ -10,8 +10,10 @@ end
 users = [{:name => 'Toni', :email => 'toni@gmail.com', :password => 'password', :password_confirmation => 'password',:phone_number => '+2412412414', :admin => true},
             {:name => 'Bob', :email => 'bob@gmail.com', :password => 'password', :password_confirmation => 'password', :phone_number => '+2412412414', :admin => false}]
 
-users.each do |user|
-  User.create!(user)
+unless User.find_by( email: "toni@gmail.com" )
+  users.each do |user|
+    User.create!(user)
+  end
 end
 
 

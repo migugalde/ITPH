@@ -76,7 +76,7 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
+      params.require(:event).permit(:title, :date_range, :start, :end, :color, :notes, :room, :weekly, :biweekly, :new_name, :new_email, :event_type, :client_ids => [], :user_ids => [])
     end
 
     def send_new(event, client)
