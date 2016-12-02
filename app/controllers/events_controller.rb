@@ -126,5 +126,5 @@ class EventsController < ApplicationController
           flash[:success] ="New clients need a name and a valid email"
       end
     end
-
+  end
 end

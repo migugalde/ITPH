@@ -1,5 +1,9 @@
 <%= simple_form_for @event, remote: true do |f| %>
 
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "flash #{key}" %>
+  <% end %>
+
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.hint "No client names, please. All counselors can see the Title." %>
