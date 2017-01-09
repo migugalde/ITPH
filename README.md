@@ -1,19 +1,22 @@
-<a href="https://codeclimate.com/github/msmith3/ITPH"><img src="https://codeclimate.com/github/msmith3/ITPH/badges/gpa.svg" /></a>
+<a href="https://codeclimate.com/github/jgg01/ITPH/"><img src="https://codeclimate.com/github/jgg01/ITPH/badges/gpa.svg" /></a>
 
-<a href="https://codeclimate.com/github/msmith3/ITPH/coverage"><img src="https://codeclimate.com/github/msmith3/ITPH/badges/coverage.svg" /></a>
+<a href="https://codeclimate.com/github/jgg01/ITPH/coverage"><img src="https://codeclimate.com/github/jgg01/ITPH/badges/coverage.svg" /></a>
 
-[![Build Status](https://travis-ci.org/msmith3/ITPH.svg?branch=master)](https://travis-ci.org/msmith3/ITPH)
+[![Build Status](https://travis-ci.org/jgg01/ITPH.svg?branch=master)](https://travis-ci.org/jgg01/ITPH)
 
-Iteration Checkpoint & Client Website:
+In The Potter's Hands is a non-profit counseling center based in Pleasanton, California. Our challenge was to solve their problem of very few rooms, several counselors, and the management and scheduling problems arising from many clients. With the creation of a simple, interactive client and calendar database, we designed and deployed a scalable solution to their team.
+
+Client Website:
+itph.org
+
+Example Webapp Deployment:
 https://inthepottershands.herokuapp.com/
 
+Test Credentials:
 Username: toni@gmail.com
 Password: password
 
-https://www.pivotaltracker.com/n/projects/1882909
+Current Pivotal Tracker:
+https://www.pivotaltracker.com/projects/1947875
 
-Thanks to https://www.driftingruby.com/episodes/fullcalendar-events-and-scheduling who created a great starting point for including Fullcalendar.io in our app!
-
-In the Potter's Hands hopes to provide counseling and community to those who need it.
-
-Currently, scheduling of appointments and reminders are done manually by counselors through phone calendars. Booking appointments using multiple non-communicating calendars is arduous, error prone, and ultimately unsustainable as ITPH grows. We hope to provide ITPH a central app through which appointments can be booked on a master calendar, appointment reminders will be sent to clients automatically, and provide client information and forms.
+This project would not have been possible without the collaboration of Forest Fraser, Matt Smith, Tara Calista and Abi Agraval from UC Berkeley's CS169 in Fall 2016. That repository is located at https://github.com/jgg01/ITPH-cs169-fa16.
