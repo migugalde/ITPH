@@ -67,3 +67,6 @@ end
 gem 'google-drive'
 gem 'figaro'
 gem 'postmark-rails'
+
+gem  'execjs'
+gem 'therubyracer', :platforms => :ruby
