@@ -70,3 +70,5 @@ gem 'postmark-rails'
 
 gem  'execjs'
 gem 'therubyracer', :platforms => :ruby
+
+gem 'io-console'
