@@ -72,3 +72,5 @@ gem  'execjs'
 gem 'therubyracer', :platforms => :ruby
 
 gem 'io-console'
+
+gem 'puma'
