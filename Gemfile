@@ -26,7 +26,7 @@ gem 'jquery-simplecolorpicker-rails'
 gem 'devise'
 
 gem 'simplecov', :require => false, :group => :test
-gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'faker'
 
