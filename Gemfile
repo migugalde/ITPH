@@ -74,3 +74,5 @@ gem 'therubyracer', :platforms => :ruby
 gem 'io-console'
 
 gem 'puma'
+
+gem 'sqlite3'
