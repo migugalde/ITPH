@@ -11,6 +11,7 @@ https://youtu.be/m9hLi8c_GRI
 
 Example Webapp Deployment:
 https://inthepottershands.herokuapp.com/
+(Note that while the codebase is currently being developed privately, the example site is running up to date 2/17)
 
 Test Credentials:
 Username: toni@gmail.com
