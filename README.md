@@ -14,7 +14,7 @@ https://inthepottershands.herokuapp.com/
 (Note that while the codebase is currently being developed privately, the example site is running up to date 2/17)
 
 Test Credentials:
-Username: toni@gmail.com
+Username: technical@itph.org
 Password: password
 
 Current Pivotal Tracker:
