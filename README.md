@@ -1,4 +1,4 @@
-<a href="https://codeclimate.com/github/jgg01/ITPH/"><img src="https://codeclimate.com/github/jgg01/ITPH/badges/gpa.svg" /></a>
+<a href="https://codeclimate.com/github/migugalde/ITPH/"><img src="https://codeclimate.com/github/migugalde/ITPH/badges/gpa.svg" /></a>
 
 In The Potter's Hands is a non-profit counseling center based in Pleasanton, California. Our challenge was to solve their problem of very few rooms, several counselors, and the management and scheduling problems arising from many clients. With the creation of a simple, interactive client and calendar database, we designed and deployed a scalable solution to their team.
 
